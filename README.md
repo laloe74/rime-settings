@@ -43,28 +43,9 @@
 
 [Rime方案製作詳解](https://rime-aca.tumblr.com/post/67241713724/rime方案製作詳解)
 
-<br>
 
-## 其他
 
-在  `custom_phrase.txt` 中可以设置某些字词永远只出现在前 N 个候选项，但是这样设置之后，这些字词就不能与正常的字共同造词（自造词无法被记住）。现在不知道如何能完美的固定某些字词的候选项顺序。  
+## 同步
 
-<br>
-
-顺便推荐一下在 VSCode 中给 YAML 设置默认 Tab 行为的方法：https://github.com/microsoft/vscode/issues/69011
-
-使 Tab 变成 2 个空格长度的 Tab（而不是空格），修改词库时很方便，不用总是手动调节了。
-
-建议配置都折腾完了再启用这个，因为配置文件中如果使用了 Tab 来缩进会产生一些意想不到的错误。。。
-
-`.../.vscode/settings.json`：
-
-```json
-    // Configure editor settings to be overridden for [yaml] language.
-    "[yaml]": {
-        "editor.insertSpaces": false,
-        "editor.tabSize": 2,
-        "editor.autoIndent": false,
-    },
-```
-
+1. 配置文件里打开 installation.yaml，将 id 和路径改成与 iCloud 同步文件 installation.yaml 里的一至。
+2. 点击菜单栏【ㄓ】-【同步用户数据】，此时你之前的个人词库已经同步到新配置里。
