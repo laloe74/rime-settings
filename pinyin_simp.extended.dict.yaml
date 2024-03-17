@@ -22,4 +22,7 @@ import_tables:
   - cn_dicts/d       # 个人词库
   - cn_dicts/d_cn_en # 中英混输词典
   - cn_dicts/d_av    # 著名表演艺术家
+  - cn_dicts/sogou.computer
+  - cn_dicts/sogou.physics
+  - cn_dicts/sogou.poem
 ...
