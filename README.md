@@ -17,6 +17,17 @@
 
 <br>
 
+## 同步至 iCloud
+
+1. 配置文件里打开 installation.yaml，将 id 改为 Mac（支持自定义）。
+2. 复制下面路径代码粘贴进去，将 admin 替换为 Mac 管理员名称（代码里 RimeSync 是同步后文件夹名称，支持自定义）。
+```
+sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
+```
+3. 点击菜单栏【ㄓ】-【同步用户数据】，等待几秒提示同步成功。打开访达 iCloud 找到名为 RimeSync 的文件即是。
+
+<br>
+
 ## 精简字表
 
 袖珍简化方案原版字表 17K+ 的字，而《通用规范汉字表》才只收录了 8105 个字。
@@ -45,7 +56,3 @@
 
 
 
-## 同步
-
-1. 配置文件里打开 installation.yaml，将 id 和路径改成与 iCloud 同步文件 installation.yaml 里的一至。
-2. 点击菜单栏【ㄓ】-【同步用户数据】，此时你之前的个人词库已经同步到新配置里。
