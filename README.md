@@ -15,7 +15,7 @@ sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 
 [twlz0ne](https://github.com/twlz0ne)/**[rime-settings](https://github.com/twlz0ne/rime-settings)** 基本配置
 
-[iDvel](https://github.com/iDvel)/**[雾凇拼音 | 长期维护的简体词库](https://github.com/iDvel/rime-ice)** 词库
+[iDvel](https://github.com/iDvel)/**[雾凇拼音|长期维护的简体词库](https://github.com/iDvel/rime-ice)** 词库
 
 [lewangdev](https://github.com/lewangdev)/**[scel2txt](https://github.com/lewangdev/scel2txt)** 搜狗细胞词库转鼠须管（Rime）词库
 
