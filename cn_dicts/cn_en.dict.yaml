@@ -12,12 +12,13 @@
 #
 
 ---
-name: d_cn_en
+name: cn_en
 version: "2021-07-03"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
-# 补充的中英词汇
+
+# 基础中英词汇
 U 盘	youpan
 U 盘	upan
 B 站	bzhan
@@ -130,6 +131,8 @@ z 逆变换	znibianhuan	100
 γ 刀	gamadao	100
 γ 射线	gamashexian	100
 
+
+# 雾凇 cn_en.txt
 X光	Xguang
 X光	xguang
 X光片	Xguangpian
