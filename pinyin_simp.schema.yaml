@@ -4,12 +4,13 @@
 
 schema:
   schema_id: pinyin_simp
-  name: 袖珍简化字拼音
-  version: "0.8"
+  name: 雾凇拼音
+  version: "2024-02-25"
   author:
-    - 佚名
+    - Dvel
   description: |
-    源自 Android 拼音
+    雾凇拼音
+    https://github.com/iDvel/rime-ice
   # dependencies:
   #   - stroke
 
