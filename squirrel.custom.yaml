@@ -2,12 +2,55 @@ patch:
   show_notifications_when: always # options: always | never | appropriate
 
   # 皮肤可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
-  style/color_scheme: native
+  style:
+    color_scheme: wechat
+    color_scheme_dark: wechat_dark
 
   preset_color_schemes:
+    
     native:
       name: 系統配色
-  
+    
+    wechat:
+      name: '微信键盘 / WeChat-keyboard' # 配色取自微信键盘
+      author: zsakvo
+      back_color: 0xFFFFFF
+      border_height: 0
+      border_width: 8
+      candidate_format: '%c %@ '
+      comment_text_color: 0x999999
+      corner_radius: 5
+      hilited_corner_radius: 5
+      font_face: PingFangSC
+      font_point: 16
+      hilited_candidate_back_color: 0x75B100
+      hilited_candidate_text_color: 0xFFFFFF
+      horizontal: true
+      inline_preedit: true
+      label_font_point: 12
+      text_color: 0x424242
+
+    wechat_dark:
+      name: '微信键盘_深色 / WeChat-keyboard_dark' # 配色取自微信键盘
+      author: shlroland
+      back_color: 0x151515
+      border_color: 0x151515
+      border_height: 0
+      border_width: 8
+      candidate_format: '%c %@ '
+      comment_text_color: 0xAEAEAE
+      corner_radius: 5
+      hilited_corner_radius: 5
+      font_face: PingFangSC
+      font_point: 16
+      hilited_candidate_back_color: 0x75B100
+      hilited_candidate_text_color: 0xFFFFFF
+      horizontal: true
+      inline_preedit: true
+      label_font_point: 12
+      label_color: 0x777777
+      text_color: 0xBBBBBB
+
   # 可参考 https://github.com/rime/squirrel/blob/69112996441fdae1d1778ac9a32eb98f6a8e7841/data/squirrel.yaml
   app_options:    # App默认英文
     # com.apple.Spotlight:
