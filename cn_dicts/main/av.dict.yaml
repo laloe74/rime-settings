@@ -6,7 +6,7 @@
 # 分别对应简中、日文，简中和日文相同的只保留一个。
 
 ---
-name: d_av
+name: av
 version: "2021-08-21"
 sort: by_weight
 vocabulary: essay-zh-hans

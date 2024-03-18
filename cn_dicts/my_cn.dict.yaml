@@ -5,21 +5,21 @@
 #
 
 ---
-name: d
+name: my_cn
 version: "2021-08-10"
 sort: by_weight
 vocabulary: essay-zh-hans
 ...
-# 平时顺手补充一些词汇
-# [中英混合词汇]，补充到 d_cn_en 中
-# [英文]，补充到 melt_eng 词典中，支持补全提示及大写字母
-# [符号]，补充到 opencc 中，支持超级简拼，如「hsd」→「华氏度 ℉」
+# 个人中文词库
 
 
-# 基础自定义
-鼠须管  shuxg
+
+鼠须管	shu xu guan
 
 
+
+
+# 编码
 &nbsp;	nbsp
 <br>	br
 .DS_Store	dsstore

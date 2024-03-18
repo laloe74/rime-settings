@@ -1,0 +1,14 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# https://github.com/iDvel/rime-settings/
+#
+
+---
+name: my_en
+version: "2024-03-19"
+sort: by_weight
+vocabulary: essay-zh-hans
+...
+# 个人英文词库
+
