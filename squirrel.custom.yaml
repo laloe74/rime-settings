@@ -7,7 +7,6 @@ patch:
     color_scheme_dark: wechat_dark
 
   preset_color_schemes:
-    
     native:
       name: 系統配色
     
