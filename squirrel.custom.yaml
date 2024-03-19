@@ -1,15 +1,30 @@
 patch:
   show_notifications_when: always # options: always | never | appropriate
 
-  # 皮肤可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
+  # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
   style:
-    color_scheme: wechat
-    color_scheme_dark: wechat_dark
+    color_scheme: 
+    color_scheme_dark: 
+
+    text_orientation: horizontal  # horizontal | vertical
+    inline_preedit: true
+    corner_radius: 10
+    hilited_corner_radius: 0
+    border_height: 0
+    border_width: 0
+    line_spacing: 5
+    spacing: 10
+    #candidate_format: '%c. %@'
+    #base_offset: 6
+    font_face: 'Lucida Grande'
+    font_point: 21
+    #label_font_face: 'Lucida Grande'
+    label_font_point: 18
+    #comment_font_face: 'Lucida Grande'
+    comment_font_point: 18
 
   preset_color_schemes:
-    native:
-      name: 系統配色
-    
+
     wechat:
       name: '微信键盘 / WeChat-keyboard' # 配色取自微信键盘
       author: zsakvo
