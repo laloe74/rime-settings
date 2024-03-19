@@ -3,9 +3,10 @@ patch:
 
   # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
   style:
-    color_scheme: 
-    color_scheme_dark: 
-
+    color_scheme: native
+    color_scheme_dark: native
+    
+    # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
     text_orientation: horizontal  # horizontal | vertical
     inline_preedit: true
     corner_radius: 10
@@ -24,6 +25,9 @@ patch:
     comment_font_point: 18
 
   preset_color_schemes:
+    
+    native:
+      name: 系統配色
 
     wechat:
       name: '微信键盘 / WeChat-keyboard' # 配色取自微信键盘
