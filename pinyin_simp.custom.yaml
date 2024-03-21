@@ -124,3 +124,26 @@ patch:
     - derive/([qypjlxbnm])in$/$1ni/ # lni → lin
     - derive/([aeo])ng$/n$1g/ # cnag → cang
     - derive/([qylxn])ue$/$1eu/ # xeu → xue
+    
+    # 声母
+    - derive/^n/l/ #  lai 可输出 nai（奶、乃、奈……）。 可以单向或成对儿启用模糊音
+    # 韵母
+    - derive/ang$/an/
+    - derive/an$/ang/
+    - derive/eng$/en/
+    - derive/en$/eng/
+    - derive/in$/ing/
+    - derive/ing$/in/
+    - derive/ian$/iang/
+    - derive/iang$/ian/
+    - derive/uan$/uang/
+    - derive/uang$/uan/
+    - derive/ai$/an/
+    - derive/an$/ai/
+    - derive/ong$/un/
+    - derive/un$/ong/
+    - derive/ong$/on/
+    - derive/iong$/un/
+    - derive/un$/iong/
+    - derive/ong$/eng/
+    - derive/eng$/ong/
