@@ -17,7 +17,6 @@ vocabulary: essay-zh-hans
 Quantum	quant
 Quanta	quant
 
-
 # 网址
 www.ithome.com/blog/	it
 www.neodb.social/discover/	neo
@@ -38,3 +37,6 @@ SU7	suq
 E-link	elink
 SpaceX	space
 Mastodon	masto
+Hacker	hack
+Hacker News	hack
+Perplexity	perplex
