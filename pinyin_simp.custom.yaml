@@ -86,7 +86,7 @@ patch:
     import_preset: symbols.custom
 
 
-  # 拼写设定
+  # 拼写设定 https://github.com/iDvel/rime-ice/blob/main/rime_ice.schema.yaml
   speller/algebra:
     # 原装
     - abbrev/^([a-z]).+$/$1/
@@ -100,9 +100,9 @@ patch:
     - derive/iu$/iou/ 
     # 原装自动纠错
     - derive/([aeiou])ng$/$1gn/ # agn → ang
-    # - derive/([dtngkhrzcs])o(u|ng)$/$1o/ # do → dou|dong 
-    # - derive/([dtngkhrzcs])o(u)$/$1o/ # 改：do → dou
-    # - derive/ong$/on/ # lon → long  ton → tong ...
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/ # do → dou|dong 
+    - derive/([dtngkhrzcs])o(u)$/$1o/ # 改：do → dou
+    - derive/ong$/on/ # lon → long  ton → tong ...
     - derive/ao$/oa/ # hoa → hao
     - derive/([iu])a(o|ng?)$/a$1$2/ # tain → tian  laing → liang  laio → liao
     # 自己添加的：
