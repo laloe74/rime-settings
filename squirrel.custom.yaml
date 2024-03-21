@@ -6,7 +6,7 @@ patch:
     color_scheme: native
     color_scheme_dark: native
     
-    # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
+    # 系统配色
     text_orientation: horizontal  # horizontal | vertical
     inline_preedit: true
     corner_radius: 10

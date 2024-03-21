@@ -16,13 +16,9 @@ patch:
       states: [简, 繁繁繁]
 
 
-  # 快捷键
   key_binder/bindings/+:
-    # 简繁体快捷键
-    - {when: always, accept: Control+Shift+4, toggle: traditionalization}
-    # - {when: always, accept: Control+slash, toggle: traditionalization}   # Ctrl + /
-    # 全半角快捷键
-    - {when: always, accept: Control+Shift+5, toggle: full_shape}
+    - {when: always, accept: Control+Shift+4, toggle: traditionalization}  # 简繁体快捷键
+    - {when: always, accept: Control+Shift+5, toggle: full_shape}          # 全半角快捷键
 
 
   engine/filters:
