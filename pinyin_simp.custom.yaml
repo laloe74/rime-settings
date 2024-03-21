@@ -127,3 +127,6 @@ patch:
     - derive/([qypjlxbnm])in$/$1ni/ # lni → lin
     - derive/([aeo])ng$/n$1g/ # cnag → cang
     - derive/([qylxn])ue$/$1eu/ # xeu → xue
+    # 韵母
+    - derive/en$/eng/
+    - derive/in$/ing/
