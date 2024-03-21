@@ -102,9 +102,9 @@ patch:
     - derive/([aeiou])ng$/$1gn/ # agn → ang
     - derive/([dtngkhrzcs])o(u|ng)$/$1o/ # do → dou|dong 
     - derive/([dtngkhrzcs])o(u)$/$1o/ # 改：do → dou
-    - derive/ong$/on/ # lon → long  ton → tong ...
-    - derive/ao$/oa/ # hoa → hao
-    - derive/([iu])a(o|ng?)$/a$1$2/ # tain → tian  laing → liang  laio → liao
+    # - derive/ong$/on/ # lon → long  ton → tong ...
+    # - derive/ao$/oa/ # hoa → hao
+    # - derive/([iu])a(o|ng?)$/a$1$2/ # tain → tian  laing → liang  laio → liao
     # 自己添加的：
     - derive/ua$/au/ # shau → shua  hau → hua
     - derive/ian$/ina/ # tina → tian 如果经常要打「李娜」，建议注释掉这个
@@ -124,26 +124,3 @@ patch:
     - derive/([qypjlxbnm])in$/$1ni/ # lni → lin
     - derive/([aeo])ng$/n$1g/ # cnag → cang
     - derive/([qylxn])ue$/$1eu/ # xeu → xue
-    
-    # 声母
-    - derive/^n/l/ #  lai 可输出 nai（奶、乃、奈……）。 可以单向或成对儿启用模糊音
-    # 韵母
-    - derive/ang$/an/
-    - derive/an$/ang/
-    - derive/eng$/en/
-    - derive/en$/eng/
-    - derive/in$/ing/
-    - derive/ing$/in/
-    - derive/ian$/iang/
-    - derive/iang$/ian/
-    - derive/uan$/uang/
-    - derive/uang$/uan/
-    - derive/ai$/an/
-    - derive/an$/ai/
-    - derive/ong$/un/
-    - derive/un$/ong/
-    - derive/ong$/on/
-    - derive/iong$/un/
-    - derive/un$/iong/
-    - derive/ong$/eng/
-    - derive/eng$/ong/
