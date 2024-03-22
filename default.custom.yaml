@@ -14,8 +14,10 @@ patch:
     Control_L: noop
     Control_R: noop
 
-  switcher/hotkeys:
-    - "Control+grave" # Ctrl + `
+  switcher:
+    hotkeys:
+      - "Control+grave" # Ctrl + `
+    fold_options: false
 
   # 按键绑定 https://github.com/rime/rime-prelude/blob/master/key_bindings.yaml
   key_binder/bindings:

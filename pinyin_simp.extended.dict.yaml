@@ -10,7 +10,7 @@ vocabulary: essay-zh-hans
 import_tables:
   # ----------------------- 字表 ----------------------- #
   - cn_dicts/8105    # https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters
-  # - cn_dicts/41448   # https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters
+  # - cn_dicts/41448
 
   # --------------------- 个人词库 --------------------- #
   - cn_dicts/my_cn               # 个人中文词库
