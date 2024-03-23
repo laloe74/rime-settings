@@ -1,8 +1,6 @@
 # Rime dictionary
 # encoding: utf-8
 #
-# https://github.com/iDvel/rime-settings/
-#
 
 ---
 name: my_en
@@ -18,10 +16,6 @@ Quantum	quant
 Quanta	quant
 Oppenheimer
 
-# 网址
-www.ithome.com/blog/	it
-www.neodb.social/discover/	neo
-www.unsplash.com	unsp
 
 
 # 个人
@@ -43,3 +37,4 @@ Mastodon	masto
 Hacker	hack
 Hacker News	hack
 Perplexity	perplex
+neodb	 neo
