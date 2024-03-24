@@ -13,8 +13,9 @@ import_tables:
   # - cn_dicts/41448
 
   # --------------------- 个人词库 --------------------- #
-  - cn_dicts/my_cn               # 个人中文词库
-  - cn_dicts/privacy             # 个人隐私词汇！！！
+  - cn_dicts/my_cn                 # 个人中文词库
+  - cn_dicts/privacy               # 个人隐私词汇！！！
+  - cn_dicts/film                  # 电影
 
   # --------------------- 扩展词库 --------------------- #
   - cn_dicts/extend/base           # 基础词库

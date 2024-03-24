@@ -87,9 +87,37 @@ patch:
 
   # 拼写设定 https://github.com/iDvel/rime-ice/blob/main/rime_ice.schema.yaml
   speller/algebra:
-    # 原装
-    - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([zcs]h).+$/$1/ # 令 zh ch sh 响应单字而不是 z'h c'h s'h 这种的
+    # 声母
+    - derive/^([zcs])h/$1/          # zh* ch* sh* 派生出 z* c* s*
+    - derive/^([zcs])([^h])/$1h$2/  # z* c* s*    派生出 zh* ch* sh*
+    - derive/^l/n/
+    - derive/^n/l/
+    # - derive/^f/h/
+    # - derive/^h/f/
+    # - derive/^l/r/
+    # - derive/^r/l/
+    # - derive/^g/k/
+    # - derive/^k/g/
+    # 韵母
+    # - derive/ang$/an/
+    # - derive/an$/ang/
+    - derive/eng$/en/
+    # - derive/en$/eng/
+    # - derive/in$/ing/
+    - derive/ing$/in/
+    # - derive/ian$/iang/
+    # - derive/iang$/ian/
+    # - derive/uan$/uang/
+    # - derive/uang$/uan/
+    # - derive/ai$/an/
+    # - derive/an$/ai/
+    # - derive/ong$/un/
+    # - derive/un$/ong/
+    # - derive/ong$/on/
+    # - derive/iong$/un/
+    # - derive/un$/iong/
+    # - derive/ong$/eng/
+    # - derive/eng$/ong/
     # 原装的 v u 容错转换
     - derive/^([nl])ve$/$1ue/
     - derive/^([jqxy])u/$1v/
@@ -123,6 +151,3 @@ patch:
     - derive/([qypjlxbnm])in$/$1ni/ # lni → lin
     - derive/([aeo])ng$/n$1g/ # cnag → cang
     - derive/([qylxn])ue$/$1eu/ # xeu → xue
-    # 韵母
-    - derive/en$/eng/
-    - derive/in$/ing/
