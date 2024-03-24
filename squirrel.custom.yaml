@@ -3,27 +3,28 @@ patch:
 
   # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
   style:
-    color_scheme: original    
-    color_scheme_dark: original
+    # 不填则使用「默认皮肤」
+    color_scheme:  # wechat_light
+    color_scheme_dark:  # wechat_dark
     
+    #「默认皮肤」
+    name: 默认皮肤
+    border_height: 0                        # 窗口上下高度，大于圆角半径才生效
+    border_width: 0                         # 窗口左右宽度，大于圆角半径才生效
+    candidate_format: '%c. %@'              # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+    corner_radius: 10                       # 窗口圆角
+    hilited_corner_radius: 0                # 高亮圆角
+    font_face: 'Lucida Grande'              # 候选词字体
+    font_point: 21                          # 候选字大小
+    horizontal: false                       # true横排，false竖排
+    inline_preedit: true                    # 拼音位于：候选框 false| 行内 true
+    label_font_point: 18                    # 候选编号大小
+    line_spacing: 5                         # 候选词的行间距
+    spacing: 10                             # 在非内嵌编码模式下，预编辑和候选词之间的间距
+    comment_font_point: 18                  # 提示词字体大小
+
   preset_color_schemes:
-
-    original:
-      name: 默认皮肤
-      border_height: 0                        # 窗口上下高度，大于圆角半径才生效
-      border_width: 0                         # 窗口左右宽度，大于圆角半径才生效
-      candidate_format: '%c. %@'              # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
-      corner_radius: 10                       # 窗口圆角
-      hilited_corner_radius: 0                # 高亮圆角
-      font_face: 'Lucida Grande'              # 候选词字体
-      font_point: 21                          # 候选字大小
-      horizontal: false                       # true横排，false竖排
-      inline_preedit: true                    # 拼音位于：候选框 false| 行内 true
-      label_font_point: 18                    # 候选编号大小
-      line_spacing: 5                         # 候选词的行间距
-      spacing: 10                             # 在非内嵌编码模式下，预编辑和候选词之间的间距
-      comment_font_point: 18                  # 提示词字体大小
-
+  
     wechat_light:
       name: 微信键盘浅色
       author: zsakvo                          # 作者
