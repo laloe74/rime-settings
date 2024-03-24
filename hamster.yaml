@@ -169,59 +169,43 @@ keyboard:
   # hamster_color_schemas  为引用的颜色文件名称
   colorSchemas:
     # __include: hamster_color_schemas:/colorSchemas
-    - schemaName: wechat_dark
-      name: 微信键盘深色
-      author: 古罗
-      back_color: "0x2D2D2D"
-      button_back_color: "0x656565"
-      button_pressed_back_color: "0x707070"
-      button_bubble_back_color: "0x707070"
-      button_foreground_color: "0xFDFDFD"
-      button_pressed_foreground_color: "0xFFFFFF"
-      button_swipe_foreground_color: "0xFFFFFF"
-      corner_radius: 6
-      border_color: "0x01000000"
-      text_color: "0x7A7A7A"
-      lower_edge_color: "0x01000000"
-      shadow_color: "0x01000000"
-      shadow_size: 0
-      hilited_candidate_back_color: "0x686868"
-      hilited_candidate_text_color: "0x8DE200"
-      hilited_candidate_label_color: "0x8DE200"
-      hilited_comment_text_color: "0x8DE200"
-      candidate_text_color: "0xC0C0C0"
-      comment_text_color: "0xC0C0C0"
-      label_color: "0xC0C0C0"
-      hilited_callout_back_color: "0x686868"
-      hilited_callout_foreground_color: "0x8DE200"
-
-
     - schemaName: wechat_light
       name: 微信键盘浅色
       author: 古罗
-      back_color: "0xE0DCDA"
-      button_back_color: "0xFEFCFC"
-      button_pressed_back_color: "0xFEFCFC"
-      button_bubble_back_color: "0xFEFCFC"
-      button_foreground_color: "0x000000"
-      button_pressed_foreground_color: "0x000000"
-      button_swipe_foreground_color: "0x000000"
-      corner_radius: 6
-      font-weight: 20
-      border_color: "0x01000000"
-      text_color: "0x444444"
-      lower_edge_color: "0x9C9997"
-      shadow_color: "0x01000000"
-      shadow_size: 0
-      hilited_candidate_back_color: "0xFBFAF9"
-      hilited_candidate_text_color: "0x66AC18"
-      hilited_candidate_label_color: "0x66AC18"
-      hilited_comment_text_color: "0x66AC18"
-      candidate_text_color: "0x171616"
-      comment_text_color: "0x171616"
-      label_color: "0x606060"
-      hilited_callout_back_color: "0xFBFAF9"
-      hilited_callout_foreground_color: "0x66AC18"
+      back_color: "0xD8D3D0"                      # 键盘背景色
+      button_back_color: "0xFEFCFC"               # 按键背景色
+      button_foreground_color: "0x000000"         # 按钮前景色
+      button_pressed_back_color: "0xEBEBEB"       # 按下时按键背景色
+      button_front_color: "0x7389FF"              # 按键上文字颜色
+      button_pressed_foreground_color: "0x000000" # 按下时按键上文字颜色
+      button_swipe_foreground_color: "0x000000"   # 按键上划动手势文字的颜色
+      corner_radius: 6                            # 按键圆角半径
+      border_color: "0x01000000"                  # 按键边框颜色
+      text_color: "0x444444"                      # 组字区域文字颜色
+      hilited_candidate_back_color: "0x75B100"    # 候选栏首选文字区域背景色
+      hilited_candidate_text_color: "0xFFFFFF"    # 候选栏首选文字颜色
+      hilited_comment_text_color: "0x999999"      # 候选栏首选文字 Comment 信息颜色
+      candidate_text_color: "0x424242"            # 候选栏次选文字颜色
+      comment_text_color: "0x999999"              # 候选栏次选文字 Comment 信息颜色
+
+    - schemaName: wechat_dark
+      name: 微信键盘深色
+      author: 古罗
+      back_color: "0x2C2C2C"                      # 键盘背景色
+      button_back_color: "0x656565"               # 按键背景色
+      button_foreground_color: "0xFDFDFD"         # 按钮前景色
+      button_pressed_back_color: "0x707070"       # 按下时按键背景色
+      button_front_color: "0x7389FF"              # 按键上文字颜色
+      button_pressed_foreground_color: "0xFFFFFF" # 按下时按键上文字颜色
+      button_swipe_foreground_color: "0xFFFFFF"   # 按键上划动手势文字的颜色
+      corner_radius: 6                            # 按键圆角半径
+      border_color: "0x01000000"                  # 按键边框颜色
+      text_color: "0x7A7A7A"                      # 组字区域文字颜色
+      hilited_candidate_back_color: "0x75B100"    # 候选栏首选文字区域背景色
+      hilited_candidate_text_color: "0xFFFFFF"    # 候选栏首选文字颜色
+      hilited_comment_text_color: "0xAEAEAE"      # 候选栏首选文字 Comment 信息颜色
+      candidate_text_color: "0xBBBBBB"            # 候选栏次选文字颜色
+      comment_text_color: "0xAEAEAE"              # 候选栏次选文字 Comment 信息颜色
 
 
 # RIME 引擎相关配置
