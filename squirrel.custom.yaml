@@ -3,71 +3,66 @@ patch:
 
   # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
   style:
-    color_scheme: native
-    color_scheme_dark: native
+    color_scheme: wechat_light      # original
+    color_scheme_dark: wechat_dark  # original
     
-    # 系统配色
-    text_orientation: horizontal  # horizontal | vertical
-    inline_preedit: true
-    corner_radius: 10
-    hilited_corner_radius: 0
-    border_height: 0
-    border_width: 0
-    line_spacing: 5
-    spacing: 10
-    #candidate_format: '%c. %@'
-    #base_offset: 6
-    font_face: 'Lucida Grande'
-    font_point: 21
-    #label_font_face: 'Lucida Grande'
-    label_font_point: 18
-    #comment_font_face: 'Lucida Grande'
-    comment_font_point: 18
-
   preset_color_schemes:
     
-    native:
-      name: 系統配色
+    original:
+      name: 默认皮肤
+      border_height: 0                       # 窗口上下高度，大于圆角半径才生效
+      border_width: 0                        # 窗口左右宽度，大于圆角半径才生效
+      candidate_format: '%c. %@'             # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+      corner_radius: 10                      # 窗口圆角
+      hilited_corner_radius: 0               # 高亮圆角
+      font_face: 'Lucida Grande'             # 候选词字体
+      font_point: 21                         # 候选字大小
+      horizontal: true                       # true横排，false竖排
+      inline_preedit: true                   # 拼音位于：候选框 false| 行内 true
+      label_font_point: 18                   # 候选编号大小
+      line_spacing: 5                        # 候选词的行间距
+      spacing: 10                            # 在非内嵌编码模式下，预编辑和候选词之间的间距
+      comment_font_point: 18                 # 备注字体大小
 
-    wechat:
-      name: '微信键盘 / WeChat-keyboard' # 配色取自微信键盘
-      author: zsakvo
-      back_color: 0xFFFFFF
-      border_height: 0
-      border_width: 8
-      candidate_format: '%c %@ '
-      comment_text_color: 0x999999
-      corner_radius: 5
-      hilited_corner_radius: 5
-      font_face: PingFangSC
-      font_point: 16
-      hilited_candidate_back_color: 0x75B100
-      hilited_candidate_text_color: 0xFFFFFF
-      horizontal: true
-      inline_preedit: true
-      label_font_point: 12
-      text_color: 0x424242
+    wechat_light:
+      name: 微信键盘浅色
+      author: zsakvo                          # 作者
+      back_color: 0xFFFFFF                    # 候选条背景色
+      border_height: 0                        # 窗口上下高度，大于圆角半径才生效
+      border_width: 8                         # 窗口左右宽度，大于圆角半径才生效
+      candidate_format: '%c %@ '               # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+      comment_text_color: 0x999999            # 拼音等提示文字颜色
+      corner_radius: 5                        # 窗口圆角
+      hilited_corner_radius: 5                # 高亮圆角
+      font_face: PingFangSC                   # 候选词字体
+      font_point: 16                          # 候选字大小
+      hilited_candidate_back_color: 0x75B100  # 第一候选项背景色
+      hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+      horizontal: true                        # true横排，false竖排
+      inline_preedit: true                    # 拼音位于：候选框 false| 行内 true
+      label_font_point: 12                    # 候选编号大小
+      text_color: 0x424242                    # 拼音行文字颜色
 
     wechat_dark:
-      name: '微信键盘_深色 / WeChat-keyboard_dark' # 配色取自微信键盘
-      author: shlroland
-      back_color: 0x151515
-      border_color: 0x151515
-      border_height: 0
-      border_width: 8
-      candidate_format: '%c %@ '
-      comment_text_color: 0xAEAEAE
-      corner_radius: 5
-      hilited_corner_radius: 5
-      font_face: PingFangSC
-      font_point: 16
-      hilited_candidate_back_color: 0x75B100
-      hilited_candidate_text_color: 0xFFFFFF
-      horizontal: true
-      inline_preedit: true
-      label_font_point: 12
-      label_color: 0x777777
-      text_color: 0xBBBBBB
+      name: 微信键盘深色
+      author: shlroland                       # 作者
+      back_color: 0x151515                    # 候选条背景色
+      border_color: 0x151515                  # 候选条圆角颜色
+      border_height: 0                        # 窗口上下高度，大于圆角半径才生效
+      border_width: 8                         # 窗口左右宽度，大于圆角半径才生效
+      candidate_format: '%c %@ '               # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+      comment_text_color: 0xAEAEAE            # 拼音等提示文字颜色
+      corner_radius: 5                        # 窗口圆角
+      hilited_corner_radius: 5                # 高亮圆角
+      font_face: PingFangSC                   # 候选词字体
+      font_point: 16                          # 候选字大小
+      hilited_candidate_back_color: 0x75B100  # 第一候选项背景色
+      hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+      horizontal: true                        # true横排，false竖排
+      inline_preedit: true                    # 拼音位于：候选框 false| 行内 true
+      label_font_point: 12                    # 候选编号大小
+      label_color: 0x777777                   # 候选编号颜色
+      text_color: 0xBBBBBB                    # 拼音行文字颜色
 
   # 可参考 https://github.com/rime/squirrel/blob/69112996441fdae1d1778ac9a32eb98f6a8e7841/data/squirrel.yaml
   app_options:    # App默认英文

@@ -21,6 +21,12 @@
 
 <br>
 
+## 删除错词
+
+将光标（`↑` `↓`或`←` `→`）移到要删除的词组上，按 `Shift+Fn+Delete` 键（第三方键盘按 `Control+Delete`）。只能从用户词典中删除词组，词库里词组只会取消其调频顺序。
+
+<br>
+
 ## 不同设备间通过 iCloud 同步
 
 1. 配置文件里打开 `installation.yaml`，将 `installation_id` 后的名称改为 Mac（支持自定义）
@@ -39,5 +45,7 @@ sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 [twlz0ne](https://github.com/twlz0ne)/**[rime-settings](https://github.com/twlz0ne/rime-settings)** 参考了基本配置
 
 [pengcu](https://github.com/pengcu)/**[rime-settings](https://github.com/pengcu/rime-settings)** 参考了基本配置
+
+[Rime配置教程：雾凇拼音 博客版](https://dvel.me/posts/rime-ice/)
 
 [Rime方案製作詳解](https://rime-aca.tumblr.com/post/67241713724/rime方案製作詳解)
