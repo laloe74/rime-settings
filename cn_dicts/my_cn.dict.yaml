@@ -14,71 +14,10 @@ vocabulary: essay-zh-hans
 
 
 
-鼠须管
-应声附和
-搬瓦工
-天玑
-骁龙
-李老是不是你老师	lls
-极氪
-领克
-阿斯顿·马丁
-苏姿丰
-电子水墨屏
-电子墨水屏
-空明朝体
-奥本海默
-
-# 导演
-楊德昌	ydc
-克里斯托弗·诺兰	nuo lan
-
-
-# 小米
-卢伟冰	lwb
-许斐	xf
-雷军	lj
-胡馨心	hxx
-馨心	xx
-王化	wh
-四字Tu姐	sztj
-王腾	wt
-萝卜敦敦	lbdd
-胡峥楠	hzn
-数码闲聊站	xlz
-陈震同学	cz
-南哥说车	ng
-番茄殿下	fqdx
-小胖小胖人间宝藏	xp
-Cici_老魏	lw
-曾学忠	zxz
-王晓雁	wxy
-粮厂	lc
-黑厂	hc
-蓝厂	lc
-红米	hm
-霞光紫
-雅灰
-海湾蓝
-橄榄绿
-
 # 编码
 &nbsp;	nbsp
 <br>	br
 .DS_Store	dsstore
-
-
-# 方便词
-儿	r
-版	b
-一	i
-一个	ig
-这	zh
-有个	ug
-有一个	uig
-有一个	uyig
-有一个	uyige
-又双叒叕	uuu
 
 # 容错词
 什么	sheme
@@ -120,6 +59,32 @@ Cici_老魏	lw
 嫐	nv nan nv
 嬲	nan nv nan
 
+# 小米
+卢伟冰	lwb
+许斐	xu fei
+雷军	lei jun
+胡馨心	hxx
+馨心	xx
+王化	wang hua
+四字Tu姐	sztj
+王腾	wt
+萝卜敦敦	luo bo dun dun
+胡峥楠	hu zheng nan
+数码闲聊站	shu ma xian liao zhan
+陈震同学	chen zhen tong xue
+南哥说车	nan ge shuo che
+番茄殿下	fan qie dian xia
+小胖小胖人间宝藏	xiao pang xiao pang
+Cici_老魏	lao wei
+曾学忠	zeng xue zhong
+王晓雁	wang xiao yan
+粮厂	lc
+黑厂	hc
+蓝厂	lc
+霞光紫
+雅灰
+海湾蓝
+橄榄绿
 
 # 扩展词语
 放铳
@@ -329,3 +294,19 @@ Cici_老魏	lw
 黄焖鸡
 黄焖鸡米饭
 鸡公煲
+鼠须管
+应声附和
+搬瓦工
+天玑
+骁龙
+李老师不是你老师	ni lao shi bu shi ni lao shi
+极氪
+领克
+阿斯顿·马丁	a si dun ma ding
+苏姿丰
+电子水墨屏
+电子墨水屏
+空明朝体
+奥本海默
+楊德昌	ydc
+克里斯托弗·诺兰	nuo lan
