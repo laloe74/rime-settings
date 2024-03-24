@@ -38,6 +38,18 @@ sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 
 <br>
 
+## 仓|Hamster 输入法配置
+
+-   仓|Hamster 2.3.0 适用与 iOS 系统
+-   和鼠须管同方案，使用 `hamster.yaml` 替换 `default.custom.yaml` 为通用配置
+    -   内含「微信键盘皮肤」+「古罗配列」
+-   使用方法同鼠须管
+    -   在仓输入法里开启 iCloud 同步，将本项目所有文件拷贝至 `iCloud/Hamster/Rime/` 目录下
+    -   仓输入法-RIME-重新部署，既可
+    -   [通用教程](https://ihsiao.com/apps/hamster/docs/)
+
+<br>
+
 ## 参考
 
 [maomiui](https://github.com/maomiui)/**[rime](https://github.com/maomiui/rime)** 详细的图文教程及实例
@@ -49,5 +61,3 @@ sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 [Rime配置教程：雾凇拼音 博客版](https://dvel.me/posts/rime-ice/)
 
 [Rime方案製作詳解](https://rime-aca.tumblr.com/post/67241713724/rime方案製作詳解)
-
-[Rime方案配置](https://placeless.net/blog/my-rime-squirrel-config)
