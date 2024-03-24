@@ -42,10 +42,12 @@ sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 
 [maomiui](https://github.com/maomiui)/**[rime](https://github.com/maomiui/rime)** 详细的图文教程及实例
 
-[twlz0ne](https://github.com/twlz0ne)/**[rime-settings](https://github.com/twlz0ne/rime-settings)** 参考了基本配置
+[twlz0ne](https://github.com/twlz0ne)/**[rime-settings](https://github.com/twlz0ne/rime-settings)** 基本配置
 
-[pengcu](https://github.com/pengcu)/**[rime-settings](https://github.com/pengcu/rime-settings)** 参考了基本配置
+[pengcu](https://github.com/pengcu)/**[rime-settings](https://github.com/pengcu/rime-settings)** 基本配置
 
 [Rime配置教程：雾凇拼音 博客版](https://dvel.me/posts/rime-ice/)
 
 [Rime方案製作詳解](https://rime-aca.tumblr.com/post/67241713724/rime方案製作詳解)
+
+[Rime方案配置](https://placeless.net/blog/my-rime-squirrel-config)
