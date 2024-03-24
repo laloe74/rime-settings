@@ -168,44 +168,56 @@ keyboard:
   # 来源: https://github.com/rime/squirrel/blob/master/data/squirrel.yaml
   # hamster_color_schemas  为引用的颜色文件名称
   colorSchemas:
-    # __include: hamster_color_schemas:/colorSchemas
     - schemaName: wechat_light
       name: 微信键盘浅色
       author: 古罗
-      back_color: "0xD8D3D0"                      # 键盘背景色
-      button_back_color: "0xFEFCFC"               # 按键背景色
-      button_foreground_color: "0x000000"         # 按钮前景色
-      button_pressed_back_color: "0xEBEBEB"       # 按下时按键背景色
-      button_front_color: "0x7389FF"              # 按键上文字颜色
-      button_pressed_foreground_color: "0x000000" # 按下时按键上文字颜色
-      button_swipe_foreground_color: "0x000000"   # 按键上划动手势文字的颜色
-      corner_radius: 6                            # 按键圆角半径
-      border_color: "0x01000000"                  # 按键边框颜色
-      text_color: "0x444444"                      # 组字区域文字颜色
-      hilited_candidate_back_color: "0x75B100"    # 候选栏首选文字区域背景色
-      hilited_candidate_text_color: "0xFFFFFF"    # 候选栏首选文字颜色
-      hilited_comment_text_color: "0x999999"      # 候选栏首选文字 Comment 信息颜色
-      candidate_text_color: "0x424242"            # 候选栏次选文字颜色
-      comment_text_color: "0x999999"              # 候选栏次选文字 Comment 信息颜色
-
+      back_color: "0xD8D3D0"
+      button_back_color: "0xFEFCFC"
+      button_pressed_back_color: "0xEBEBEB"
+      button_bubble_back_color: "0xD0D0D0"
+      button_foreground_color: "0x000000"
+      button_pressed_foreground_color: "0x000000"
+      button_swipe_foreground_color: "0x000000"
+      corner_radius: 6
+      border_color: "0x01000000"
+      text_color: "0x444444"
+      lower_edge_color: "0x000000"
+      shadow_color: "0x000000"
+      shadow_size: 0
+      hilited_candidate_back_color: "0xFBFAF9"
+      hilited_candidate_text_color: "0x66AC18"
+      hilited_candidate_label_color: "0x66AC18"
+      hilited_comment_text_color: "0x66AC18"
+      candidate_text_color: "0x424242"
+      comment_text_color: "0x999999"
+      label_color: "0x000000"
+      hilited_callout_back_color: "0xFBFAF9"
+      hilited_callout_foreground_color: "0x66AC18"
     - schemaName: wechat_dark
       name: 微信键盘深色
       author: 古罗
-      back_color: "0x2C2C2C"                      # 键盘背景色
-      button_back_color: "0x656565"               # 按键背景色
-      button_foreground_color: "0xFDFDFD"         # 按钮前景色
-      button_pressed_back_color: "0x707070"       # 按下时按键背景色
-      button_front_color: "0x7389FF"              # 按键上文字颜色
-      button_pressed_foreground_color: "0xFFFFFF" # 按下时按键上文字颜色
-      button_swipe_foreground_color: "0xFFFFFF"   # 按键上划动手势文字的颜色
-      corner_radius: 6                            # 按键圆角半径
-      border_color: "0x01000000"                  # 按键边框颜色
-      text_color: "0x7A7A7A"                      # 组字区域文字颜色
-      hilited_candidate_back_color: "0x75B100"    # 候选栏首选文字区域背景色
-      hilited_candidate_text_color: "0xFFFFFF"    # 候选栏首选文字颜色
-      hilited_comment_text_color: "0xAEAEAE"      # 候选栏首选文字 Comment 信息颜色
-      candidate_text_color: "0xBBBBBB"            # 候选栏次选文字颜色
-      comment_text_color: "0xAEAEAE"              # 候选栏次选文字 Comment 信息颜色
+      back_color: "0x2C2C2C"
+      button_back_color: "0x656565"
+      button_pressed_back_color: "0x707070"
+      button_bubble_back_color: "0xD0D0D0"
+      button_foreground_color: "0xFDFDFD"
+      button_pressed_foreground_color: "0xFFFFFF"
+      button_swipe_foreground_color: "0xFFFFFF"
+      corner_radius: 6
+      border_color: "0x01000000"
+      text_color: "0x7A7A7A"
+      lower_edge_color: "0x000000"
+      shadow_color: "0x000000"
+      shadow_size: 0
+      hilited_candidate_back_color: "0x676767"
+      hilited_candidate_text_color: "0x8EE600"
+      hilited_candidate_label_color: "0x8EE600"
+      hilited_comment_text_color: "0x8EE600"
+      candidate_text_color: "0xFEFEFE"
+      comment_text_color: "0xAEAEAE"
+      label_color: "0xFEFEFE"
+      hilited_callout_back_color: "0x676767"
+      hilited_callout_foreground_color: "0x8EE600"
 
 
 # RIME 引擎相关配置
@@ -251,9 +263,126 @@ swipe:
 # 自定义键盘布局
 # 布局文档说明文档：https://github.com/imfuxiao/Hamster/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%AE%E7%9B%98%E5%B8%83%E5%B1%80
 # hamster_keyboards 为引用的键盘文件名称
+customKeyStyles:
+  abc_dark: &a2
+    name: abc_dark
+    buttonBackgroundColor: "0x656565"
+    pressedButtonBackgroundColor: "0x929292"
+    buttonForegroundColor: "0xFCFCFC"
+    pressedButtonForegroundColor: "0xFCFCFC"
+    swipeForegroundColor: "0xFCFCFC"
+    pressedSwipeForegroundColor: "0xFCFCFC"
+    cornerRadius: 6
+    borderSize: 1
+    borderColor: "0x01000000"
+    lowerEdgeColor: "0x01000000"
+    shadowColor: "0x01000000"
+    shadowSize: 0
+    fontSize: 24
+  abc_light: &a1
+    name: abc_light
+    buttonBackgroundColor: "0xFEFCFC"
+    pressedButtonBackgroundColor: "0xEBEBEB"
+    buttonForegroundColor: "0x000000"
+    pressedButtonForegroundColor: "0x000000"
+    swipeForegroundColor: "0x000000"
+    pressedSwipeForegroundColor: "0x000000"
+    cornerRadius: 6
+    borderSize: 1
+    borderColor: "0x01000000"
+    lowerEdgeColor: "0x5A000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+    fontSize: 24
+  enter_dark: &a8
+    name: enter_dark
+    buttonBackgroundColor: "0x75B100"
+    pressedButtonBackgroundColor: "0x656565"
+    buttonForegroundColor: "0xFFFFFF"
+    pressedButtonForegroundColor: "0xFFFFFF"
+    swipeForegroundColor: "0xFFFFFF"
+    pressedSwipeForegroundColor: "0xFFFFFF"
+    cornerRadius: 6
+    borderSize: 0
+    borderColor: "0x000000"
+    lowerEdgeColor: "0x5F000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+  enter_light: &a7
+    name: enter_light
+    buttonBackgroundColor: "0x75B100"
+    pressedButtonBackgroundColor: "0xFEFCFC"
+    buttonForegroundColor: "0xDCFFFFFF"
+    pressedButtonForegroundColor: "0x000000"
+    swipeForegroundColor: "0x000000"
+    pressedSwipeForegroundColor: "0x000000"
+    cornerRadius: 6
+    borderSize: 0
+    borderColor: "0x000000"
+    lowerEdgeColor: "0x5F000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+  other_dark: &a4
+    name: other_dark
+    buttonBackgroundColor: "0x3C3C3C"
+    pressedButtonBackgroundColor: "0x656565"
+    buttonForegroundColor: "0xFFFFFF"
+    pressedButtonForegroundColor: "0xFFFFFF"
+    swipeForegroundColor: "0xFFFFFF"
+    pressedSwipeForegroundColor: "0xFFFFFF"
+    cornerRadius: 6
+    borderSize: 0
+    borderColor: "0x000000"
+    lowerEdgeColor: "0x5F000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+  other_light: &a3
+    name: other_light
+    buttonBackgroundColor: "0xC4BCB7"
+    pressedButtonBackgroundColor: "0xFEFCFC"
+    buttonForegroundColor: "0xDC000000"
+    pressedButtonForegroundColor: "0x000000"
+    swipeForegroundColor: "0x000000"
+    pressedSwipeForegroundColor: "0x000000"
+    cornerRadius: 6
+    borderSize: 0
+    borderColor: "0x000000"
+    lowerEdgeColor: "0x5F000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+  space_dark: &a6
+    name: space_dark
+    buttonBackgroundColor: "0x656565"
+    pressedButtonBackgroundColor: "0x3C3C3C"
+    buttonForegroundColor: "0x000000"
+    pressedButtonForegroundColor: "0x000000"
+    swipeForegroundColor: "0x000000"
+    pressedSwipeForegroundColor: "0x000000"
+    cornerRadius: 6
+    borderSize: 1
+    borderColor: "0x01000000"
+    lowerEdgeColor: "0x5A000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+    fontSize: 18
+  space_light: &a5
+    name: space_light
+    buttonBackgroundColor: "0xFEFCFC"
+    pressedButtonBackgroundColor: "0xC3BBB6"
+    buttonForegroundColor: "0x000000"
+    pressedButtonForegroundColor: "0x000000"
+    swipeForegroundColor: "0x000000"
+    pressedSwipeForegroundColor: "0x000000"
+    cornerRadius: 6
+    borderSize: 1
+    borderColor: "0x01000000"
+    lowerEdgeColor: "0x5A000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+    fontSize: 18
 keyboards:
   - name: 古罗配列-26键
-    isPrimary: false
+    isPrimary: true
     rows:
       - keys:
           - action:
@@ -275,6 +404,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: w
@@ -294,6 +425,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: e
@@ -313,6 +446,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: r
@@ -332,6 +467,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: t
@@ -351,6 +488,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: y
@@ -370,6 +509,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: u
@@ -389,6 +530,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: i
@@ -408,6 +551,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: o
@@ -427,6 +572,7 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
           - action:
               character:
                 char: p
@@ -446,6 +592,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
       - keys:
           - action: none
             width:
@@ -469,6 +617,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: s
@@ -488,6 +638,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: d
@@ -507,6 +659,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: f
@@ -526,6 +680,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: g
@@ -540,11 +696,13 @@ keyboards:
                 direction: up
               - action:
                   symbol:
-                    char: "@"
-                label: "@"
+                    char: "|"
+                label: "|"
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: h
@@ -564,6 +722,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: j
@@ -583,6 +743,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: k
@@ -602,6 +764,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: l
@@ -621,6 +785,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action: none
             width:
               percentage: 0.05
@@ -628,6 +794,8 @@ keyboards:
           - action: shift
             width:
               percentage: 0.13
+            lightModeStyle: *a3
+            darkModeStyle: *a4
           - action: none
             width:
               percentage: 0.02
@@ -650,6 +818,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: x
@@ -662,6 +832,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: up
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: c
@@ -674,6 +846,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: up
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: v
@@ -686,6 +860,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: up
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: b
@@ -698,6 +874,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: up
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: n
@@ -717,6 +895,8 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: m
@@ -736,12 +916,16 @@ keyboards:
                 display: true
                 processByRIME: true
                 direction: down
+            lightModeStyle: *a1
+            darkModeStyle: *a2
           - action: none
             width:
               percentage: 0.02
           - action: backspace
             width:
               percentage: 0.13
+            lightModeStyle: *a3
+            darkModeStyle: *a4
       - keys:
           - action:
               keyboardType: numericNineGrid
@@ -749,6 +933,8 @@ keyboards:
               portrait: available
               landscape:
                 percentage: 0.2
+            lightModeStyle: *a3
+            darkModeStyle: *a4
           - action: space
             width:
               portrait:
@@ -757,11 +943,15 @@ keyboards:
             label:
               text: " "
               loadingText: " "
+            lightModeStyle: *a5
+            darkModeStyle: *a6
           - action: enter
             width:
               portrait: available
               landscape:
                 percentage: 0.2
+            lightModeStyle: *a7
+            darkModeStyle: *a8
     buttonInsets:
       left: 3
       bottom: 4
