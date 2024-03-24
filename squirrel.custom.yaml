@@ -3,11 +3,12 @@ patch:
 
   # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
   style:
-    # 不填则使用「默认皮肤」
-    color_scheme:  # wechat_light
-    color_scheme_dark:  # wechat_dark
+    # 浅色主题  不填则使用「默认皮肤」
+    color_scheme:  wechat_light
+    # 深色主题  不填则使用「默认皮肤」
+    color_scheme_dark:  wechat_dark
     
-    #「默认皮肤」
+    # 默认皮肤
     name: 默认皮肤
     border_height: 0                        # 窗口上下高度，大于圆角半径才生效
     border_width: 0                         # 窗口左右宽度，大于圆角半径才生效
