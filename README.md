@@ -46,8 +46,8 @@ sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 -   使用方法同鼠须管
     -   在仓输入法里开启 iCloud 同步，将本项目所有文件拷贝至 `iCloud/Hamster/Rime/` 目录下
     -   仓输入法-RIME-重新部署，既可
-    -   支持高度自定义「[通用教程1](https://ihsiao.com/apps/hamster/docs/)」 + 「[通用教程2](https://github.com/imfuxiao/Hamster/wiki)」
-    -   可以通过这个[在线自定义工具](https://lost-melody.github.io/hamster-tools/)导入配置文件`hamster.yaml`后，自定义修改皮肤、按键等
+    -   支持高度自定义 「[通用教程1](https://ihsiao.com/apps/hamster/docs/)」 + 「[通用教程2](https://github.com/imfuxiao/Hamster/wiki)」
+    -   可以通过这个 [在线自定义工具](https://lost-melody.github.io/hamster-tools/) 导入配置文件 `hamster.yaml` 后，自定义修改皮肤、按键等
 
 <br>
 
