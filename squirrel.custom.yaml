@@ -24,8 +24,9 @@ patch:
     spacing: 10                               # 在非内嵌编码模式下，预编辑和候选词之间的间距
     comment_font_point: 18                    # 提示词字体大小
 
+  # 微信皮肤浅色：https://gist.github.com/zsakvo/fff6e4859265d5d629439d5ccb553f8a
+  # 微信皮肤深色：https://gist.github.com/shlroland/78b3af88b993116c6f3e14b30cfefac0#file-yaml
   preset_color_schemes:
-  
     wechat_light:
       name: 微信键盘浅色
       author: zsakvo                          # 作者
@@ -40,10 +41,10 @@ patch:
       font_point: 18                          # 候选字大小
       hilited_candidate_back_color: 0x75B100  # 第一候选项背景色
       hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+      hilited_comment_text_color: 0xFFFFFF    # 第一候选项注释颜色
       horizontal: true                        # true横排，false竖排
       inline_preedit: true                    # 拼音位于：候选框 false| 行内 true
       label_font_point: 12                    # 候选编号大小
-      #text_color: 0x424242                    # 拼音行文字颜色
 
     wechat_dark:
       name: 微信键盘深色
@@ -60,11 +61,12 @@ patch:
       font_point: 18                          # 候选字大小
       hilited_candidate_back_color: 0x75B100  # 第一候选项背景色
       hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
+      hilited_comment_text_color: 0xFFFFFF    # 第一候选项注释颜色
       horizontal: true                        # true横排，false竖排
       inline_preedit: true                    # 拼音位于：候选框 false| 行内 true
       label_font_point: 12                    # 候选编号大小
       label_color: 0x777777                   # 候选编号颜色
-      text_color: 0xBBBBBB                    # 拼音行文字颜色
+      text_color: 0xBBBBBB                    # 文字颜色
 
   # 可参考 https://github.com/rime/squirrel/blob/69112996441fdae1d1778ac9a32eb98f6a8e7841/data/squirrel.yaml
   app_options:    # App默认英文
