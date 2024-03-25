@@ -16,7 +16,7 @@ toolbar:
   # 是否开启工具栏
   enableToolbar: true
   # 显示键盘 icon 按钮
-  displayAppIconButton: true
+  displayAppIconButton: false
   # 显示键盘 dismiss 按钮
   displayKeyboardDismissButton: true
   # 工具栏总高度
@@ -46,9 +46,9 @@ keyboard:
   # chinese: 中文26键
   # chineseNineGrid: 中文九宫格
   # 自定义键盘填写自定义键盘配置中的 name 的值。如: `useKeyboardType: 大千注音`
-  useKeyboardType: chinese
+  useKeyboardType: gulu_26
   # 关闭划动文本显示
-  disableSwipeLabel: false
+  disableSwipeLabel: true
   # 上下显示划动文本不规则布局
   swipeLabelUpAndDownIrregularLayout: false
   # 上下显示划动文本规则布局
@@ -95,8 +95,8 @@ keyboard:
   symbolsOfGridOfNumericKeyboard:
     - +
     - "-"
-    - "*"
-    - /
+    - "×"
+    - "÷"
   # Shift状态锁定
   lockShiftState: false
   # 启动内嵌模式
@@ -159,7 +159,7 @@ keyboard:
   # 暗色模式下配色
   useColorSchemaForDark: "wechat_dark"
   # 中文26键显示大写字符
-  showUppercasedCharacterOnChineseKeyboard: true
+  showUppercasedCharacterOnChineseKeyboard: false
 
   # 按键下方边框
   enableButtonUnderBorder: true
@@ -171,7 +171,7 @@ keyboard:
     - schemaName: wechat_light
       name: 微信键盘浅色
       author: 古罗
-      back_color: "0xD8D3D0"
+      back_color: "0x01D8D3D0"
       button_back_color: "0xFEFCFC"
       button_pressed_back_color: "0xEBEBEB"
       button_bubble_back_color: "0xD0D0D0"
@@ -196,14 +196,14 @@ keyboard:
     - schemaName: wechat_dark
       name: 微信键盘深色
       author: 古罗
-      back_color: "0x2C2C2C"
+      back_color: "0x012C2C2C"
       button_back_color: "0x656565"
       button_pressed_back_color: "0x707070"
       button_bubble_back_color: "0xD0D0D0"
       button_foreground_color: "0xFDFDFD"
       button_pressed_foreground_color: "0xFFFFFF"
       button_swipe_foreground_color: "0xFFFFFF"
-      corner_radius: 6
+      corner_radius: 8
       border_color: "0x01000000"
       text_color: "0x7A7A7A"
       lower_edge_color: "0x000000"
@@ -218,6 +218,8 @@ keyboard:
       label_color: "0xFEFEFE"
       hilited_callout_back_color: "0x676767"
       hilited_callout_foreground_color: "0x8EE600"
+
+
 
 
 # RIME 引擎相关配置
@@ -294,7 +296,7 @@ customKeyStyles:
     shadowColor: "0x000000"
     shadowSize: 0
     fontSize: 24
-  enter_dark: &a8
+  enter_dark: &a10
     name: enter_dark
     buttonBackgroundColor: "0x75B100"
     pressedButtonBackgroundColor: "0x656565"
@@ -308,7 +310,7 @@ customKeyStyles:
     lowerEdgeColor: "0x5F000000"
     shadowColor: "0x000000"
     shadowSize: 0
-  enter_light: &a7
+  enter_light: &a9
     name: enter_light
     buttonBackgroundColor: "0x75B100"
     pressedButtonBackgroundColor: "0xFEFCFC"
@@ -322,6 +324,65 @@ customKeyStyles:
     lowerEdgeColor: "0x5F000000"
     shadowColor: "0x000000"
     shadowSize: 0
+  number_dark: &a8
+    name: number_dark
+    buttonBackgroundColor: "0x656565"
+    pressedButtonBackgroundColor: "0x707070"
+    buttonForegroundColor: "0xFFFFFF"
+    pressedButtonForegroundColor: "0xFFFFFF"
+    swipeForegroundColor: "0xFFFFFF"
+    pressedSwipeForegroundColor: "0xFFFFFF"
+    cornerRadius: 8
+    borderSize: 0
+    borderColor: "0x000000"
+    lowerEdgeColor: "0xB9000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+  number_light: &a7
+    name: number_light
+    buttonBackgroundColor: "0xFEFCFC"
+    pressedButtonBackgroundColor: "0xEBEBEB"
+    buttonForegroundColor: "0x000000"
+    pressedButtonForegroundColor: "0x000000"
+    swipeForegroundColor: "0x000000"
+    pressedSwipeForegroundColor: "0x000000"
+    cornerRadius: 8
+    borderSize: 0
+    borderColor: "0x000000"
+    lowerEdgeColor: "0x3C000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+    fontSize: 19
+  number_other_dark: &a12
+    name: number_other_dark
+    buttonBackgroundColor: "0x656565"
+    pressedButtonBackgroundColor: "0x707070"
+    buttonForegroundColor: "0xFFFFFF"
+    pressedButtonForegroundColor: "0xFFFFFF"
+    swipeForegroundColor: "0xFFFFFF"
+    pressedSwipeForegroundColor: "0xFFFFFF"
+    cornerRadius: 8
+    borderSize: 0
+    borderColor: "0x000000"
+    lowerEdgeColor: "0xB9000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+    fontSize: 14
+  number_other_light: &a11
+    name: number_other_light
+    buttonBackgroundColor: "0xFEFCFC"
+    pressedButtonBackgroundColor: "0xEBEBEB"
+    buttonForegroundColor: "0x000000"
+    pressedButtonForegroundColor: "0x000000"
+    swipeForegroundColor: "0x000000"
+    pressedSwipeForegroundColor: "0x000000"
+    cornerRadius: 8
+    borderSize: 0
+    borderColor: "0x000000"
+    lowerEdgeColor: "0x3C000000"
+    shadowColor: "0x000000"
+    shadowSize: 0
+    fontSize: 14
   other_dark: &a4
     name: other_dark
     buttonBackgroundColor: "0x3C3C3C"
@@ -381,7 +442,7 @@ customKeyStyles:
     shadowSize: 0
     fontSize: 18
 keyboards:
-  - name: 古罗配列-26键
+  - name: gulu_26
     isPrimary: true
     rows:
       - keys:
@@ -928,11 +989,12 @@ keyboards:
             darkModeStyle: *a4
       - keys:
           - action:
-              keyboardType: numericNineGrid
+              keyboardType: gulu_9
             width:
               portrait: available
               landscape:
                 percentage: 0.2
+            label: "123"
             lightModeStyle: *a3
             darkModeStyle: *a4
           - action: space
@@ -950,8 +1012,170 @@ keyboards:
               portrait: available
               landscape:
                 percentage: 0.2
+            lightModeStyle: *a3
+            darkModeStyle: *a4
+    buttonInsets:
+      left: 3
+      bottom: 4
+      top: 8
+      right: 3
+  - name: gulu_9
+    isPrimary: false
+    rows:
+      - keys:
+          - action:
+              symbol:
+                char: +
+            width:
+              portrait:
+                percentage: 0.18
+              landscape:
+                percentage: 0.16
+            lightModeStyle: *a3
+            darkModeStyle: *a4
+          - action:
+              character:
+                char: "1"
+            width: available
             lightModeStyle: *a7
             darkModeStyle: *a8
+          - action:
+              character:
+                char: "2"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action:
+              character:
+                char: "3"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action: backspace
+            width:
+              portrait:
+                percentage: 0.18
+              landscape:
+                percentage: 0.16
+            lightModeStyle: *a3
+            darkModeStyle: *a4
+      - keys:
+          - action:
+              symbol:
+                char: "-"
+            width:
+              portrait:
+                percentage: 0.18
+              landscape:
+                percentage: 0.16
+            lightModeStyle: *a3
+            darkModeStyle: *a4
+          - action:
+              character:
+                char: "4"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action:
+              character:
+                char: "5"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action:
+              character:
+                char: "6"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action:
+              symbol:
+                char: .
+            width:
+              portrait:
+                percentage: 0.18
+              landscape:
+                percentage: 0.16
+            lightModeStyle: *a3
+            darkModeStyle: *a4
+      - keys:
+          - action:
+              symbol:
+                char: =
+            width:
+              portrait:
+                percentage: 0.18
+              landscape:
+                percentage: 0.16
+            lightModeStyle: *a3
+            darkModeStyle: *a4
+          - action:
+              character:
+                char: "7"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action:
+              character:
+                char: "8"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action:
+              character:
+                char: "9"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action:
+              symbol:
+                char: "@"
+            width:
+              portrait:
+                percentage: 0.18
+              landscape:
+                percentage: 0.16
+            label: "@"
+            lightModeStyle: *a3
+            darkModeStyle: *a4
+      - keys:
+          - action:
+              keyboardType: gulu_26
+            width:
+              portrait:
+                percentage: 0.18
+              landscape:
+                percentage: 0.16
+            label: 返回
+            lightModeStyle: *a9
+            darkModeStyle: *a10
+          - action:
+              keyboardType: classifySymbolic
+            processByRIME: false
+            width: available
+            label: 符号
+            lightModeStyle: *a11
+            darkModeStyle: *a12
+          - action:
+              character:
+                char: "0"
+            width: available
+            lightModeStyle: *a7
+            darkModeStyle: *a8
+          - action: space
+            processByRIME: false
+            width: available
+            label: 空格
+            lightModeStyle: *a11
+            darkModeStyle: *a12
+          - action: enter
+            width:
+              portrait:
+                percentage: 0.18
+              landscape:
+                percentage: 0.16
+            lightModeStyle: *a3
+            darkModeStyle: *a4
     buttonInsets:
       left: 3
       bottom: 4
