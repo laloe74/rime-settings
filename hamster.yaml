@@ -1002,6 +1002,12 @@ keyboards:
             label:
               text: " "
               loadingText: " "
+            swipe:
+              - action:
+                  shortcutCommand: "#简繁切换"
+                display: false
+                processByRIME: true
+                direction: down
             lightModeStyle: *a5
             darkModeStyle: *a6
           - action: enter
