@@ -165,8 +165,7 @@ keyboard:
   enableButtonUnderBorder: true
 
   # 配色方案
-  # 来源: https://github.com/rime/squirrel/blob/master/data/squirrel.yaml
-  # hamster_color_schemas  为引用的颜色文件名称
+  # 来源: https://gist.github.com/laloe74/c0c2b481abb7f0f272a1b0c86cf67dc0
   colorSchemas:
     - schemaName: wechat_light
       name: 微信键盘浅色
@@ -263,8 +262,8 @@ swipe:
     __include: hamster_swipe:/keyboardSwipe
 
 # 自定义键盘布局
-# 布局文档说明文档：https://github.com/imfuxiao/Hamster/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%AE%E7%9B%98%E5%B8%83%E5%B1%80
-# hamster_keyboards 为引用的键盘文件名称
+# 布局文档说明文档：https://github.com/imfuxiao/Hamster/wiki
+# 在线自定义工具：https://lost-melody.github.io/hamster-tools/
 customKeyStyles:
   abc_dark: &a2
     name: abc_dark

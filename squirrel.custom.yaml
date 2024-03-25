@@ -43,7 +43,7 @@ patch:
       horizontal: true                        # true横排，false竖排
       inline_preedit: true                    # 拼音位于：候选框 false| 行内 true
       label_font_point: 12                    # 候选编号大小
-      text_color: 0x424242                    # 拼音行文字颜色
+      #text_color: 0x424242                    # 拼音行文字颜色
 
     wechat_dark:
       name: 微信键盘深色
