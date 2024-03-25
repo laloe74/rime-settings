@@ -40,7 +40,7 @@ sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 
 ## 仓 | Hamster 输入法配置
 
--   仓 | Hamster 2.3.0 适用于 iOS 系统
+-   [仓 | Hamster](https://github.com/imfuxiao/Hamster) 2.3.0 适用于 iOS 系统
 -   和鼠须管同方案，使用 `hamster.yaml` 替换 `default.custom.yaml` 为通用配置
     -   内含「微信键盘皮肤」+「古罗配列26键及9键」
 -   使用方法同鼠须管
