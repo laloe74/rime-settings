@@ -219,8 +219,6 @@ keyboard:
       hilited_callout_foreground_color: "0x8EE600"
 
 
-
-
 # RIME 引擎相关配置
 rime:
   # 最大候选数量
