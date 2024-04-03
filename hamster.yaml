@@ -170,13 +170,14 @@ keyboard:
     - schemaName: wechat_light
       name: 微信键盘浅色
       author: 古罗
-      back_color: "0x01D8D3D0"
+      back_color: "0x1ED8D3D0"
       button_back_color: "0xFEFCFC"
       button_pressed_back_color: "0xEBEBEB"
       button_bubble_back_color: "0xD0D0D0"
       button_foreground_color: "0x000000"
       button_pressed_foreground_color: "0x000000"
       button_swipe_foreground_color: "0x000000"
+      button_swipe_pressed_foreground_color: "0x000000"
       corner_radius: 6
       border_color: "0x01000000"
       text_color: "0x444444"
@@ -195,13 +196,14 @@ keyboard:
     - schemaName: wechat_dark
       name: 微信键盘深色
       author: 古罗
-      back_color: "0x012C2C2C"
+      back_color: "0x1E2C2C2C"
       button_back_color: "0x656565"
       button_pressed_back_color: "0x707070"
       button_bubble_back_color: "0xD0D0D0"
       button_foreground_color: "0xFDFDFD"
       button_pressed_foreground_color: "0xFFFFFF"
       button_swipe_foreground_color: "0xFFFFFF"
+      button_swipe_pressed_foreground_color: "0x000000"
       corner_radius: 8
       border_color: "0x01000000"
       text_color: "0x7A7A7A"
@@ -271,6 +273,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0xFCFCFC"
     swipeForegroundColor: "0xFCFCFC"
     pressedSwipeForegroundColor: "0xFCFCFC"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 6
     borderSize: 1
     borderColor: "0x01000000"
@@ -286,6 +289,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0x000000"
     swipeForegroundColor: "0x000000"
     pressedSwipeForegroundColor: "0x000000"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 6
     borderSize: 1
     borderColor: "0x01000000"
@@ -301,6 +305,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0xFFFFFF"
     swipeForegroundColor: "0xFFFFFF"
     pressedSwipeForegroundColor: "0xFFFFFF"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 6
     borderSize: 0
     borderColor: "0x000000"
@@ -315,6 +320,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0x000000"
     swipeForegroundColor: "0x000000"
     pressedSwipeForegroundColor: "0x000000"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 6
     borderSize: 0
     borderColor: "0x000000"
@@ -329,6 +335,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0xFFFFFF"
     swipeForegroundColor: "0xFFFFFF"
     pressedSwipeForegroundColor: "0xFFFFFF"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 8
     borderSize: 0
     borderColor: "0x000000"
@@ -343,6 +350,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0x000000"
     swipeForegroundColor: "0x000000"
     pressedSwipeForegroundColor: "0x000000"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 8
     borderSize: 0
     borderColor: "0x000000"
@@ -358,6 +366,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0xFFFFFF"
     swipeForegroundColor: "0xFFFFFF"
     pressedSwipeForegroundColor: "0xFFFFFF"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 8
     borderSize: 0
     borderColor: "0x000000"
@@ -373,6 +382,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0x000000"
     swipeForegroundColor: "0x000000"
     pressedSwipeForegroundColor: "0x000000"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 8
     borderSize: 0
     borderColor: "0x000000"
@@ -388,6 +398,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0xFFFFFF"
     swipeForegroundColor: "0xFFFFFF"
     pressedSwipeForegroundColor: "0xFFFFFF"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 6
     borderSize: 0
     borderColor: "0x000000"
@@ -402,6 +413,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0x000000"
     swipeForegroundColor: "0x000000"
     pressedSwipeForegroundColor: "0x000000"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 6
     borderSize: 0
     borderColor: "0x000000"
@@ -416,6 +428,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0x000000"
     swipeForegroundColor: "0x000000"
     pressedSwipeForegroundColor: "0x000000"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 6
     borderSize: 1
     borderColor: "0x01000000"
@@ -431,6 +444,7 @@ customKeyStyles:
     pressedButtonForegroundColor: "0x000000"
     swipeForegroundColor: "0x000000"
     pressedSwipeForegroundColor: "0x000000"
+    buttonBubbleBackColor: "0xD0D0D0"
     cornerRadius: 6
     borderSize: 1
     borderColor: "0x01000000"
@@ -631,6 +645,7 @@ keyboards:
                 processByRIME: true
                 direction: down
             lightModeStyle: *a1
+            darkModeStyle: *a2
           - action:
               character:
                 char: p
