@@ -178,7 +178,7 @@ keyboard:
       button_pressed_foreground_color: "0x000000"
       button_swipe_foreground_color: "0x000000"
       button_swipe_pressed_foreground_color: "0x000000"
-      corner_radius: 6
+      corner_radius: 8
       border_color: "0x01000000"
       text_color: "0x444444"
       lower_edge_color: "0x000000"
