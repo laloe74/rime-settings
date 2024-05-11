@@ -4,9 +4,9 @@ patch:
   # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
   style:
     # 浅色主题  不填则使用「默认皮肤」
-    color_scheme:  wechat_light
+    color_scheme:  # wechat_light
     # 深色主题  不填则使用「默认皮肤」
-    color_scheme_dark:  wechat_dark
+    color_scheme_dark:  # wechat_dark
     
     # 默认皮肤
     name: 默认皮肤
