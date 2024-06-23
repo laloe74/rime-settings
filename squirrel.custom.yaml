@@ -3,12 +3,13 @@ patch:
 
   # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
   style:
+    #color_scheme: native
+    #color_scheme_dark: native
     color_scheme: system_light
     color_scheme_dark: system_dark
     #color_scheme: wechat_light
     #color_scheme_dark: wechat_dark
-    #color_scheme: native
-    #color_scheme_dark: native
+    
 
     # 样式设置
     candidate_list_layout: linear                       # 垂直排列 stacked | 平行排列 linear
@@ -137,5 +138,5 @@ patch:
   app_options:    # App默认英文
     com.microsoft.VSCode:
         ascii_mode: false     # 关闭默认英文
-    com.apple.Terminal:
-        ascii_mode: true      # 默认英文
+    #com.apple.Terminal:
+    #    ascii_mode: true      # 默认英文
