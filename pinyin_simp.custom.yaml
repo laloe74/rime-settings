@@ -72,7 +72,7 @@ patch:
 
   # 挂载词库
   translator/dictionary: pinyin_simp.extended
-  
+
 
   # “/” 模式转为 “v” 模式，并增加识别大写字母
   recognizer/patterns/punct: "^v([a-zA-Z]+|[0-9]0?)$" # 原： "^/([a-z]+|[0-9]0?)$"
