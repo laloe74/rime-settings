@@ -89,8 +89,7 @@ patch:
 
   # 可参考 https://github.com/rime/squirrel/blob/69112996441fdae1d1778ac9a32eb98f6a8e7841/data/squirrel.yaml
   app_options:    # App默认英文
-    # com.apple.Spotlight:
-    #     ascii_mode: true      # 默认英文
     com.microsoft.VSCode:
         ascii_mode: false     # 关闭默认英文
-
+    com.apple.Terminal:
+        ascii_mode: true      # 默认英文
