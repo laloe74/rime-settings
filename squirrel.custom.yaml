@@ -107,8 +107,8 @@ patch:
       back_color: 0xFFFFFF                                # 候选条-背景色
       hilited_candidate_back_color: 0x75B100              # 第一候选项-背景色
       hilited_candidate_text_color: 0xFFFFFF              # 第一候选项-文字颜色
-      #hilited_comment_text_color: 0xFFFFFF               # 第一候选项-注释颜色
-      #label_color: 0x777777                              # 第二候选项-编号颜色
+      hilited_comment_text_color: 0xFFFFFF                # 第一候选项-注释颜色
+      label_color: 0x777777                               # 第二候选项-编号颜色
       comment_text_color: 0x999999                        # 补充信息-文字颜色
 
     wechat_dark:
