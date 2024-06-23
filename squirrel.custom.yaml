@@ -3,8 +3,10 @@ patch:
 
   # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
   style:
-    color_scheme: wechat_light #native 
-    color_scheme_dark:  wechat_dark #native  
+    color_scheme:  native
+    color_scheme_dark: native
+    #color_scheme: wechat_light
+    #color_scheme_dark: wechat_dark
 
     # 样式设置
     candidate_list_layout: linear                       # 垂直排列 stacked | 平行排列 linear
@@ -19,11 +21,11 @@ patch:
     spacing: 10                                         # 在非内嵌编码模式下，预编辑和候选词之间的间距
     shadow_size: 0                                      # 在高光候选对象周围呈现阴影
     font_face: 'Lucida Grande'                          # 候选词字体   默认：'Avenir'
-    font_point: 16                                      # 候选词大小
+    font_point: 18                                      # 候选词大小
     label_font_face: 'Lucida Grande'                    # 候选编号字体   默认：'Avenir'
     label_font_point: 12                                # 候选编号大小
     comment_font_face: 'Lucida Grande'                  # 补充信息字体   默认：'Avenir'
-    comment_font_point: 16                              # 补充信息大小
+    comment_font_point: 18                              # 补充信息大小
     # 基本设置
     inline_preedit: true                                # 拼音位于：候选框 false| 行内 true
     inline_candidate: false                             # 是否将选定的候选词作为文本嵌入输入框
@@ -47,7 +49,7 @@ patch:
       corner_radius: 5                                    # 窗口圆角
       hilited_corner_radius: 5                            # 高亮圆角
       font_face: PingFangSC                               # 候选词字体
-      font_point: 16                                      # 候选词大小
+      font_point: 18                                      # 候选词大小
       candidate_list_layout: linear                       # linear横排，stacked竖排
       inline_preedit: true                                # 拼音位于：候选框 false| 行内 true
       label_font_point: 12                                # 候选编号大小
@@ -70,7 +72,7 @@ patch:
       corner_radius: 5                                    # 窗口圆角
       hilited_corner_radius: 5                            # 高亮圆角
       font_face: PingFangSC                               # 候选词字体
-      font_point: 16                                      # 候选词大小
+      font_point: 18                                      # 候选词大小
       candidate_list_layout: linear                       # linear横排，stacked竖排
       inline_preedit: true                                # 拼音位于：候选框 false| 行内 true
       label_font_point: 12                                # 候选编号大小
