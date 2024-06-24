@@ -2,9 +2,9 @@ function date_translator(input, seg)
     if (input == "rq") then
         --- Candidate(type, start, end, text, comment)
         yield(Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d"), ""))
-        yield(Candidate("date", seg.start, seg._end, os.date("（%Y-%m-%d）"), "")) -- 自用，左右全角括号
-        yield(Candidate("date", seg.start, seg._end, os.date("%Y/%m/%d"), ""))
         yield(Candidate("date", seg.start, seg._end, os.date("%Y年%m月%d日"), ""))
+        yield(Candidate("date", seg.start, seg._end, os.date("（%Y-%m-%d）"), ""))
+        yield(Candidate("date", seg.start, seg._end, os.date("%Y/%m/%d"), ""))
         -- yield(Candidate("date", seg.start, seg._end, os.date("%m-%d"), ""))
         -- yield(Candidate("date", seg.start, seg._end, os.date("%m-%d-%Y"), ""))
     end
