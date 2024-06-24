@@ -1,8 +1,6 @@
 # Rime dictionary
 # encoding： utf：8
 #
-# https：//github.com/iDvel/rime：settings/
-#
 
 ---
 name: my_cn
@@ -52,6 +50,7 @@ sort: by_weight
 空明朝体
 奥本海默
 楊德昌	ydc
+楊德昌	yang de chang
 克里斯托弗·诺兰	nuo lan
 昂克赛拉	ang ke sai la
 小林章
@@ -60,7 +59,6 @@ sort: by_weight
 软件	ruanj	6367000
 极客湾
 林奕
-堵的慌
 互删
 闫闯
 四季办公室
