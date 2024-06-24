@@ -40,10 +40,10 @@ patch:
   # 微信皮肤深色：https://gist.github.com/shlroland/78b3af88b993116c6f3e14b30cfefac0#file-yaml
   preset_color_schemes:
     native:
-      name: 系統配色
+      name: 鼠须管默认
 
     system_light:
-      name: 系统原生样式-浅色
+      name: Mac原生样式-浅色
       candidate_list_layout: linear                       # 垂直排列 stacked | 平行排列 linear
       border_height: -2                                   # 窗口上下高度，大于圆角半径才生效
       border_width: -2                                    # 窗口左右宽度，大于圆角半径才生效
@@ -67,7 +67,7 @@ patch:
       candidate_format: '[label]. [candidate] [comment]'  # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
 
     system_dark:
-      name: 系统原生样式-深色
+      name: Mac原生样式-深色
       candidate_list_layout: linear                       # 垂直排列 stacked | 平行排列 linear
       border_height: -2                                   # 窗口上下高度，大于圆角半径才生效
       border_width: -2                                    # 窗口左右宽度，大于圆角半径才生效
