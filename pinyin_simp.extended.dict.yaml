@@ -15,7 +15,7 @@ import_tables:
   # --------------------- 个人词库 --------------------- #
   - cn_dicts/my_cn                 # 个人中文词库
   - cn_dicts/privacy               # 个人隐私词汇！！！
-  - cn_dicts/film                  # 电影
+  - cn_dicts/filmBook              # 电影&书籍
 
   # --------------------- 扩展词库 --------------------- #
   - cn_dicts/extend/base           # 基础词库
