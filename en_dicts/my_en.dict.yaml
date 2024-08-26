@@ -1,0 +1,56 @@
+# Rime dictionary
+# encoding: utf-8
+#
+
+---
+name: my_en
+version: "2024-03-19"
+sort: by_weight
+vocabulary: essay-zh-hans
+...
+# 个人英文词库
+
+# 物理
+# qua	qua
+Quantum	quant
+Quanta	quant
+Oppenheimer
+
+
+
+# 个人
+Patti	patti
+okk~	okk
+Bandwagon	band
+Xiaomi	xm
+Civi	civi
+Redmi	red
+Chiphell	chh
+Z-library	zli
+ChatGPT	chat
+arXiv	arx
+Google	goo
+Neodb	neo
+SU7	suq
+E-link	elink
+SpaceX	space
+Mastodon	masto
+Hacker	hack
+Hacker News	hack
+Perplexity	perplex
+neodb	neo
+Update	update
+Nio	Nio
+Shadowrocket	shadowrocket
+Vmess	vmess
+Trojan	trojan
+Vless	vless
+X-UI	xui
+Chiphell	chiphell
+Dribbble	dribbble
+Claude	claude
+NetNewsWire	netnews
+FinalShell	finalshell
+Calibre	calibre
+Shottr	shottr
+Easydict	esaydict

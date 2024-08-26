@@ -1,0 +1,31 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: pinyin_simp.extended
+version: "1"
+sort: by_weight
+vocabulary: essay-zh-hans
+
+import_tables:
+  # ----------------------- 字表 ----------------------- #
+  - cn_dicts/8105    # https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters
+  # - cn_dicts/41448
+
+  # --------------------- 个人词库 --------------------- #
+  - cn_dicts/my_cn                 # 个人中文词库
+  - cn_dicts/privacy               # 个人隐私词汇！！！
+  - cn_dicts/filmBook              # 电影&书籍
+
+  # --------------------- 扩展词库 --------------------- #
+  - cn_dicts/extend/base           # 基础词库
+  - cn_dicts/extend/cn_en          # 中-英
+  - cn_dicts/extend/ext            # 扩展词库，小词库。
+  - cn_dicts/extend/av             # 著名表演艺术家
+  - cn_dicts/extend/sogou.computer # 搜狗词库：计算机
+  - cn_dicts/extend/sogou.physics  # 搜狗词库：物理数学
+  - cn_dicts/extend/sogou.poem     # 搜狗词库：诗歌
+  - cn_dicts/extend/others         # 其他
+
+
+...

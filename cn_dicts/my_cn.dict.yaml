@@ -1,0 +1,169 @@
+# Rime dictionary
+# encoding： utf：8
+#
+
+---
+name: my_cn
+version: "2024-03-18"
+sort: by_weight
+...
+# 个人中文词库
+
+# 方便词
+为什么	weism
+怎么办	zenmb
+怎么	zenm
+力学	lx
+文件夹	wenjj
+
+# 容错词
+什么	sheme
+为什么	weisheme
+干什么	gansheme
+因为	yiwnei
+可以	keiy
+可以	kyie
+怎么	zemne
+
+# 补充
+出镜
+波米
+虚拟环境
+威瑞信
+隆基绿能	long ji lv neng
+蔡宥綺	cai you qi
+梓墨
+烂俗
+奇偶
+奇偶性
+大语言
+字间距
+式子
+字重
+沾沾喜气
+风向旗
+王五四
+王永智
+四一哥
+宋石男
+纽北
+圈速榜
+卡爆
+阿里
+通义千问
+煎豆腐
+作为意志和表象的世界
+循环扇
+一维势场
+势场
+常点
+非正则奇点
+麦高芬
+和菜头
+冯青春
+叶虻
+天然石
+余怒
+鼠须管
+应声附和
+搬瓦工
+天玑
+骁龙
+李老师不是你老师	ni lao shi bu shi ni lao shi
+极氪
+领克
+阿斯顿·马丁	a si dun ma ding
+苏姿丰
+电子水墨屏
+电子墨水屏
+空明朝体
+奥本海默
+楊德昌	ydc
+楊德昌	yang de chang
+克里斯托弗·诺兰	nuo lan
+昂克赛拉	ang ke sai la
+小林章
+字谈字畅
+饥饿	ji e	6367000
+软件	ruanj	6367000
+极客湾
+林奕
+互删
+闫闯
+四季办公室
+伍佰
+金斯堡
+
+# 小米
+小米	xm
+小米汽车	xmqc
+雷军	lei ju
+卢伟冰	lu wei bing
+许斐	xu fei
+许斐	xf
+胡馨心	hu xin xin
+馨心	xx
+王化	wang hua
+王化	wh
+王腾	wang teng
+王腾	wt
+萝卜敦敦	luo bo dun dun
+萝卜敦敦	lbdd
+胡峥楠	hu zheng nan
+胡峥楠	hzn
+数码闲聊站	shu ma xian liao zhan
+数码闲聊站	xlz
+陈震同学	chen zhen tong xue
+南哥说车	nan ge shuo che
+南哥说车	ng
+番茄殿下	fan qie dian xia
+番茄殿下	fq
+小胖小胖人间宝藏	xiao pang xiao pang
+曾学忠	zeng xue zhong
+王晓雁	wang xiao yan
+粮厂	lc
+黑厂	hc
+蓝厂	lc
+霞光紫	xgz
+雅灰	ya hui
+海湾蓝	hai wan lan
+橄榄绿	gan lan lv
+四字Tu姐	sizitujie
+Cici_老魏	cicilaowei
+馨心_Mia	xinxinmia
+
+# 叠字（「jjj」→「鑫」，「jinjj」→「鑫」，「jjjin」→「鑫」）
+鑫	jin jin jin
+淼	shui shui shui
+垚	tu tu tu
+焱	huo huo huo
+壵	shi shi shi
+掱	shou shou shou
+舙	she she she
+畾	tian tian tian
+孨	zi zi zi
+羴	yang yang yang
+矗	zhi zhi zhi
+尛	xiao xiao xiao
+毳	mao mao mao
+麤	lu lu lu
+鱻	yu yu yu
+猋	quan quan quan
+犇	niu niu niu
+驫	ma ma ma
+骉	ma ma ma
+㐂	qi qi qi
+龘	long long long
+叒	you you you
+叕	you you you you
+# 其他拼字
+蟊	mao chong chong
+飙	quan quan quan feng
+飚	feng huo huo huo
+嫐	nv nan nv
+嬲	nan nv nan
+
+# 编码
+&nbsp;	nbsp
+<br>	br
+.DS_Store	dsstore

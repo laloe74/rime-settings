@@ -1,0 +1,138 @@
+# Rime table
+# coding: utf-8
+#@/db_name  custom_phrase.txt
+#@/db_type	tabledb
+#
+# 用於【朙月拼音】系列輸入方案
+# 【小狼毫】0.9.21 以上
+#
+# 請將該文件以UTF-8編碼保存爲
+# Rime用戶文件夾/custom_phrase.txt
+#
+# 碼表各字段以製表符（Tab）分隔
+# 順序爲：文字、編碼、權重（決定重碼的次序、可選）
+#
+# 雖然文本碼表編輯較爲方便，但不適合導入大量條目
+#
+# no comment 
+
+
+
+去	q	2
+千	q	1
+我	w	2
+万	w	1
+呃	e
+与	y	2
+于	y	1
+有	u	3
+又	u	2
+由	u	1
+一	i	3
+以	i	2
+已	i	1
+哦	o
+片	p
+是	s	3
+时	s	2
+使	s	1
+的	d	3
+得	d	2
+地	d	1
+个	g
+和	h
+及	j	3
+将	j	2
+即	j	1
+可	k
+了	l	2
+啦	l	1
+在	z	3
+再	z	2
+自	z	1
+想	x	3
+像	x	2
+向	x	1
+才	c
+吧	b	2
+百	b	1
+那	n	2
+哪	n	1
+吗	m	2
+嘛	m	1
+
+
+这	zh
+等等	dd
+等等等等	dddd
+刚刚	gg
+才刚刚	cgg
+知道	zd
+不知道	bzd
+往往	ww
+哈哈	hh
+看看	kk
+常常	cc
+想想	xx	2
+想象	xx	1
+隐约	yy
+又有	uu
+什么	sm
+为什么	wsm
+是不是	sbs
+没什么	msm
+有时候	ysh
+有时候	yshh
+有时候	yshou
+什么的	smd
+
+
+我们	wm
+我们	wom
+你们	nm
+你们	nim
+人们	rm
+人们	renm
+
+
+他	t	3
+她	t	2
+它	t	1
+他的	td	3
+她的	td	2
+它的	td	1
+他的	tad	3
+她的	tad	2
+它的	tad	1
+他们	tm	3
+她们	tm	2
+它们	tm	1
+他们	tam	3
+她们	tam	2
+它们	tam	1
+
+
+那儿	nr	2
+哪儿	nr	1
+那儿	nar	2
+哪儿	nar	1
+那个	ng	2
+哪个	ng	1
+那个	nag	2
+哪个	nag	1
+那些	nx	2
+哪些	nx	1
+那些	nax	2
+哪些	nax	1
+那里	nl	2
+哪里	nl	1
+那里	nal	2
+哪里	nal	1
+那边	nb	2
+哪边	nb	1
+那边	nab	2
+哪边	nab	1
+那位	nw	2
+哪位	nw	1
+那位	naw	2
+哪位	naw	1

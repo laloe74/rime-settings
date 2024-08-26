@@ -1,0 +1,142 @@
+patch:
+  show_notifications_when: always # options: always | never | appropriate
+
+  # 皮肤可参考 https://github.com/iDvel/rime-ice/blob/main/squirrel.yaml
+  style:
+    #color_scheme: native
+    #color_scheme_dark: native
+    color_scheme: system_light
+    color_scheme_dark: system_dark
+    #color_scheme: wechat_light
+    #color_scheme_dark: wechat_dark
+    
+
+    # 样式设置
+    candidate_list_layout: linear                       # 垂直排列 stacked | 平行排列 linear
+    border_height: -2                                   # 窗口上下高度，大于圆角半径才生效
+    border_width: -2                                    # 窗口左右宽度，大于圆角半径才生效
+    corner_radius: 10                                   # 窗口圆角
+    hilited_corner_radius: 8                            # 高亮圆角
+    mutual_exclusive: false                             # 透明颜色叠加
+    translucency: false                                 # 半透明背景
+    # 候选栏
+    line_spacing: 5                                     # 候选词的行间距
+    spacing: 10                                         # 在非内嵌编码模式下，预编辑和候选词之间的间距
+    shadow_size: 0                                      # 在高光候选对象周围呈现阴影
+    font_face: 'Lucida Grande'                          # 候选词字体   默认：'Avenir'
+    font_point: 18                                      # 候选词大小
+    label_font_face: 'Lucida Grande'                    # 候选编号字体   默认：'Avenir'
+    label_font_point: 12                                # 候选编号大小
+    comment_font_face: 'Lucida Grande'                  # 补充信息字体   默认：'Avenir'
+    comment_font_point: 18                              # 补充信息大小
+    # 基本设置
+    inline_preedit: true                                # 拼音位于：候选框 false| 行内 true
+    inline_candidate: false                             # 是否将选定的候选词作为文本嵌入输入框
+    memorize_size: true                                 # 候选面板是否贴在屏幕边缘以减少跳跃
+    candidate_format: '[label]. [candidate] [comment]'  # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+
+
+  # 微信皮肤浅色：https://gist.github.com/zsakvo/fff6e4859265d5d629439d5ccb553f8a
+  # 微信皮肤深色：https://gist.github.com/shlroland/78b3af88b993116c6f3e14b30cfefac0#file-yaml
+  preset_color_schemes:
+    native:
+      name: 鼠须管默认
+
+    system_light:
+      name: Mac原生样式-浅色
+      candidate_list_layout: linear                       # 垂直排列 stacked | 平行排列 linear
+      border_height: -2                                   # 窗口上下高度，大于圆角半径才生效
+      border_width: -2                                    # 窗口左右宽度，大于圆角半径才生效
+      corner_radius: 10                                   # 窗口圆角
+      hilited_corner_radius: 8                            # 高亮圆角
+      text_color: 0x424242                                # 文字颜色
+      hilited_candidate_back_color: 0xD05925              # 第一候选项-背景色
+      hilited_candidate_text_color: 0xFFFFFF              # 第一候选项-文字颜色
+      line_spacing: 5                                     # 候选词的行间距
+      spacing: 10                                         # 在非内嵌编码模式下，预编辑和候选词之间的间距
+      shadow_size: 0                                      # 在高光候选对象周围呈现阴影
+      font_face: 'Lucida Grande'                          # 候选词字体   默认：'Avenir'
+      font_point: 18                                      # 候选词大小
+      label_font_face: 'Lucida Grande'                    # 候选编号字体   默认：'Avenir'
+      label_font_point: 12                                # 候选编号大小
+      comment_font_face: 'Lucida Grande'                  # 补充信息字体   默认：'Avenir'
+      comment_font_point: 18                              # 补充信息大小
+      inline_preedit: true                                # 拼音位于：候选框 false| 行内 true
+      inline_candidate: false                             # 是否将选定的候选词作为文本嵌入输入框
+      memorize_size: true                                 # 候选面板是否贴在屏幕边缘以减少跳跃
+      candidate_format: '[label]. [candidate] [comment]'  # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+
+    system_dark:
+      name: Mac原生样式-深色
+      candidate_list_layout: linear                       # 垂直排列 stacked | 平行排列 linear
+      border_height: -2                                   # 窗口上下高度，大于圆角半径才生效
+      border_width: -2                                    # 窗口左右宽度，大于圆角半径才生效
+      corner_radius: 10                                   # 窗口圆角
+      hilited_corner_radius: 8                            # 高亮圆角
+      text_color: 0xBBBBBB                                # 文字颜色
+      hilited_candidate_back_color: 0xD05925              # 第一候选项-背景色
+      hilited_candidate_text_color: 0xFFFFFF              # 第一候选项-文字颜色
+      line_spacing: 5                                     # 候选词的行间距
+      spacing: 10                                         # 在非内嵌编码模式下，预编辑和候选词之间的间距
+      shadow_size: 0                                      # 在高光候选对象周围呈现阴影
+      font_face: 'Lucida Grande'                          # 候选词字体   默认：'Avenir'
+      font_point: 18                                      # 候选词大小
+      label_font_face: 'Lucida Grande'                    # 候选编号字体   默认：'Avenir'
+      label_font_point: 12                                # 候选编号大小
+      comment_font_face: 'Lucida Grande'                  # 补充信息字体   默认：'Avenir'
+      comment_font_point: 18                              # 补充信息大小
+      inline_preedit: true                                # 拼音位于：候选框 false| 行内 true
+      inline_candidate: false                             # 是否将选定的候选词作为文本嵌入输入框
+      memorize_size: true                                 # 候选面板是否贴在屏幕边缘以减少跳跃
+      candidate_format: '[label]. [candidate] [comment]'  # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+
+    wechat_light:
+      name: 微信键盘-浅色
+      author: zsakvo                                      # 作者
+      border_height: 0                                    # 窗口上下高度，大于圆角半径才生效
+      border_width: 8                                     # 窗口左右宽度，大于圆角半径才生效
+      candidate_format: '[label]. [candidate] [comment]'  # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+      corner_radius: 5                                    # 窗口圆角
+      hilited_corner_radius: 5                            # 高亮圆角
+      font_face: PingFangSC                               # 候选词字体
+      font_point: 18                                      # 候选词大小
+      candidate_list_layout: linear                       # linear横排，stacked竖排
+      inline_preedit: true                                # 拼音位于：候选框 false| 行内 true
+      label_font_point: 12                                # 候选编号大小
+      text_color: 0x424242                                # 文字颜色
+      back_color: 0xFFFFFF                                # 候选条-背景色
+      hilited_candidate_back_color: 0x75B100              # 第一候选项-背景色
+      hilited_candidate_text_color: 0xFFFFFF              # 第一候选项-文字颜色
+      hilited_comment_text_color: 0xFFFFFF                # 第一候选项-注释颜色
+      label_color: 0x777777                               # 第二候选项-编号颜色
+      comment_text_color: 0x999999                        # 补充信息-文字颜色
+
+    wechat_dark:
+      name: 微信键盘-深色
+      author: shlroland                                   # 作者
+      border_height: 0                                    # 窗口上下高度，大于圆角半径才生效
+      border_width: 8                                     # 窗口左右宽度，大于圆角半径才生效
+      candidate_format: '[label]. [candidate] [comment]'  # 用1/6 em 空格 U+2005 来控制编号 %C 和候选词 %@ 前后的空间
+      corner_radius: 5                                    # 窗口圆角
+      hilited_corner_radius: 5                            # 高亮圆角
+      font_face: PingFangSC                               # 候选词字体
+      font_point: 18                                      # 候选词大小
+      candidate_list_layout: linear                       # linear横排，stacked竖排
+      inline_preedit: true                                # 拼音位于：候选框 false| 行内 true
+      label_font_point: 12                                # 候选编号大小
+      text_color: 0xBBBBBB                                # 文字颜色
+      back_color: 0x151515                                # 候选条-背景色
+      hilited_candidate_back_color: 0x75B100              # 第一候选项-背景色
+      hilited_candidate_text_color: 0xFFFFFF              # 第一候选项-文字颜色
+      hilited_comment_text_color: 0xFFFFFF                # 第一候选项-注释颜色
+      label_color: 0x777777                               # 第二候选项-编号颜色
+      comment_text_color: 0xAEAEAE                        # 补充信息-文字颜色
+
+
+
+  # 可参考 https://github.com/rime/squirrel/blob/69112996441fdae1d1778ac9a32eb98f6a8e7841/data/squirrel.yaml
+  app_options:    # App默认英文
+    com.microsoft.VSCode:
+        ascii_mode: false     # 关闭默认英文
+    #com.apple.Terminal:
+    #    ascii_mode: true      # 默认英文

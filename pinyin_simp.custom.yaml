@@ -1,0 +1,150 @@
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+      # states: [中文, 西文] # 永远不会切所以注释了
+    - name: full_shape
+      reset: 0
+      states: [半角, 全角]
+    - name: ascii_punct
+      reset: 0
+      # states: [。，, ．，] # 永远不会切所以注释了
+    - name: emoji # 删除了 Emoji，只保留了一点点的符号映射
+      reset: 1
+    - name: traditionalization
+      reset: 0 # 如果不想每次切换 App 都自动变成简体，可以注释这里
+      states: [简, 繁繁繁]
+
+
+  key_binder/bindings/+:
+    - {when: always, accept: Control+Shift+4, toggle: traditionalization}  # 简繁体快捷键
+    - {when: always, accept: Control+Shift+5, toggle: full_shape}          # 全半角快捷键
+
+
+  engine/filters:
+    - simplifier@emoji           # 符号映射
+    - simplifier@traditionalize  # 简繁切换
+    - uniquifier                 # 去重
+  engine/translators/+:
+    - table_translator@custom_phrase  # 自定义文本
+    - table_translator@melt_eng       # 英文输入
+    - lua_translator@date_translator  # 时间、日期
+
+
+  # 符号映射：删除了 Emoji，只保留了一点点的符号映射
+  emoji:
+    opencc_config: emoji.json
+    option_name: emoji
+
+  # 简繁切换
+  traditionalize:
+    opencc_config: s2t.json
+    option_name: traditionalization
+    tips: all # 简繁提示，注释掉可直接出繁
+
+  # 自定义文本：custom_phrase
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    # 享有最高优先级。但不与其他翻译器共同造句（所以尽量不要配置完整编码的字词，只配置缩写）
+    # custom_phrase 的优先级应该比 melt_eng 大，否则英文会冲在最前头，造成选取困难
+    initial_quality: 1
+
+  # 英文输入：Easy English Nano
+  schema/dependencies/@next: melt_eng
+  melt_eng:
+    dictionary: melt_eng
+    spelling_hints: 9
+    enable_completion: true # 关闭后英文不会有提示，只会在打全时才会显示，体验不是很好
+    enable_sentence: false
+    # initial_quality 
+    # 设置为 1 或 大于 1 时，英语与中文将拥有同样的权重，在输入单个文字时，如「a」「de」，大量的英文单词会冲到汉字前面，造成选取困难。
+    # 设置为 0 或负数时，同时会有单编码时被英文占据第一候选项的问题，建议在 custom_phrase 中设置单编码固顶字来解决这个问题
+    # 设置为 0 的另外一个问题：如「internet」，直到输入完成，该单词才变为第一候选项（「interne」时的结果是「一奈特人」）
+    # 不过总的来说，还是设置为 0 比较合适。
+    initial_quality: 0 # -3
+  # 令英文输入方案响应大写字母（ Shift + [a-z] ）
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+
+
+  # 挂载词库
+  translator/dictionary: pinyin_simp.extended
+
+
+  # “/” 模式转为 “v” 模式，并增加识别大写字母
+  recognizer/patterns/punct: "^v([a-zA-Z]+|[0-9]0?)$" # 原： "^/([a-z]+|[0-9]0?)$"
+
+  # 引入自己的 symbols，全部修改为了“v”模式
+  punctuator:
+    import_preset: symbols.custom
+
+
+  # 拼写设定 https://github.com/iDvel/rime-ice/blob/main/rime_ice.schema.yaml
+  speller/algebra:
+    # 声母
+    # - derive/^([zcs])h/$1/          # zh* ch* sh* 派生出 z* c* s*
+    # - derive/^([zcs])([^h])/$1h$2/  # z* c* s*    派生出 zh* ch* sh*
+    # - derive/^l/n/
+    # - derive/^n/l/
+    # - derive/^f/h/
+    # - derive/^h/f/
+    # - derive/^l/r/
+    # - derive/^r/l/
+    # - derive/^g/k/
+    # - derive/^k/g/
+    # 韵母
+    # - derive/ang$/an/
+    # - derive/an$/ang/
+    # - derive/eng$/en/
+    # - derive/en$/eng/
+    # - derive/in$/ing/
+    # - derive/ing$/in/
+    # - derive/ian$/iang/
+    # - derive/iang$/ian/
+    # - derive/uan$/uang/
+    # - derive/uang$/uan/
+    # - derive/ai$/an/
+    # - derive/an$/ai/
+    # - derive/ong$/un/
+    # - derive/un$/ong/
+    # - derive/ong$/on/
+    # - derive/iong$/un/
+    # - derive/un$/iong/
+    # - derive/ong$/eng/
+    # - derive/eng$/ong/
+    # 原装的 v u 容错转换
+    # - derive/^([nl])ve$/$1ue/
+    # - derive/^([jqxy])u/$1v/
+    # 原装的模糊拼音
+    # - derive/un$/uen/
+    # - derive/ui$/uei/
+    # - derive/iu$/iou/ 
+    # 原装自动纠错
+    # - derive/([aeiou])ng$/$1gn/ # agn → ang
+    # - derive/([dtngkhrzcs])o(u|ng)$/$1o/ # do → dou|dong 
+    # - derive/([dtngkhrzcs])o(u)$/$1o/ # 改：do → dou
+    # - derive/ong$/on/ # lon → long  ton → tong ...
+    # - derive/ao$/oa/ # hoa → hao
+    # - derive/([iu])a(o|ng?)$/a$1$2/ # tain → tian  laing → liang  laio → liao
+    # 自己添加的：
+    # - derive/ua$/au/ # shau → shua  hau → hua
+    # - derive/ian$/ina/ # tina → tian 如果经常要打「李娜」，建议注释掉这个
+    # - derive/iang$/inag/ # linag → liang 
+    # - derive/([wrtypsdfghjklzcbnm])a([on])$/$1$2a/ # hoa → hao  gna  → gan
+    # - derive/([wtpsghkzcbnm])ai$/$1ia/ # zia → zai 不转换[lia, lai][dia, dai]这两组正确的拼写
+    # - derive/([qjx])ia$/$1ai/ # jai → jia
+    # - derive/([zcs])hi$/$1ih/ # zih → zhi cih → chi sih → shi
+    # - derive/([wrpsdfghklzcbm])en$/$1ne/ # zne → zen
+    # - derive/([zcs])h(a|e|i|o|u|an|en|un|ui|ang|eng|ong|ou|uo|ai|ei)$/h$1$2/ # hzi → zhi  hsang → shang
+    # - derive/([zcs])h([aeiou])ng$/$1hn$2g/ # chneg → cheng
+    # - derive/([qjx])ie$/$1ei/ # qei → qie
+    # - derive/([wfghkz])ei$/$1ie/ # fie → fei
+    # - derive/([rtsghkzc])ui$/$1iu/ # hiu → hui
+    # - derive/([qjlxbnm])iu$/$1ui/ # qui → qiu
+    # - derive/([rtysdghklzcn])ong$/$1ng/ # tng → tong
+    # - derive/([qypjlxbnm])in$/$1ni/ # lni → lin
+    # - derive/([aeo])ng$/n$1g/ # cnag → cang
+    # - derive/([qylxn])ue$/$1eu/ # xeu → xue
