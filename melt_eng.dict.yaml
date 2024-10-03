@@ -19,8 +19,8 @@ sort: by_weight
 vocabulary: essay-zh-hans
 import_tables:
   - en_dicts/my_en  # 个人英语词库
-  - en_dicts/en_ext # 补充（里面有些许带权重的，且和 en 重复，需要把 en_ext 放在上面）
-  - en_dicts/en     # 英文主词库
+  - en_dicts/en_ext # 补充(同步于雾凇词库)
+  - en_dicts/en     # 英文主词库(同步于雾凇词库)
   
 ...
 # 补充的英文词汇
