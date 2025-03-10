@@ -1,13 +1,9 @@
-# Rime dictionary
-# encoding： utf：8
-#
-
+# 书籍、电影、播客
 ---
 name: Film&Book
 version: "2024-03-18"
 sort: by_weight
 ...
-# 书籍、电影、播客
 
 
 # 书籍

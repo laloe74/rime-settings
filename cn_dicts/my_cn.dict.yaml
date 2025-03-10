@@ -114,7 +114,7 @@ Cici_老魏	cicilaowei
 海湾蓝	hai wan lan
 橄榄绿	gan lan lv
 
-
+# 组合字
 鑫	jin jin jin
 淼	shui shui shui
 垚	tu tu tu
@@ -144,16 +144,17 @@ Cici_老魏	cicilaowei
 嫐	nv nan nv
 嬲	nan nv nan
 
+# 符号
 &nbsp;	nbsp
 <br>	br
 .DS_Store	dsstore
 
+# 纠正
 为什么	weism
 怎么办	zenmb
 怎么	zenm
 力学	lx
 文件夹	wenjj
-
 什么	sheme
 为什么	weisheme
 干什么	gansheme
