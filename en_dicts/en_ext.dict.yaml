@@ -3,9 +3,10 @@
 #
 # https://github.com/iDvel/rime-ice
 # ------- 补充的英文词汇 -------
+# 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2024-06-10"
+version: "2025-03-06"
 sort: by_weight
 ...
 # 一些杂项
@@ -156,7 +157,7 @@ macOS Big Sur	macOS	5
 macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
-macOS Sequoia	macOS	8
+macOS Sequoia	macOS	9
 Windows	Windows	999
 Windows 95	Windows	1
 Windows 98	Windows	2
@@ -169,6 +170,7 @@ Windows 7	Windows	7
 Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
+Windows 12	Windows	12
 # +_+
 iPhone 3G	iPhone3G
 iPhone 3GS	iPhone3GS
@@ -243,12 +245,14 @@ Windows 7	Windows7
 Windows 8	Windows8
 Windows 10	Windows10
 Windows 11	Windows11
+Windows 12	Windows12
 ERC-20	ERC-20
 ERC-721	ERC-721
 ERC-1155	ERC-1155
 High Sierra	HighSierra
 Mojave	Mojave
 Big Sur	BigSur
+Sequoia	Sequoia
 TypeORM	TypeORM
 RPG	RPG
 Role-Playing Game	RPG
@@ -303,6 +307,9 @@ Chief Operating Officer	COO
 Chief Operating Officer	ChiefOperatingOfficer
 iShot	iShot
 TapTap	TapTap
+HDD	HDD
+Hard disk drive	HDD
+Hard disk drive	Harddiskdrive
 HHD	HHD
 Hybrid drive	HHD
 Hybrid drive	Hybriddrive
@@ -347,9 +354,12 @@ AlphaFold	AlphaFold
 Valve	Valve
 CS:GO	CS:GO
 Counter-Strike: Global Offensive	CS:GO
+Counter-Strike: Global Offensive	Counter-Strike:GlobalOffensive
 Counter-Strike	Counter-Strike
+Counter-Strike 2	Counter-Strike2
+CS2	CS2
+Counter-Strike 2	CS2
 Tesla	Tesla
-Polo	Polo
 Code Runner	CodeRunner
 AfterShokz Aeropex	AfterShokzAeropex
 AfterShokz	AfterShokz
@@ -359,7 +369,6 @@ Xnip	Xnip
 Workspace	Workspace
 AdSense	AdSense
 Authenticator	Authenticator
-Chrome	Chrome
 DeepMind	DeepMind
 Google	Google
 Google Ads	GoogleAds
@@ -396,7 +405,6 @@ International Data Corporation	IDC
 International Data Corporation	InternationalDataCorporation
 Wunderlist	Wunderlist
 VMware	VMware
-Fusion	Fusion
 Flyme	Flyme
 VMware Fusion	VMwareFusion
 VMware Fusion Player	VMwareFusionPlayer
@@ -426,7 +434,6 @@ Xbox One	XboxOne
 Xbox One X	XboxOneX
 Xbox Series	XboxSeries
 Xbox Series S	XboxSeriesS
-Switch	Switch
 CSS	CSS
 Cascading Style Sheets	CSS
 Cascading Style Sheets	CascadingStyleSheets
@@ -441,7 +448,6 @@ IntelliJ IDEA Community	IntelliJIDEACommunity
 IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
 IDEA Community	IDEACommunity
 IDEA Ultimate	IDEAUltimate
-IDE	IDE
 NTR	NTR
 Notion	Notion
 Notion AI	NotionAI
@@ -467,7 +473,6 @@ Apple Music	AppleMusic
 TED	TED
 DeepL	DeepL
 Homebrew	Homebrew
-Finder	Finder
 VMess	VMess
 Shadowsocks	Shadowsocks
 PC	PC
@@ -530,7 +535,6 @@ Intel	Intel
 JSON	JSON
 JetBrains	JetBrains
 KTV	KTV
-Mac	Mac
 Macintosh	Macintosh
 MBP	MBP
 MacBook Pro	MBP
@@ -639,6 +643,9 @@ Caffeine	Caffeine
 Calcbot	Calcbot
 Calibre	Calibre
 CarPlay	CarPlay
+CarLife	CarLife
+CarLife+	CarLife+
+HiCar	HiCar
 CDN	CDN
 Content Delivery Network	CDN
 Content Delivery Network	ContentDeliveryNetwork
@@ -721,6 +728,8 @@ Instacast	Instacast
 Instashare	Instashare
 Intensify	Intensify
 IP	IP
+internet protocol	IP
+internet protocol	internetprotocol
 iPack	iPack
 iPad Air	iPadAir
 iPad mini	iPadmini
@@ -1181,11 +1190,6 @@ New Technology File System	NewTechnologyFileSystem
 Microsoft NTFS	NTFS
 Microsoft NTFS	MicrosoftNTFS
 ChromeOS	ChromeOS
-GCD	GCD
-Grand Central Dispatch	GCD
-Grand Central Dispatch	GrandCentralDispatch
-greatest common divisor	GCD
-greatest common divisor	Greatestcommondivisor
 Ed Sheeran	EdSheeran
 Sheeran	Sheeran
 Cloudflare Images	CloudflareImages
@@ -1198,10 +1202,8 @@ HarmonyOS	HarmonyOS
 NPC	NPC
 Non-Player Character	NPC
 Non-Player Character	Non-PlayerCharacter
-MVP	MVP
 Quantumult X	QuantumultX
-Confluence	Confluence
-Skynet	Skynet
+skynet	skynet
 serverless	serverless
 Identifier	Identifier
 NameCheap	NameCheap
@@ -1225,15 +1227,11 @@ Sport Utility Vehicle	SportUtilityVehicle
 UFO	UFO
 Unidentified Flying Object	UFO
 Unidentified Flying Object	UnidentifiedFlyingObject
-Copyright	Copyright
-Registered	Registered
 TM	TM
 tmux	tmux
 SOS	SOS
 abcd	abcd
 ABCD	ABCD
-abc	abc
-ABC	ABC
 Starbucks	Starbucks
 I Love You	ILoveYou
 ZZZ	ZZZ
@@ -1340,7 +1338,6 @@ Software Freedom Conservancy	SFC
 Software Freedom Conservancy	SoftwareFreedomConservancy
 PopCap	PopCap
 PopCap Games	PopCapGames
-Cyberpunk	Cyberpunk
 Kotlin	Kotlin
 PhpStorm	PhpStorm
 Datalore	Datalore
@@ -1490,7 +1487,6 @@ UTF	UTF
 UTF-8	UTF-8
 UTF-16	UTF-16
 ASCII	ASCII
-ANSI	ANSI
 IEEE	IEEE
 Institute of Electrical and Electronics Engineers	IEEE
 DjVu	DjVu
@@ -1510,7 +1506,6 @@ mRNA	mRNA
 messenger RNA	mRNA
 C++	C++
 C++	Cpp
-Python	Python
 MIT	MIT
 Massachusetts Institute of Technology	MIT
 Massachusetts Institute of Technology	MassachusettsInstituteofTechnology
@@ -1518,20 +1513,15 @@ MIT License	MITLicense
 LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
-Mozilla	Mozilla
 Mozilla Firefox	MozillaFirefox
-Apache	Apache
-Steam	Steam
 Steam Deck	SteamDeck
 Android	Android
 android	android
 iOS	iOS
 Linux	Linux
 Ubuntu	Ubuntu
-Windows	Windows
 Microsoft	Microsoft
 Nintendo	Nintendo
-Nexus	Nexus
 Wii U	WiiU
 Wii	Wii
 Oracle	Oracle
@@ -1629,6 +1619,12 @@ denial-of-service attack	denial-of-serviceattack
 DDoS	DDoS
 distributed denial-of-service attack	DDoS
 distributed denial-of-service attack	distributeddenial-of-serviceattack
+CVE	CVE
+Common Vulnerabilities and Exposures	CVE
+Common Vulnerabilities and Exposures	CommonVulnerabilitiesandExposures
+CWE	CWE
+Common Weakness Enumeration	CWE
+Common Weakness Enumeration	CommonWeaknessEnumeration
 LibreWolf	LibreWolf
 WebRTC	WebRTC
 WebDAV	WebDAV
@@ -1824,8 +1820,6 @@ dYdX	dYdX
 NFT	NFT
 Non-Fungible Token	NFT
 Solidity	Solidity
-Argent	Argent
-argent	argent
 Argent X	ArgentX
 Braavos	Braavos
 Braavos Wallet	Braavos
@@ -1863,8 +1857,6 @@ Large Language Model Meta AI	LLaMA
 R.I.P	R.I.P
 AIGC	AIGC
 AI Generated Content	AIGC
-Presto	Presto
-presto	presto
 Upscayl	Upscayl
 Cocos Creator	CocosCreator
 John Wick	JohnWick
@@ -1898,6 +1890,7 @@ Kubernetes	Kubernetes
 Kubeadm	Kubeadm
 Minikube	Minikube
 shitwork	shitwork
+W3C	W3C
 A4	A4
 3D	3D
 Loki	Loki
@@ -2141,12 +2134,36 @@ Microsoft Visual C++	MicrosoftVisualC++
 DBeaver	DBeaver
 Vite	Vite
 AE86	AE86
-M1	M1
-M2	M2
-M3	M3
-M4	M4
-3G	3G
-4G	4G
-5G	5G
-2D	2D
-4D	4D
+Floorp	Floorp
+Costco	Costco
+NFC	NFC
+Near Field Communication	NFC
+Near Field Communication	NearFieldCommunication
+Apple Intelligence	AppleIntelligence
+7-Zip	7-Zip
+LGTM	LGTM
+PTAL	PTAL
+GPT-4o	GPT-4o
+Grok	Grok
+MBR	MBR
+master boot record	masterbootrecord
+master boot record	MBR
+EFI	EFI
+Extensible Firmware Interface	ExtensibleFirmwareInterface
+Extensible Firmware Interface	EFI
+UEFI	UEFI
+Unified Extensible Firmware Interface	UnifiedExtensibleFirmwareInterface
+Unified Extensible Firmware Interface	UEFI
+CMOS	CMOS
+complementary metal-oxide-semiconductor	complementarymetal-oxide-semiconductor
+complementary metal-oxide-semiconductor	CMOS
+OOP	OOP
+object-oriented programming	object-orientedprogramming
+object-oriented programming	OOP
+IDE	IDE
+integrated development environment	integrateddevelopmentenvironment
+integrated development environment	IDE
+TensorFlow	TensorFlow
+PyTorch	PyTorch
+DeepSeek	DeepSeek
+Mercedes-Benz	Mercedes-Benz

@@ -1,31 +1,11 @@
-# Rime dictionary
-# encoding： utf：8
-#
-
+# 个人中文词库
 ---
 name: my_cn
 version: "2024-03-18"
 sort: by_weight
 ...
-# 个人中文词库
 
-# 方便词
-为什么	weism
-怎么办	zenmb
-怎么	zenm
-力学	lx
-文件夹	wenjj
 
-# 容错词
-什么	sheme
-为什么	weisheme
-干什么	gansheme
-因为	yiwnei
-可以	keiy
-可以	kyie
-怎么	zemne
-
-# 补充
 宇树
 众擎
 曾谨言
@@ -104,8 +84,6 @@ sort: by_weight
 四季办公室
 伍佰
 金斯堡
-
-# 小米
 小米	xm
 小米汽车	xmqc
 雷军	lei ju
@@ -136,7 +114,7 @@ Cici_老魏	cicilaowei
 海湾蓝	hai wan lan
 橄榄绿	gan lan lv
 
-# 叠字（「jjj」→「鑫」，「jinjj」→「鑫」，「jjjin」→「鑫」）
+
 鑫	jin jin jin
 淼	shui shui shui
 垚	tu tu tu
@@ -160,14 +138,26 @@ Cici_老魏	cicilaowei
 龘	long long long
 叒	you you you
 叕	you you you you
-# 其他拼字
 蟊	mao chong chong
 飙	quan quan quan feng
 飚	feng huo huo huo
 嫐	nv nan nv
 嬲	nan nv nan
 
-# 编码
 &nbsp;	nbsp
 <br>	br
 .DS_Store	dsstore
+
+为什么	weism
+怎么办	zenmb
+怎么	zenm
+力学	lx
+文件夹	wenjj
+
+什么	sheme
+为什么	weisheme
+干什么	gansheme
+因为	yiwnei
+可以	keiy
+可以	kyie
+怎么	zemne
