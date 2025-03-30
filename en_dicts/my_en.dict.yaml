@@ -6,6 +6,22 @@ sort: by_weight
 vocabulary: essay-zh-hans
 ...
 
+# 物理
+ℏ	hbar
+Ψ	bpsi
+Ĥ	hhat
+∇	gran
+Δ	delta
+⟩	ket
+⟨	bar
+
+# 数学
+∂	pian
+∂	partial
+∫	jifen
+∫	integral
+∑	sum
+∏	bpi
 
 Quantum	quant
 Quanta	quant
@@ -47,3 +63,55 @@ FinalShell	finalshell
 Calibre	calibre
 Shottr	shottr
 Easydict	esaydict
+
+# 希腊-小
+α	alpha
+β	beta
+γ	gamma
+δ	delta
+ε	epsilon
+ζ	zeta
+η	eta
+θ	theta
+ι	lota
+κ	kappa
+λ	lambda
+μ	mu
+ν	nu
+ξ	xi
+ο	omicron
+π	pi
+ρ	rho
+σ	sigma
+τ	tau
+υ	upsilon
+φ	phi
+χ	chi
+ψ	psi
+ω	omega
+
+# 希腊-大
+Α	balpha
+Β	bbeta
+Γ	bgamma
+Δ	bdelta
+Ε	bepsilon
+Ζ	bzeta
+Η	beta
+Θ	btheta
+Ι	biota
+Κ	bkappa
+Λ	blambda
+Μ	bmu
+Ν	bnu
+Ξ	bxi
+Ο	bomicron
+Π	bpi
+Ρ	brho
+Σ	bsigma
+Τ	btau
+Υ	bupsilon
+Φ	bphi
+Χ	bchi
+Ψ	bpsi
+Ω	bomega
