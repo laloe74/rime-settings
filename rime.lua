@@ -5,9 +5,20 @@ function date_translator(input, seg)
         yield(Candidate("date", seg.start, seg._end, os.date("%Y年%m月%d日"), ""))
         yield(Candidate("date", seg.start, seg._end, os.date("%Y/%m/%d"), ""))
     end
+    
+    function rfc3339_now()
+        local s = os.date("%Y-%m-%dT%H:%M:%S%z")
+        local prefix = string.sub(s, 1, 19)
+        local zone = string.sub(s, 20)
+        if (#zone == 5) then
+            zone = string.sub(zone, 1, 3) .. ":" .. string.sub(zone, 4, 5)
+        end
+        return prefix .. zone
+    end
+    
     if (input == "sj") then
         --- Candidate(type, start, end, text, comment)
-        yield(Candidate("time", seg.start, seg._end, os.date("%Y-%m-%dT%H:%M:%S%z"), ""))
+        yield(Candidate("time", seg.start, seg._end, rfc3339_now(), "(RFC3339)"))
         yield(Candidate("time", seg.start, seg._end, os.date("%Y-%m-%d %H:%M"), ""))
         yield(Candidate("time", seg.start, seg._end, os.date("%H:%M"), ""))
         yield(Candidate("time", seg.start, seg._end, os.date("%Y%m%d-%H:%M:%S"), ""))
