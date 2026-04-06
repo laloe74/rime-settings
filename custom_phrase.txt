@@ -1,138 +1,64 @@
 # Rime table
 # coding: utf-8
-#@/db_name  custom_phrase.txt
+#@/db_name	custom_phrase.txt
 #@/db_type	tabledb
 #
-# 用於【朙月拼音】系列輸入方案
-# 【小狼毫】0.9.21 以上
+# 自定义短语
+# 可为方案增加一些要置顶的词汇及短语，例如邮箱、手机号、常用短语等等。编码可以随便起，不限于拼音。
 #
-# 請將該文件以UTF-8編碼保存爲
-# Rime用戶文件夾/custom_phrase.txt
+# 适用于全拼。双拼默认为 custom_phrase_double.txt 需要手动创建，并更改上面的 db_name 为 custom_phrase_double.txt
 #
-# 碼表各字段以製表符（Tab）分隔
-# 順序爲：文字、編碼、權重（決定重碼的次序、可選）
+# 以下固定的词汇及顺序纯属个人偏好，仅作示例，
+# 可以增加自己的 .txt 文件，并在方案的 custom_phrase/user_dict 指定为自己的文件。
 #
-# 雖然文本碼表編輯較爲方便，但不適合導入大量條目
+# 以 Tab 分割：词汇<Tab>编码<Tab>权重
 #
-# no comment 
+# 这个文件内的字词会占据最高权重（即排在候选项的最前面，因为指定了高权重 custom_phrase/initial_quality: 99）。
+# 但不与其他翻译器互相造词，如果使用了完整编码，那么这个字或词将无法参与造词，即自造词无法被记住。
+# 所以只建议固定非完整拼音的编码，如果需求是置顶指定拼音的候选项，请参考方案中的 pin_cand_filter。
+#
+# 最下面的英文是因为一些常用单词的第一候选项被纠错覆盖了，如 Amazon 被纠错为「a ma zong 阿妈粽」，期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
+#
+# version: "2024-03-12"
+#
+# 此行之后不能写注释
 
+噷	hm
+呣	m
+呒	m
 
-
-去	q	2
-千	q	1
-我	w	2
-万	w	1
-呃	e
-与	y	2
-于	y	1
 有	u	3
 又	u	2
 由	u	1
-一	i	3
-以	i	2
-已	i	1
-哦	o
-片	p
-是	s	3
-时	s	2
-使	s	1
-的	d	3
-得	d	2
-地	d	1
-个	g
-和	h
-及	j	3
-将	j	2
-即	j	1
-可	k
-了	l	2
-啦	l	1
-在	z	3
-再	z	2
-自	z	1
-想	x	3
-像	x	2
-向	x	1
-才	c
-吧	b	2
-百	b	1
-那	n	2
-哪	n	1
-吗	m	2
-嘛	m	1
 
+一	i	4
+以	i	3
+已	i	2
+亦	i	1
 
-这	zh
-等等	dd
-等等等等	dddd
-刚刚	gg
-才刚刚	cgg
-知道	zd
-不知道	bzd
-往往	ww
-哈哈	hh
-看看	kk
-常常	cc
-想想	xx	2
-想象	xx	1
-隐约	yy
+一个	ig
+有个	ug
+是一个	sig
+有一个	uig
+有一个	uyig
+有一个	uyige
+有没有	umu
+有没有	umeiu
 又有	uu
-什么	sm
-为什么	wsm
-是不是	sbs
-没什么	msm
-有时候	ysh
-有时候	yshh
-有时候	yshou
-什么的	smd
+又又又	uuu
+又双叒叕	uuuu
 
-
-我们	wm
-我们	wom
-你们	nm
-你们	nim
-人们	rm
-人们	renm
-
-
-他	t	3
-她	t	2
-它	t	1
-他的	td	3
-她的	td	2
-它的	td	1
-他的	tad	3
-她的	tad	2
-它的	tad	1
-他们	tm	3
-她们	tm	2
-它们	tm	1
-他们	tam	3
-她们	tam	2
-它们	tam	1
-
-
-那儿	nr	2
-哪儿	nr	1
-那儿	nar	2
-哪儿	nar	1
-那个	ng	2
-哪个	ng	1
-那个	nag	2
-哪个	nag	1
-那些	nx	2
-哪些	nx	1
-那些	nax	2
-哪些	nax	1
-那里	nl	2
-哪里	nl	1
-那里	nal	2
-哪里	nal	1
-那边	nb	2
-哪边	nb	1
-那边	nab	2
-哪边	nab	1
-那位	nw	2
-哪位	nw	1
-那位	naw	2
-哪位	naw	1
+go	go
+Golang	golang
+Hugo	hugo
+goto	goto
+domain	domain
+TODO	todo
+Dota	dota
+main	main
+Amazon	amazon
+NASA	nasa
+gone	gone
+Go程	gocheng
+code	code
+SOHO	soho
