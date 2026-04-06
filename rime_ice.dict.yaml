@@ -5,19 +5,19 @@
 name: rime_ice
 version: "2026-01-26"
 import_tables:
-  - cn_dicts/ice/8105                  # 字表
-  # - cn_dicts/ice/41448               # 大字表（按需启用）
-  - cn_dicts/ice/base                  # 基础词库
-  - cn_dicts/ice/ext                   # 扩展词库
-  - cn_dicts/ice/tencent               # 腾讯词向量（大词库，部署时间较长）
-  - cn_dicts/ice/others                # 一些杂项
+  - cn_dicts/ice/8105                  # 雾凇拼音-字表
+  # - cn_dicts/ice/41448               # 雾凇拼音-大字表（按需启用）
+  - cn_dicts/ice/base                  # 雾凇拼音-基础词库
+  - cn_dicts/ice/ext                   # 雾凇拼音-扩展词库
+  - cn_dicts/ice/tencent               # 雾凇拼音-腾讯词向量（大词库，部署时间较长）
+  - cn_dicts/ice/others                # 雾凇拼音-一些杂项
 
   - cn_dicts/sougou/sogou.computer     # 搜狗词库：计算机
   - cn_dicts/sougou/sogou.physics      # 搜狗词库：物理数学
   - cn_dicts/sougou/sogou.poem         # 搜狗词库：诗歌
 
   - cn_dicts/my_cn                     # 个人中文词库
-  - cn_dicts/privacy                   # 个人隐私词汇！！！
+  - cn_dicts/privacy                   # 个人**隐私词汇**
 ...
 
 # 按需启用：
