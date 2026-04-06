@@ -1,19 +1,26 @@
 ## 基本套路：
 
-- Squirrel 1.2.2 简体
-- 「[雾凇拼音输入方案](https://github.com/iDvel/rime-ice)」作为基础
+- Squirrel 1.2.2 简体拼音
+- [雾凇拼音输入方案](https://github.com/iDvel/rime-ice)
     - [简繁切换](https://github.com/rime/home/issues/388#issuecomment-504572224)
     - [动态日期、时间、星期、农历](https://github.com/KyleBing/rime-wubi86-jidian)
-    - 所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
-    - 删除了「[Emoji](https://github.com/rime/rime-emoji)」，改为词语与符号映射
-    - 增加了许多拼音纠错
 - 融合「[easy_en](https://github.com/BlindingDark/rime-easy-en)」英文输入方案
     - 使用了「[融合拼音](https://github.com/tumuyan/rime-pinyin-simp)」的词库和拼写规则
-- 纯简体字表、词库（这样在用户词典中也是简体了）
-    - 字表：[《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
-    - 词库：「[雾凇拼音 | 长期维护的简体词库](https://github.com/iDvel/rime-ice)」 + 「[搜狗细胞词库](https://github.com/lewangdev/scel2txt)」
-- 皮肤 「Mac系统输入法皮肤」 + 「[微信键盘皮肤](https://gist.github.com/zsakvo/fff6e4859265d5d629439d5ccb553f8a)」
-- 长期持续修订遇到的异形词、错别字、错误注音
+- 纯简体字表、词库
+    - [雾凇词库](https://github.com/iDvel/rime-ice)
+    - [搜狗细胞词库](https://github.com/lewangdev/scel2txt)
+    - [个人隐私词库]
+- 皮肤
+    - Mac系统输入法风格皮肤
+    - [微信键盘皮肤](https://gist.github.com/zsakvo/fff6e4859265d5d629439d5ccb553f8a)
+- 快捷功能
+    - `rq` -> 2026-04-06
+    - `sj` -> 14:52
+    - `dt` -> 2026-04-06T14:52:37+08:00
+    - `nl` -> 丙午年（马）二月十九
+    - `Shift + R` + `数字` -> 拾贰萬零贰拾
+    - `uuid` -> 297e20d0-8782-4678-ac02-d195ef9d7c8b
+    - `Shift + U` + `Unicode编码(2713)` -> ✓
 
 <br>
 
@@ -39,17 +46,7 @@ sync_dir: "/Users/admin/Library/Mobile Documents/com~apple~CloudDocs/RimeSync"
 3. 点击菜单栏【ㄓ】-【同步用户数据】
 
 <br>
-
-## 快捷功能
-
-`rq` -> 2026-04-06
-`sj` -> 14:52
-`dt` -> 2026-04-06T14:52:37+08:00
-`nl` -> 丙午年（马）二月十九
-`Shift + R` + `数字` -> 拾贰萬零贰拾
-`uuid` -> 297e20d0-8782-4678-ac02-d195ef9d7c8b
-`Shift + U` + `Unicode编码(2713)` -> ✓
-
+    
 ## 仓 | Hamster 输入法配置
 
 - [仓 | Hamster](https://github.com/imfuxiao/Hamster) 2.3.0 适用于 iOS 系统
