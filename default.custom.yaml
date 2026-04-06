@@ -1,17 +1,24 @@
+# 使用逻辑：
+# 空格：上屏首个候选词
+# 回车：上屏拼出的字母
+# 数字：上屏特定候选词
+# Cap： 上屏拼出的字母，并切换到英文
+# Shift： 按住输入大写字母
+
 patch:
   schema_list:
     - schema: pinyin_simp
-  
+
   # 候选词个数
   menu/page_size: 5
 
-  # 下面设置的效果：不用 CapsLock 和 Shift 切换输入法，切换输入法使用自定义按键，如 Ctrl/Cmd + 空格
-  ascii_composer/good_old_caps_lock: true # Caps 只切换大小写
+  # 交给 Rime 处理 Caps，Mac需要关闭系统里的：Use the 中/英 key to switch to and from ABC
+  ascii_composer/good_old_caps_lock: false
+  # 切换中英输入法
   ascii_composer/switch_key:
-    Caps_Lock: commit_text # 打字打到一半时按下了Caps后：commit_code 上屏拼音的英文字母；commit_text 上屏拼音拼出的词语
+    Caps_Lock: commit_code # 打字打到一半时按下了Caps后：commit_code 上屏拼音的英文字母；commit_text 上屏拼音拼出的词语
     Shift_L: noop
     Shift_R: noop
-    Control_L: noop
     Control_R: noop
 
   switcher:
