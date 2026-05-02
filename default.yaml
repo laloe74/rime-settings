@@ -46,13 +46,13 @@ switcher:
 # set_ascii_mode   切换到英文模式
 # unset_ascii_mode 切换到中文模式
 ascii_composer:
-  good_old_caps_lock: true  # true | false
+  good_old_caps_lock: false  # true | false
   switch_key:
-    Caps_Lock: clear      # commit_code | commit_text | clear
-    Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Caps_Lock: commit_text # commit_code | commit_text | clear
+    Shift_L: noop          # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Shift_R: noop          # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Control_L: noop        # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Control_R: noop        # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
 
 
 # 处理输入栏内光标的移动
@@ -154,7 +154,7 @@ punctuator:
     "%": "%"
     "&": "&"
     "'": { pair: ["「", "」"] }
-    '"': { pair: ["『", "』"] }
+    '"': "\""
     "(": "（"
     ")": "）"
     "*": "*"
@@ -171,10 +171,10 @@ punctuator:
     "?": { commit: "？" }
     "@": "@"
     "[": "["
-    "\\": "、"
+    '\\': "\\"
     "]": "]"
-    "^": [^ , ⋯⋯]
-    _: "⸺"
+    "^": "^"
+    _: "_"
     "`": "`"
     "{": "{"
     "|": "|"
