@@ -46,7 +46,7 @@ switcher:
 # set_ascii_mode   切换到英文模式
 # unset_ascii_mode 切换到中文模式
 ascii_composer:
-  good_old_caps_lock: false  # true | false
+  good_old_caps_lock: true  # true | false
   switch_key:
     Caps_Lock: noop          # commit_code | commit_text | clear
     Shift_L: commit_text     # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
