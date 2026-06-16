@@ -48,11 +48,11 @@ switcher:
 ascii_composer:
   good_old_caps_lock: false  # true | false
   switch_key:
-    Caps_Lock: commit_text # commit_code | commit_text | clear
-    Shift_L: noop          # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Shift_R: noop          # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Control_L: noop        # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Control_R: noop        # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Caps_Lock: noop          # commit_code | commit_text | clear
+    Shift_L: commit_text     # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Shift_R: noop            # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Control_L: noop          # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Control_R: noop          # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
 
 
 # 处理输入栏内光标的移动
@@ -93,7 +93,7 @@ punctuator:
     ":": { commit: ： }
     "'": { pair: ["‘", "’"] }
     '"': { pair: ["『", "』"] }
-    '\': [、, ＼]
+    "\\": [、, ＼]
     "|": [·, ｜, "§", "¦"]
     "`": ｀
     "~": ～
@@ -171,7 +171,7 @@ punctuator:
     "?": { commit: "？" }
     "@": "@"
     "[": "["
-    '\\': "\\"
+    "\\": { commit: 、 }
     "]": "]"
     "^": "^"
     _: "_"
