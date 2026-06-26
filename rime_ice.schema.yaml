@@ -22,26 +22,26 @@ schema:
 # states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
 # abbrev: 默认的缩写取 states 的第一个字符，abbrev 可自定义一个字符
 switches:
-  - name: ascii_mode
-    states: [ 中, Ａ ]
+  # - name: ascii_mode      # 彻底禁用中英切换，英文用系统输入法
+  #   states: [ 中, Ａ ]
   - name: ascii_punct  # 中英标点
     states: [ ¥, $ ]
   - name: traditionalization
     states: [ 简, 繁 ]
-  - name: emoji
-    states: [ 💀, 😄 ]
+  # - name: emoji            # 已禁用 Emoji
+  #   states: [ 💀, 😄 ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
-    states: [正常, 单字]
-    abbrev: [词, 单]
+    states: [ 正常, 单字 ]
+    abbrev: [ 词, 单 ]
 
 
 # 输入引擎
 engine:
   processors:
     - lua_processor@*select_character  # 以词定字
-    - ascii_composer
+    # - ascii_composer       # 禁用中英切换处理器
     - recognizer
     - key_binder
     - speller
