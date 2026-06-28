@@ -10,5 +10,5 @@ version: "2023-05-09"
 import_tables:
   - en_dicts/ice/en_ext # 雾凇拼音-补充（里面有些许带权重的，且和 en 重复，需要把 en_ext 放在上面）
   - en_dicts/ice/en     # 雾凇拼音-英文主词库
-  - en_dicts/my_en  # 个人英文词库
+  - en_dicts/my_en      # 个人英文词库
 ...

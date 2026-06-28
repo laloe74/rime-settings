@@ -1,7 +1,6 @@
 # Rime schema
 # encoding: utf-8
 
-
 # 方案说明
 schema:
   schema_id: rime_ice
@@ -22,14 +21,10 @@ schema:
 # states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
 # abbrev: 默认的缩写取 states 的第一个字符，abbrev 可自定义一个字符
 switches:
-  # - name: ascii_mode      # 彻底禁用中英切换，英文用系统输入法
-  #   states: [ 中, Ａ ]
   - name: ascii_punct  # 中英标点
     states: [ ¥, $ ]
   - name: traditionalization
     states: [ 简, 繁 ]
-  # - name: emoji            # 已禁用 Emoji
-  #   states: [ 💀, 😄 ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
@@ -41,7 +36,6 @@ switches:
 engine:
   processors:
     - lua_processor@*select_character  # 以词定字
-    # - ascii_composer       # 禁用中英切换处理器
     - recognizer
     - key_binder
     - speller
@@ -78,7 +72,6 @@ engine:
     - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
     - lua_filter@*long_word_filter                  # 长词优先（顺序要求：长词优先 > Emoji）
     - lua_filter@*reduce_english_filter             # 降低部分英语单词在候选项的位置
-    # - simplifier@emoji                              # Emoji (已完全禁用)
     - simplifier@traditionalize                     # 简繁切换
     - lua_filter@*search@radical_pinyin             # 部件拆字辅码
     - uniquifier                                    # 去重
@@ -208,14 +201,6 @@ custom_phrase:
   enable_completion: false  # 补全提示
   enable_sentence: false    # 禁止造句
   initial_quality: 99       # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
-
-
-
-# Emoji (已完全禁用以减少候选项数量和计算开销)
-# emoji:
-#   option_name: emoji         # 对应 switches 中的 name
-#   opencc_config: emoji.json  # 选择要加载的 OpenCC 配置
-#   inherit_comment: false     # 在 corrector.lua 及反查中，emoji 的 comment 显示为空
 
 # 简繁切换
 traditionalize:
