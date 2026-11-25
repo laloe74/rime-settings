@@ -12,6 +12,10 @@ import_tables:
   #- cn_dicts/ice/tencent              # 雾凇拼音-腾讯词向量（大词库，部署时间较长）
   - cn_dicts/ice/others                # 雾凇拼音-一些杂项
 
+  - cn_dicts/qwen/cs_ai                # 千问词频-计算机科学
+  - cn_dicts/qwen/web_slang            # 千问词频-网络用语
+  - cn_dicts/qwen/zhwiktionary         # 千问词频-中文维基词条
+
   - cn_dicts/sougou/sogou.computer     # 搜狗词库：计算机
   - cn_dicts/sougou/sogou.physics      # 搜狗词库：物理数学
   - cn_dicts/sougou/sogou.poem         # 搜狗词库：诗歌

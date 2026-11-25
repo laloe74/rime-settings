@@ -1,2477 +1,2628 @@
 # Rime dictionary
 # encoding: utf-8
 #
+#
 # https://github.com/iDvel/rime-ice
 # ------- 补充的英文词汇 -------
 #
-# en.dict.yaml 放置正经单词
-# en_ext.dict.yaml 大部分是缩写或互联网相关
-#
-# 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
-name: en_ext
-version: "2026-03-08"
+name: rime_ice.en_ext
+version: "2026-07-25"
 sort: by_weight
 ...
 # 一些杂项
-&nbsp;	&nbsp;
-.DS_Store	.DS_Store
-README.md	README.md
+&nbsp;	&nbsp;	977640
+.DS_Store	.DS_Store	962398
+README.md	README.md	990792
 
 # 按键
-Fn	Fn
-cmd	cmd
-command	command
-Ctrl	Ctrl
-control	control
-Opt	Opt
-option	option
-shift	shift
-tab	tab
-Caps	Caps
-CapsLock	CapsLock
-return	return
-enter	enter
-space	space
-backspace	backspace
-Del	Del
-delete	delete
-Esc	Esc
-eject	eject
+Fn	Fn	983983
+cmd	cmd	981624
+command	command	996463
+Ctrl	Ctrl	994763
+control	control	996379
+Opt	Opt	981787
+option	option	995759
+shift	shift	993126
+tab	tab	987560
+Caps	Caps	992344
+CapsLock	CapsLock	966857
+return	return	998647
+enter	enter	990980
+space	space	992878
+backspace	backspace	967829
+Del	Del	983858
+delete	delete	995988
+Esc	Esc	976879
+eject	eject	978281
 # 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
-January	January
-Jan.	Jan.
-January	Jan
-February	February
-Feb.	Feb.
-February	Feb
-March	March
-Mar.	Mar.
-March	Mar
-April	April
-Apr.	Apr.
-April	Apr
-May	May
-June	June
+January	January	996792
+Jan.	Jan.	983765
+January	Jan	996792
+February	February	993335
+Feb.	Feb.	980635
+February	Feb	993335
+March	March	996399
+Mar.	Mar.	970182
+March	Mar	996399
+April	April	997224
+Apr.	Apr.	969807
+April	Apr	997224
+May	May	981696
+June	June	995642
 # Jun.	Jun
-June	Jun
-July	July
+June	Jun	995642
+July	July	995527
 # Jul.	Jul
 # July	Jul
-August	August
-Aug.	Aug.
-August	Aug
-September	September
-Sep.	Sep.
-Sept.	Sep.
-Sept.	Sept.
-September	Sep
-September	Sept
-October	October
-Oct.	Oct.
-October	Oct
-November	November
-Nov.	Nov.
-November	Nov
-December	December
-Dec.	Dec.
-December	Dec
+August	August	997117
+Aug.	Aug.	971534
+August	Aug	997117
+September	September	993468
+Sep.	Sep.	970732
+Sept.	Sep.	973329
+Sept.	Sept.	973329
+September	Sep	993468
+September	Sept	993468
+October	October	996921
+Oct.	Oct.	975659
+October	Oct	996921
+November	November	995439
+Nov.	Nov.	977716
+November	Nov	995439
+December	December	993334
+Dec.	Dec.	970619
+December	Dec	993334
 # 星期
-Monday	Monday
-Mon.	Mon.
-Monday	Mon
-Tuesday	Tuesday
-Tue.	Tue.
-Tuesday	Tue.
-Wednesday	Wednesday
-Wed.	Wed.
-Wednesday	Wed
-Thursday	Thursday
-Thu.	Thu.
-Thurs.	Thu.
-Thurs.	Thurs.
-Thursday	Thu
-Thursday	Thurs
-Friday	Friday
-Fri.	Fri.
-Friday	Fri
-Saturday	Saturday
-Sat.	Sat.
-Saturday	Sat
-Sunday	Sunday
-Sun.	Sun.
-Sunday	Sun
+Monday	Monday	993393
+Mon.	Mon.	964435
+Monday	Mon	993393
+Tuesday	Tuesday	995136
+Tue.	Tue.	975863
+Tuesday	Tue.	995136
+Wednesday	Wednesday	993108
+Wed.	Wed.	965166
+Wednesday	Wed	993108
+Thursday	Thursday	994942
+Thu.	Thu.	965193
+Thurs.	Thu.	961976
+Thurs.	Thurs.	961976
+Thursday	Thu	994942
+Thursday	Thurs	994942
+Friday	Friday	995252
+Fri.	Fri.	966120
+Friday	Fri	995252
+Saturday	Saturday	993594
+Sat.	Sat.	965556
+Saturday	Sat	993594
+Sunday	Sunday	994281
+Sun.	Sun.	968734
+Sunday	Sun	994281
 # 生活大爆炸 & 老友记
-Sheldon	Sheldon
-Leonard	Leonard
-Howard	Howard
-Rajesh	Rajesh
-Penny	Penny
-Bernadette	Bernadette
-Amy	Amy
-Rachel	Rachel
-Monica	Monica
-Joey	Joey
-Ross	Ross
-Chandler	Chandler
-Phoebe	Phoebe
+Sheldon	Sheldon	960945
+Leonard	Leonard	976496
+Howard	Howard	989240
+Rajesh	Rajesh	969835
+Penny	Penny	984935
+Bernadette	Bernadette	962069
+Amy	Amy	979668
+Rachel	Rachel	988900
+Monica	Monica	971457
+Joey	Joey	983730
+Ross	Ross	990160
+Chandler	Chandler	961505
+Phoebe	Phoebe	968622
 # 特定的排序，为了每组的排序，code 必须保持一致
-hell	hell	2
-he'll	hell	1
-shell	shell	2
-she'll	shell	1
-well	well	2
-we'll	well	1
-ill	ill	2
-I'll	ill	1
-ID	id	2
-I'd	id	1
-shed	shed	2
-she'd	shed	1
-net	net	2
-.NET	net	1
-.NET	dotnet
+hell	hell	991680
+he'll	hell	963775
+shell	shell	993695
+she'll	shell	964772
+well	well	991961
+we'll	well	980343
+ill	ill	980494
+I'll	ill	983820
+ID	id	987769
+I'd	id	979456
+shed	shed	987247
+she'd	shed	967153
+net	net	986107
+.NET	net	997834
+.NET	dotnet	997834
 # 带权重的系列
-iPhone	iPhone	999
-iPhone 17	iPhone	4
-iPhone 17 Pro	iPhone	3
-iPhone 17 Pro Max	iPhone	2
-iPhone 17e	iPhone	1
-Mac OS X	MacOSX	999
-Mac OS X Cheetah	MacOSX	1
-Mac OS X Puma	MacOSX	2
-Mac OS X Jaguar	MacOSX	3
-Mac OS X Panther	MacOSX	4
-Mac OS X Tiger	MacOSX	5
-Mac OS X Leopard	MacOSX	6
-Mac OS X Snow Leopard	MacOSX	7
-OS X	OSX	999
-OS X Lion	OSX	1
-OS X Mountain Lion	OSX	2
-OS X Mavericks	OSX	3
-OS X Yosemite	OSX	4
-OS X El Capitan	OSX	5
-macOS	macOS	999
-macOS Sierra	macOS	1
-macOS High Sierra	macOS	2
-macOS Mojave	macOS	3
-macOS Catalina	macOS	4
-macOS Big Sur	macOS	5
-macOS Monterey	macOS	6
-macOS Ventura	macOS	7
-macOS Sonoma	macOS	8
-macOS Sequoia	macOS	9
-macOS Tahoe	macOS	10
-Windows	Windows	999
-Windows 95	Windows	1
-Windows 98	Windows	2
-Windows Me	Windows	3
-Windows 2000	Windows	4
-Windows XP	Windows	5
-Windows XP	WindowsXP
-Windows Vista	Windows	6
-Windows 7	Windows	7
-Windows 8	Windows	8
-Windows 10	Windows	10
-Windows 11	Windows	11
-# Windows 12	Windows	12
+iPhone	iPhone	992315
+iPhone 17	iPhone	951595
+iPhone 17 Pro	iPhone	953031
+iPhone 17 Pro Max	iPhone	953719
+iPhone 17e	iPhone	944639
+Mac OS X	MacOSX	975215
+Mac OS X Cheetah	MacOSX	956109
+Mac OS X Puma	MacOSX	952559
+Mac OS X Jaguar	MacOSX	949598
+Mac OS X Panther	MacOSX	952687
+Mac OS X Tiger	MacOSX	954502
+Mac OS X Leopard	MacOSX	957829
+Mac OS X Snow Leopard	MacOSX	958251
+OS X	OSX	973320
+OS X Lion	OSX	958485
+OS X Mountain Lion	OSX	958296
+OS X Mavericks	OSX	957972
+OS X Yosemite	OSX	958415
+OS X El Capitan	OSX	960577
+macOS	macOS	983726
+macOS Sierra	macOS	959843
+macOS High Sierra	macOS	963249
+macOS Mojave	macOS	961607
+macOS Catalina	macOS	963144
+macOS Big Sur	macOS	961348
+macOS Monterey	macOS	957484
+macOS Ventura	macOS	958776
+macOS Sonoma	macOS	956220
+macOS Sequoia	macOS	958324
+macOS Tahoe	macOS	954177
+macOS Golden Gate	macOS	952769
+Windows	Windows	994321
+Windows 95	Windows	964960
+Windows 98	Windows	965958
+Windows Me	Windows	955336
+Windows 2000	Windows	962217
+Windows XP	Windows	967346
+Windows XP	WindowsXP	967346
+Windows Vista	Windows	958501
+Windows 7	Windows	966723
+Windows 8	Windows	967658
+Windows 10	Windows	967110
+Windows 11	Windows	963940
+Microsoft Defender	MicrosoftDefender	957163
 # +_+
-iPhone 3G	iPhone3G
-iPhone 3GS	iPhone3GS
-iPhone 4	iPhone4
-iPhone 4S	iPhone4S
-iPhone 5	iPhone5
-iPhone 5C	iPhone5C
-iPhone 5S	iPhone5S
-iPhone 6	iPhone6
-iPhone 6 Plus	iPhone6Plus
-iPhone 6S	iPhone6S
-iPhone 6S Plus	iPhone6SPlus
-iPhone SE	iPhoneSE
-iPhone 7	iPhone7
-iPhone 7 Plus	iPhone7Plus
-iPhone 8	iPhone8
-iPhone 8 Plus	iPhone8Plus
-iPhone X	iPhoneX
-iPhone XR	iPhoneXR
-iPhone XS	iPhoneXS
-iPhone XS Max	iPhoneXSMax
-iPhone 11	iPhone11
-iPhone 11 Pro	iPhone11Pro
-iPhone 11 Pro Max	iPhone11ProMax
-iPhone 12	iPhone12
-iPhone 12 Mini	iPhone12Mini
-iPhone 12 Pro	iPhone12Pro
-iPhone 12 Pro Max	iPhone12ProMax
-iPhone 13	iPhone13
-iPhone 13 Mini	iPhone13Mini
-iPhone 13 Pro	iPhone13Pro
-iPhone 13 Pro Max	iPhone13ProMax
-iPhone 14	iPhone14
-iPhone 14 Plus	iPhone14Plus
-iPhone 14 Pro	iPhone14Pro
-iPhone 14 Pro Max	iPhone14ProMax
-iPhone 15	iPhone15
-iPhone 15 Plus	iPhone15Plus
-iPhone 15 Pro	iPhone15Pro
-iPhone 15 Pro Max	iPhone15ProMax
-iPhone 16	iPhone16
-iPhone 16e	iPhone16e
-iPhone 16 Plus	iPhone16Plus
-iPhone 16 Pro	iPhone16Pro
-iPhone 16 Pro Max	iPhone16ProMax
-iPhone 17	iPhone17
-iPhone 17e	iPhone17e
-iPhone Air	iPhoneAir
-iPhone 17 Pro	iPhone17Pro
-iPhone 17 Pro Max	iPhone17ProMax
-Mac OS X Cheetah	MacOSXCheetah
-Mac OS X Puma	MacOSXPuma
-Mac OS X Jaguar	MacOSXJaguar
-Mac OS X Panther	MacOSXPanther
-Mac OS X Tiger	MacOSXTiger
-Mac OS X Leopard	MacOSXLeopard
-Mac OS X Snow Leopard	MacOSXSnowLeopard
-OS X Lion	OSXLion
-OS X Mountain Lion	OSXMountainLion
-OS X Mavericks	OSXMavericks
-OS X Yosemite	OSXYosemite
-OS X El Capitan	OSXElCapitan
-macOS Sierra	macOSSierra
-macOS High Sierra	macOSHighSierra
-macOS Mojave	macOSMojave
-macOS Catalina	macOSCatalina
-macOS Big Sur	macOSBigSur
-macOS Monterey	macOSMonterey
-macOS Ventura	macOSVentura
-macOS Sonoma	macOSSonoma
-macOS Sequoia	macOSSequoia
-macOS Tahoe	macOSTahoe
-Windows 95	Windows95
-Windows 98	Windows98
-Windows Me	WindowsMe
-Windows 2000	Windows2000
-Windows Vista	WindowsVista
-Windows 7	Windows7
-Windows 8	Windows8
-Windows 10	Windows10
-Windows 11	Windows11
+iPhone 3G	iPhone3G	962142
+iPhone 3GS	iPhone3GS	960289
+iPhone 4	iPhone4	961877
+iPhone 4S	iPhone4S	960780
+iPhone 5	iPhone5	961426
+iPhone 5C	iPhone5C	953186
+iPhone 5S	iPhone5S	956823
+iPhone 6	iPhone6	963363
+iPhone 6 Plus	iPhone6Plus	953936
+iPhone 6S	iPhone6S	956547
+iPhone 6S Plus	iPhone6SPlus	953434
+iPhone SE	iPhoneSE	956743
+iPhone 7	iPhone7	961426
+iPhone 7 Plus	iPhone7Plus	956852
+iPhone 8	iPhone8	957293
+iPhone 8 Plus	iPhone8Plus	953019
+iPhone X	iPhoneX	959492
+iPhone XR	iPhoneXR	958037
+iPhone XS	iPhoneXS	958339
+iPhone XS Max	iPhoneXSMax	953672
+iPhone 11	iPhone11	961213
+iPhone 11 Pro	iPhone11Pro	958173
+iPhone 11 Pro Max	iPhone11ProMax	955483
+iPhone 12	iPhone12	962569
+iPhone 12 Mini	iPhone12Mini	951960
+iPhone 12 Pro	iPhone12Pro	958095
+iPhone 12 Pro Max	iPhone12ProMax	955050
+iPhone 13	iPhone13	961213
+iPhone 13 Mini	iPhone13Mini	951364
+iPhone 13 Pro	iPhone13Pro	958262
+iPhone 13 Pro Max	iPhone13ProMax	955716
+iPhone 14	iPhone14	961213
+iPhone 14 Plus	iPhone14Plus	950619
+iPhone 14 Pro	iPhone14Pro	958173
+iPhone 14 Pro Max	iPhone14ProMax	955507
+iPhone 15	iPhone15	961213
+iPhone 15 Plus	iPhone15Plus	950619
+iPhone 15 Pro	iPhone15Pro	958173
+iPhone 15 Pro Max	iPhone15ProMax	955507
+iPhone 16	iPhone16	959278
+iPhone 16e	iPhone16e	945120
+iPhone 16 Plus	iPhone16Plus	950023
+iPhone 16 Pro	iPhone16Pro	956910
+iPhone 16 Pro Max	iPhone16ProMax	955441
+iPhone 17	iPhone17	951595
+iPhone 17e	iPhone17e	944639
+iPhone Air	iPhoneAir	954051
+iPhone 17 Pro	iPhone17Pro	953031
+iPhone 17 Pro Max	iPhone17ProMax	953719
+Mac OS X Cheetah	MacOSXCheetah	956109
+Mac OS X Puma	MacOSXPuma	952559
+Mac OS X Jaguar	MacOSXJaguar	949598
+Mac OS X Panther	MacOSXPanther	952687
+Mac OS X Tiger	MacOSXTiger	954502
+Mac OS X Leopard	MacOSXLeopard	957829
+Mac OS X Snow Leopard	MacOSXSnowLeopard	958251
+OS X Lion	OSXLion	958485
+OS X Mountain Lion	OSXMountainLion	958296
+OS X Mavericks	OSXMavericks	957972
+OS X Yosemite	OSXYosemite	958415
+OS X El Capitan	OSXElCapitan	960577
+macOS Sierra	macOSSierra	959843
+macOS High Sierra	macOSHighSierra	963249
+macOS Mojave	macOSMojave	961607
+macOS Catalina	macOSCatalina	963144
+macOS Big Sur	macOSBigSur	961348
+macOS Monterey	macOSMonterey	957484
+macOS Ventura	macOSVentura	958776
+macOS Sonoma	macOSSonoma	956220
+macOS Sequoia	macOSSequoia	958324
+macOS Tahoe	macOSTahoe	954177
+macOS Golden Gate	macOSGoldenGate	952769
+Windows 95	Windows95	964960
+Windows 98	Windows98	965958
+Windows Me	WindowsMe	955336
+Windows 2000	Windows2000	962217
+Windows Vista	WindowsVista	958501
+Windows 7	Windows7	966723
+Windows 8	Windows8	967658
+Windows 10	Windows10	967110
+Windows 11	Windows11	963940
 # Windows 12	Windows12
-ERC-20	ERC-20
-ERC-721	ERC-721
-ERC-1155	ERC-1155
-High Sierra	HighSierra
-Mojave	Mojave
-Big Sur	BigSur
-Sequoia	Sequoia
-TypeORM	TypeORM
-RPG	RPG
-Role-Playing Game	RPG
-Role-Playing Game	RolePlayingGame
-ADC	ADC
-Attack Damage Carry	ADC
-Attack Damage Carry	AttackDamageCarry
-APC	APC
-Ability Power Carry	APC
-Ability Power Carry	AbilityPowerCarry
-GDP	GDP
-GDP per capita	GDPpercapita
-Gross Domestic Product	GDP
-Gross Domestic Product	GrossDomesticProduct
-Gross Domestic Product per capita	GrossDomesticProductpercapita
-LOL	LOL
-League of Legends	LOL
-League of Legends	LeagueofLegends
-Laugh Out Loudly	LOL
-Laugh Out Loudly	LaughOutLoudly
-SQL Server	SQLServer
-Microsoft SQL Server	SQLServer
-Microsoft SQL Server	MicrosoftSQLServer
-SSH	SSH
-Secure Shell	SSH
-Secure Shell	SecureShell
-ISO	ISO
-International Organization for Standardization	ISO
-ISO 8601	ISO8601
-RFC	RFC
-Request for Comments	RFC
-RFC 3339	RFC3339
-RFCs	RFCs
-IETF	IETF
-Internet Engineering Task Force	IETF
-Pro Max	ProMax
-Aeron	Aeron
-Aeron Chair	AeronChair
-Netscape	Netscape
-WeChat	WeChat
-Dota	Dota
-Superlist	Superlist
-DJ	DJ
-Disc Jockey	DJ
-DLC	DLC
-Downloadable content	DLC
-Downloadable content	Downloadablecontent
-Quora	Quora
-LinkedIn	LinkedIn
-COO	COO
-Chief Operating Officer	COO
-Chief Operating Officer	ChiefOperatingOfficer
-iShot	iShot
-TapTap	TapTap
-HDD	HDD
-Hard disk drive	HDD
-Hard disk drive	Harddiskdrive
-HHD	HHD
-Hybrid drive	HHD
-Hybrid drive	Hybriddrive
-SSD	SSD
-Solid-state drive	SSD
-Solid-state drive	Solid-statedrive
-CPU	CPU
-Central Processing Unit	CPU
-Central Processing Unit	CentralProcessingUnit
-GPU	GPU
-Graphics Processing Unit	GPU
-Graphics Processing Unit	GraphicsProcessingUnit
-MCU	MCU
-ARM	ARM
-Advanced RISC Machine	ARM
-Advanced RISC Machine	AdvancedRISCMachine
-eGPU	eGPU
-One Piece	OnePiece
-CBD	CBD
-CCTV	CCTV
-Closed-Circuit Television	CCTV
-Closed-Circuit Television	Closed-CircuitTelevision
-China Central Television	CCTV
-ColorOS	ColorOS
-China Central Television	ChinaCentralTelevision
-GTA	GTA
-Grand Theft Auto	GTA
-Grand Theft Auto	GrandTheftAuto
-GTAV	GTAV
-Grand Theft Auto V	GTAV
-Grand Theft Auto V	GrandTheftAutoV
-LGBT	LGBT
-GPS	GPS
-ATM	ATM
-automated teller machine	ATM
-automated teller machine	automatedtellermachine
-CentOS	CentOS
-Debian	Debian
-BBC	BBC
-DataGrip	DataGrip
-AlphaGo	AlphaGo
-AlphaFold	AlphaFold
-CS:GO	CS:GO
-Counter-Strike: Global Offensive	CS:GO
-Counter-Strike: Global Offensive	Counter-Strike:GlobalOffensive
-Counter-Strike	Counter-Strike
-Counter-Strike 2	Counter-Strike2
-CS2	CS2
-Counter-Strike 2	CS2
-Tesla	Tesla
-Code Runner	CodeRunner
-AfterShokz Aeropex	AfterShokzAeropex
-AfterShokz	AfterShokz
-Aeropex	Aeropex
-X11	X11
-Xnip	Xnip
-Workspace	Workspace
-AdSense	AdSense
-Authenticator	Authenticator
-DeepMind	DeepMind
-Figma	Figma
-Google	Google
-Google Ads	GoogleAds
-Google AdSense	GoogleAdSense
-Google Analytics	GoogleAnalytics
-Google Authenticator	GoogleAuthenticator
-Google Bard	GoogleBard
-Googlebot	Googlebot
-Google Calendar	GoogleCalendar
-Google Chrome	GoogleChrome
-Google DeepMind	GoogleDeepMind
-Google Docs	GoogleDocs
-Google Drive	GoogleDrive
-Google Earth	GoogleEarth
-Google Fi	GoogleFi
-Google Fi Wireless	GoogleFiWireless
-Google Gemini	GoogleGemini
-Google Gemini Advanced	GoogleGeminiAdvanced
-Google Keep	GoogleKeep
-Google Maps	GoogleMaps
-Google One	GoogleOne
-Google Photos	GooglePhotos
-Google Pixel	GooglePixel
-Google Play	GooglePlay
-Google Play Music	GooglePlayMusic
-Google TV	GoogleTV
-Google Voice	GoogleVoice
-Google Workspace	GoogleWorkspace
-NotebookLM	NotebookLM
-Google NotebookLM	GoogleNotebookLM
-WYSIWYG	WYSIWYG
-What You See Is What You Get	WYSIWYG
-Mark Text	MarkText
-Joplin	Joplin
-SteamOS	SteamOS
-Steam Deck	SteamDeck
-Steam Machine	SteamMachine
-TikTok	TikTok
-IDC	IDC
-International Data Corporation	IDC
-International Data Corporation	InternationalDataCorporation
-Wunderlist	Wunderlist
-VMware	VMware
-Flyme	Flyme
-VMware Fusion	VMwareFusion
-VMware Fusion Player	VMwareFusionPlayer
-VMware Fusion Pro	VMwareFusionPro
-Vanilla	Vanilla
-Ubisoft	Ubisoft
-Twitch	Twitch
-Todoist	Todoist
-TeamViewer	TeamViewer
-Sleep Cycle	SleepCycle
-Sony	Sony
-Nikon	Nikon
-Canon	Canon
-FujiFilm	FujiFilm
-Panasonic	Panasonic
-Ricoh	Ricoh
-Casio	Casio
-CCD	CCD
-Charge-Coupled Device	CCD
-PDF Expert	PDFExpert
-OSCHINA	OSCHINA
-Navicat	Navicat
-Navicat Premium	NavicatPremium
-NameSilo	NameSilo
-Musixmatch	Musixmatch
-G Suite	GSuite
-CloudXNS	CloudXNS
-Bitwarden	Bitwarden
-BitComet	BitComet
-Bitbucket	Bitbucket
-LyricsX	LyricsX
-OneDrive	OneDrive
-Xbox	Xbox
-Xbox One	XboxOne
-Xbox One X	XboxOneX
-Xbox Series	XboxSeries
-Xbox Series S	XboxSeriesS
-CSS	CSS
-Cascading Style Sheets	CSS
-Cascading Style Sheets	CascadingStyleSheets
-OTC	OTC
-IEPL	IEPL
-International Ethernet Private Line	IEPL
-IPLC	IPLC
-International Private Leased Circuit	IPLC
-IntelliJ	IntelliJ
-IntelliJ IDEA	IntelliJIDEA
-IntelliJ IDEA Community	IntelliJIDEACommunity
-IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
-IDEA Community	IDEACommunity
-IDEA Ultimate	IDEAUltimate
-NTR	NTR
-Notion	Notion
-Notion AI	NotionAI
-Touch Bar	TouchBar
-DOM	DOM
-D.VA	D.VA
-IPv4	IPv4
-IPv6	IPv6
-Rick and Morty	RickandMorty
-uTools	uTool
-uTools	uTools
-AirPods	AirPods
-AirPods Pro	AirPodsPro
-AirPods Max	AirPodsMax
-EarPods	EarPods
-CallKit	CallKit
-OSS	OSS
-Object Storage Service	OSS
-Object Storage Service	ObjectStorageService
-OceanBase	OceanBase
-YouTube Music	YouTubeMusic
-Apple Music	AppleMusic
-TED	TED
-DeepL	DeepL
-Homebrew	Homebrew
-VMess	VMess
-Shadowsocks	Shadowsocks
-PC	PC
-iStat	iStat
-ClashX	ClashX
-ClashX Pro	ClashXPro
-Clash for Windows	ClashForWindows
-Clash for Android	ClashForAndroid
-OpenClash	OpenClash
-passwall	passwall
-passwall2	passwall2
-qBittorrent	qBittorrent
-qBittorrent	qBit
-qBittorrent Enhanced Edition	qEE
-qBittorrent Enhanced Edition	qBEE
-qBittorrent Enhanced Edition	qBitEE
-qBittorrent Enhanced Edition	qBittorrentEE
-qBittorrent Enhanced Edition	qBittorrentEnhancedEdition
-YAML	YAML
-YAML Ain't Markup Language	YAML
-TOML	TOML
-Tom's Obvious Minimal Language	TOML
-Hexo	Hexo
-Hugo	Hugo
-Epic Games	EpicGames
-Instagram	IG
-Instagram	INS
-Instagram	Instagram
-Evernote	Evernote
-PDF	PDF
-Portable Document Format	PDF
-Portable Document Format	PortableDocumentFormat
-PDFs	PDFs
-QuickTime Player	QuickTimePlayer
-CSDN	CSDN
-Gitee	Gitee
-Gitea	Gitea
-GitBook	GitBook
-Gboard	Gboard
-Access	Access
-BMW	BMW
-Bayerische Motoren Werke AG	BMW
-BGM	BGM
-Background music	BGM
-Background music	Backgroundmusic
-CEO	CEO
-Chief Executive Officer	CEO
-Chief Executive Officer	ChiefExecutiveOfficer
-CTO	CTO
-Chief Technology Officer	CTO
-Chief Technology Officer	ChiefTechnologyOfficer
-CFO	CFO
-Chief Financial Officer	CFO
-Django	Django
-DBMesh	DBMesh
-Facebook	Facebook
-Firefox	Firefox
-git	git
-Go	Go
-GoLand	GoLand
-Golang	Golang
-IQOS	IQOS
-Intel	Intel
-JSON	JSON
-JetBrains	JetBrains
-KTV	KTV
-Macintosh	Macintosh
-MBP	MBP
-MacBook Pro	MBP
-MBA	MBA
-MacBook Air	MBA
-MBN	MBN
-MacBook Neo	MBN
-MariaDB	MariaDB
-Microsoft Access	Access
-MongoDB	MongoDB
-MySQL	MySQL
-MyISAM	MyISAM
-InnoDB	InnoDB
-Node.js	Node.js
-Pornhub	Pornhub
-Postgres	Postgres
-PowerPoint	PowerPoint
-PPT	PPT
-PowerPoint	PPT
-Microsoft PowerPoint	PPT
-PyCharm	PyCharm
-roguelike	roguelike
-Redis	Redis
-Memcached	Memcached
-RION	RION
-SegmentFault	SegmentFault
-SPA	SPA
-SQL	SQL
-Structured Query Language	SQL
-Structured Query Language	StructuredQueryLanguage
-SQLite	SQLite
-Sourcetree	Sourcetree
-Spiritfarer	Spiritfarer
-TCP/IP	TCP/IP
-Twitter	Twitter
-V2EX	V2EX
-VSCode	VSCode
-Vue	Vue
-Vue.js	Vue.js
-Vite+	Vite+
-Vitest	Vitest
-VuePress	VuePress
-VitePress	VitePress
-Oxc	Oxc
-NestJS	NestJS
-Next.js	Next.js
-Nuxt	Nuxt
-Jekyll	Jekyll
-DuckDB	DuckDB
-Vitess	Vitess
-SurrealDB	SurrealDB
-CockroachDB	CockroachDB
-ClickHouse	ClickHouse
-TiDB	TiDB
-GreptimeDB	GreptimeDB
-TDengine	TDengine
-TiKV	TiKV
-ShardingSphere	ShardingSphere
-Apache ShardingSphere	ApacheShardingSphere
-Dubbo	Dubbo
-Apache Dubbo	ApacheDubbo
-ZooKeeper	ZooKeeper
-Apache ZooKeeper	ApacheZooKeeper
-Apache Tomcat	ApacheTomcat
-Nacos	Nacos
-Swagger	Swagger
-Databend	Databend
-PostHog	PostHog
-Plausible	Plausible
-Plausible Analytics	PlausibleAnalytics
-n8n	n8n
-Supabase	Supabase
-Strapi	Strapi
-AppFlowy	AppFlowy
-Directus	Directus
-FastAPI	FastAPI
-Hono	Hono
-Fastify	Fastify
-Ruby on Rails	RubyonRails
-Symfony	Symfony
-Beego	Beego
-KoaJS	KoaJS
-SolidJS	SolidJS
-Qwik	Qwik
-Ember.js	Ember.js
-Backbone.js	Backbone.js
-Knockout.js	Knockout.js
-DataEase	DataEase
-Netdata	Netdata
-TimescaleDB	TimescaleDB
-InfluxDB	InfluxDB
-Neo4j	Neo4j
-nebula	nebula
-Gogs	Gogs
-GitBucket	GitBucket
-OpenCV	OpenCV
-Keras	Keras
-PaddleOCR	PaddleOCR
-Content Management System	ContentManagementSystem
-CMS	CMS
-Content Management System	CMS
-Godot	Godot
-Godot Engine	GodotEngine
-Three.js	Three.js
-PixiJS	PixiJS
-TextMate	TextMate
-Docusaurus	Docusaurus
-Envoy	Envoy
-TradingView	TradingView
-ECharts	ECharts
-Apache ECharts	ECharts
-Apache ECharts	ApacheECharts
-CPython	CPython
-OpenJDK	OpenJDK
-OCaml	OCaml
-Clojure	Clojure
-CoffeeScript	CoffeeScript
-Starlark	Starlark
-MinIO	MinIO
-Storj	Storj
-Wasmtime	Wasmtime
-AssemblyScript	AssemblyScript
-WasmEdge	WasmEdge
-Playwright	Playwright
-Puppeteer	Puppeteer
-Appium	Appium
-JMeter	JMeter
-Apache JMeter	ApacheJMeter
-Tauri	Tauri
-React Native	ReactNative
-Ionic Framework	IonicFramework
-Apache Kafka	Kafka
-Apache Kafka	ApacheKafka
-RabbitMQ	RabbitMQ
-RocketMQ	RocketMQ
-gRPC	gRPC
-Excalidraw	Excalidraw
-PlantUML	PlantUML
-Meilisearch	Meilisearch
-etcd	etcd
-Shadcn	Shadcn
-Semantic UI	SemanticUI
-Nmap	Nmap
-Ansible	Ansible
-LevelDB	LevelDB
-RocksDB	RocksDB
-webpack	webpack
-Turbopack	Turbopack
-esbuild	esbuild
-Mongoose	Mongoose
-Sequelize	Sequelize
-Arduino	Arduino
-Raspberry Pi	RaspberryPi
-OpenTofu	OpenTofu
-Pulumi	Pulumi
-LM Studio	LMStudio
-LLM	LLM
-Large Language Model	LLM
-Large Language Model	LargeLanguageModel
-NLP	NLP
-Natural Language Processing	NLP
-Dify	Dify
-ComfyUI	ComfyUI
-Cherry Studio	CherryStudio
-Open WebUI	OpenWebUI
-OpenRouter	OpenRouter
-CUDA	CUDA
-CUDA Toolkit	CUDAToolkit
-WebStorm	WebStorm
-Xcode	Xcode
-emoji	emoji
-gakki	gakki
-iMazing	iMazing
-ECMAScript	ECMAScript
-jQuery	jQuery
-JS	JS
-JavaScript	JS
-JavaScript	JavaScript
-JSP	JSP
-JPG	JPG
-Joint Photographic Experts Group	JPG
-JPEG	JPEG
-Joint Photographic Experts Group	JPEG
-PNG	PNG
-Portable Network Graphics	PNG
-GIF	GIF
-Graphics Interchange Format	GIF
-DNS	DNS
-Domain Name System	DNS
-Domain Name System	DomainNameSystem
-RimWorld	RimWorld
-Factorio	Factorio
-Game Boy	GameBoy
-GBA	GBA
-Game Boy Advance	GBA
-Game Boy Advance	GameBoyAdvance
-GBC	GBC
-Game Boy Color	GBC
-Game Boy Color	GameBoyColor
-GCC	GCC
-GNU Compiler Collection	GCC
-GNU Compiler Collection	GNUCompilerCollection
-LLVM	LLVM
-LLDB	LLDB
-Clang	Clang
-CMake	CMake
-uBlacklist	uBlacklist
-AirTag	AirTag
-Apple AirTag	AppleAirTag
-Apple Watch	AppleWatch
-Apple Watch SE	AppleWatchSE
-Apple Watch Ultra	AppleWatchUltra
-AppleCare	AppleCare
-AppleCare+	AppleCare+
-Apple Card	AppleCard
-Apple Books	AppleBooks
-ATI	ATI
-Apple Store	AppleStore
-Apple TV	AppleTV
-Apple TV+	AppleTV+
-Apple TV 4K	AppleTV4K
-Apple Developer	AppleDeveloper
-Apple File System	AppleFileSystem
-Apple ID	AppleID
-Apple News	AppleNews
-Apple News+	AppleNews+
-Apple Pay	ApplePay
-Apple Fitness+	AppleFitness+
-iTunes Store	iTunesStore
-AMD	AMD
-AMDgpu	AMDgpu
-App Store	AppStore
-AirDrop	AirDrop
-Alfred	Alfred
-Amazon	Amazon
-Adobe	Adobe
-Axure	Axure
-Bartender	Bartender
-Better Snap Tool	BetterSnapTool
-Better Touch Tool	BetterTouchTool
-Better Zip	BetterZip
-Brackets	Brackets
-BundleHunt	BundleHunt
-Byword	Byword
-Btitish	Btitish
-Btrfs	Btrfs
-Caffeine	Caffeine
-Calcbot	Calcbot
-Calibre	Calibre
-CarPlay	CarPlay
-CarLife	CarLife
-CarLife+	CarLife+
-HiCar	HiCar
-CDN	CDN
-Content Delivery Network	CDN
-Content Delivery Network	ContentDeliveryNetwork
-PCDN	PCDN
-Peer-to-Peer Content Delivery Network	PCDN
-CheatSheet	CheatSheet
-Chocolatey	Chocolatey
-choco	choco
-WinGet	WinGet
-ChemBioDraw	ChemBioDraw
-Clean My Mac	CleanMyMac
-Clean My Mac X	CleanMyMacX
-CloudApp	CloudApp
-CloudMagic	CloudMagic
-CodeBox	CodeBox
-CodeKit	CodeKit
-Color Schemer	ColorSchemer
-Color Snapper	ColorSnapper
-Control Center	ControlCenter
-Cornerstone	Cornerstone
-Cortana	Cortana
-Curio	Curio
-Current Mac Bundles	CurrentMacBundles
-Daisy Disk	DaisyDisk
-Datagraph	Datagraph
-Day One	DayOne
-Default Folder X	DefaultFolderX
-Developer Preview	DeveloperPreview
-DEVONthink	DEVONthink
-Disk Utility	DiskUtility
-Diumoo	Diumoo
-Dropbox	Dropbox
-Dropzone	Dropzone
-Endnote	Endnote
-Entropy	Entropy
-EPUB	EPUB
-Eureka	Eureka
-ExFAT	ExFAT
-Extended File Allocation Table	ExFAT
-Extended File Allocation Table	ExtendedFileAllocationTable
-Fantastical	Fantastical
-F-Droid	F-Droid
-FileVault	FileVault
-Final Cut Pro	FinalCutPro
-Flickr	Flickr
-Force Touch	ForceTouch
-Forecast	Forecast
-ForkLift	ForkLift
-Frank DeLoupe	FrankDeLoupe
-Geekbench	Geekbench
-Gestimer	Gestimer
-GhostNote	GhostNote
-GhostTile	GhostTile
-Gif Brewery	GifBrewery
-gists	gists
-GitHub	GitHub
-GoagentX	GoagentX
-Graffle	Graffle
-Handoff	Handoff
-Hazel	Hazel
-HomeKit	HomeKit
-HTML	HTML
-HyperText Markup Language	HTML
-HyperText Markup Language	HyperTextMarkupLanguage
-iA Writer	iAWriter
-IBM	IBM
-International Business Machines	IBM
-International Business Machines	InternationalBusinessMachines
-iCloud	iCloud
-iCloud Mail	iCloudMail
-iCloud Drive	iCloudDrive
-iExplorer	iExplorer
-iFFmpeg	iFFmpeg
-IFTTT	IFTTT
-iMac	iMac
-IME	IME
-Input Method Editor	IME
-iMessage	iMessage
-iMore	iMore
-Inboard	Inboard
-Instacast	Instacast
-Instashare	Instashare
-Intensify	Intensify
-IP	IP
-internet protocol	IP
-internet protocol	internetprotocol
-iPack	iPack
-iPad Air	iPadAir
-iPad mini	iPadmini
-iPad Pro	iPadPro
-IPN	IPN
-IPTV	IPTV
-iStat Menus	iStatMenus
-iTerm	iTerm
-iTerm2	iTerm2
-iTunes	iTunes
-iTunes Connect	iTunesConnect
-iTunes Match	iTunesMatch
-iBook	iBook
-Kaleidoscope	Kaleidoscope
-Karabiner	Karabiner
-Keka	Keka
-Keyboard Maestro	KeyboardMaestro
-Keycard	Keycard
-KeyCue	KeyCue
-LaTeXian	LaTeXian
-Launcher	Launcher
-Little Snitch	LittleSnitch
-Live Photos	LivePhotos
-LiveReload	LiveReload
-LockScreen	LockScreen
-Mac App Store	MacAppStore
-Mac Rumors	MacRumors
-MacAppDeals	MacAppDeals
-MacBook	MacBook
-MacBook Air	MacBookAir
-MacBook Pro	MacBookPro
-MacBook Neo	MacBookNeo
-Mac Pro	MacPro
-MacID	MacID
-MacTips	MacTips
-MacUpdate Desktop	MacUpdateDesktop
-Mailbox	Mailbox
-MAMP PRO	MAMPPRO
-Manico	Manico
-Matlab	Matlab
-MarkMyWords	MarkMyWords
-MarsEdit	MarsEdit
-Mathtype	Mathtype
-MIPS	MIPS
-Moke	Moke
-MoneyWiz	MoneyWiz
-Moom	Moom
-MP3	MP3
-MP4	MP4
-MplayerX	MplayerX
-Netflix	Netflix
-Noizio	Noizio
-nvALT	nvALT
-OmmWriter	OmmWriter
-OmniFocus	OmniFocus
-OmniGraffle	OmniGraffle
-OmniOutliner	OmniOutliner
-OmniPlan	OmniPlan
-OneNote	OneNote
-OS	OS
-Operating System	OS
-Operating System	OperatingSystem
-PaintCode	PaintCode
-Parallels Desktop	ParallelsDesktop
-PayPal	PayPal
-PhotoDesk	PhotoDesk
-Picatext	Picatext
-PingWest	PingWest
-Pixelmator	Pixelmator
-Play by Play	PlaybyPlay
-PlistEdit	pliPlistEdit
-PopClip	PopClip
-PowerPack	PowerPack
-Privoxy	Privoxy
-Promotee	Promotee
-Proxifier	Proxifier
-Public Beta	PublicBeta
-Quitter	Quitter
-Quiver	Quiver
-Rdio	Rdio
-Readability	Readability
-Readkit	Readkit
-RescueTime	RescueTime
-Safari View Controller	SafariViewController
-SaneDesk	SaneDesk
-Scrapbook	Scrapbook
-ScreenFloat	ScreenFloat
-ScreenFlow	ScreenFlow
-Scrivener	Scrivener
-SDDM	SDDM
-Simple Desktop Display Manager	SDDM
-SDK	SDK
-Software Development Kit	SDK
-Software Development Kit	SoftwareDevelopmentKit
-Should I Sleep	ShouldISleep
-Simplenote	Simplenote
-Siri	Siri
-Slicy	Slicy
-Snagit	Snagit
-Sparkbox	Sparkbox
-Sparrow	Sparrow
-Speedtest	Speedtest
-Spotify	Spotify
-SSL	SSL
-Secure Sockets Layer	SSL
-StackSocial	StackSocial
-Sublime Text	SublimeText
-TechWeb	TechWeb
+ERC-20	ERC-20	973342
+ERC-721	ERC-721	961974
+ERC-1155	ERC-1155	954440
+High Sierra	HighSierra	951856
+Mojave	Mojave	971048
+Big Sur	BigSur	955555
+Sequoia	Sequoia	972378
+TypeORM	TypeORM	960316
+RPG	RPG	980750
+Role-Playing Game	RPG	962341
+Role-Playing Game	RolePlayingGame	962341
+ADC	ADC	980166
+Attack Damage Carry	ADC	948915
+Attack Damage Carry	AttackDamageCarry	948915
+APC	APC	971356
+Ability Power Carry	APC	948676
+Ability Power Carry	AbilityPowerCarry	948676
+GDP	GDP	978713
+GDP per capita	GDPpercapita	956544
+Gross Domestic Product	GDP	957186
+Gross Domestic Product	GrossDomesticProduct	957186
+Gross Domestic Product per capita	GrossDomesticProductpercapita	953060
+LOL	LOL	978213
+League of Legends	LOL	967970
+League of Legends	LeagueofLegends	967970
+Laugh Out Loudly	LOL	954473
+Laugh Out Loudly	LaughOutLoudly	954473
+SQL Server	SQLServer	972521
+Microsoft SQL Server	SQLServer	964078
+Microsoft SQL Server	MicrosoftSQLServer	964078
+SSH	SSH	977868
+Secure Shell	SSH	964116
+Secure Shell	SecureShell	964116
+ISO	ISO	981214
+International Organization for Standardization	ISO	955587
+ISO 8601	ISO8601	959001
+RFC	RFC	978349
+Request for Comments	RFC	958214
+RFC 3339	RFC3339	964637
+RFCs	RFCs	973409
+IETF	IETF	978475
+Internet Engineering Task Force	IETF	955189
+Pro Max	ProMax	954447
+Aeron	Aeron	980206
+Aeron Chair	AeronChair	948741
+Netscape	Netscape	970890
+WeChat	WeChat	969130
+Dota	Dota	971838
+Superlist	Superlist	954490
+DJ	DJ	977259
+Disc Jockey	DJ	954654
+DLC	DLC	976089
+Downloadable content	DLC	957963
+Downloadable content	Downloadablecontent	957963
+Quora	Quora	975590
+LinkedIn	LinkedIn	987315
+COO	COO	968743
+Chief Operating Officer	COO	957971
+Chief Operating Officer	ChiefOperatingOfficer	957971
+iShot	iShot	964771
+TapTap	TapTap	961161
+HDD	HDD	976081
+Hard disk drive	HDD	961312
+Hard disk drive	Harddiskdrive	961312
+HHD	HHD	966932
+Hybrid drive	HHD	951727
+Hybrid drive	Hybriddrive	951727
+SSD	SSD	973799
+Solid-state drive	SSD	959362
+Solid-state drive	Solid-statedrive	959362
+CPU	CPU	985782
+Central Processing Unit	CPU	968733
+Central Processing Unit	CentralProcessingUnit	968733
+GPU	GPU	983676
+Graphics Processing Unit	GPU	962265
+Graphics Processing Unit	GraphicsProcessingUnit	962265
+MCU	MCU	972144
+ARM	ARM	984693
+Advanced RISC Machine	ARM	952461
+Advanced RISC Machine	AdvancedRISCMachine	952461
+eGPU	eGPU	964190
+One Piece	OnePiece	952425
+CBD	CBD	979139
+CCTV	CCTV	974018
+Closed-Circuit Television	CCTV	951143
+Closed-Circuit Television	Closed-CircuitTelevision	951143
+China Central Television	CCTV	950578
+ColorOS	ColorOS	956086
+China Central Television	ChinaCentralTelevision	950578
+GTA	GTA	975532
+Grand Theft Auto	GTA	956814
+Grand Theft Auto	GrandTheftAuto	956814
+GTAV	GTAV	970512
+Grand Theft Auto V	GTAV	954331
+Grand Theft Auto V	GrandTheftAutoV	954331
+LGBT	LGBT	983474
+GPS	GPS	979324
+ATM	ATM	976736
+automated teller machine	ATM	958863
+automated teller machine	automatedtellermachine	958863
+CentOS	CentOS	964479
+Debian	Debian	978601
+BBC	BBC	979486
+DataGrip	DataGrip	957555
+AlphaGo	AlphaGo	966530
+AlphaFold	AlphaFold	967041
+CS:GO	CS:GO	970743
+Counter-Strike: Global Offensive	CS:GO	953772
+Counter-Strike: Global Offensive	Counter-Strike:GlobalOffensive	953772
+Counter-Strike	Counter-Strike	955020
+Counter-Strike 2	Counter-Strike2	949675
+CS2	CS2	974913
+Counter-Strike 2	CS2	949675
+Tesla	Tesla	989630
+Code Runner	CodeRunner	957814
+AfterShokz Aeropex	AfterShokzAeropex	946613
+AfterShokz	AfterShokz	947493
+Aeropex	Aeropex	938551
+X11	X11	967683
+Xnip	Xnip	965397
+Workspace	Workspace	991288
+AdSense	AdSense	959948
+Authenticator	Authenticator	967636
+DeepMind	DeepMind	961537
+Figma	Figma	976590
+Google	Google	995669
+Google Ads	GoogleAds	970930
+Google AdSense	GoogleAdSense	963267
+Google Analytics	GoogleAnalytics	973084
+Google Authenticator	GoogleAuthenticator	960156
+Google Bard	GoogleBard	959988
+Googlebot	Googlebot	957558
+Google Calendar	GoogleCalendar	960211
+Google Chrome	GoogleChrome	961575
+Google DeepMind	GoogleDeepMind	961961
+Google Docs	GoogleDocs	963191
+Google Drive	GoogleDrive	958611
+Google Earth	GoogleEarth	957398
+Google Fi	GoogleFi	956774
+Google Fi Wireless	GoogleFiWireless	949198
+Google Gemini	GoogleGemini	957272
+Google Gemini Advanced	GoogleGeminiAdvanced	951028
+Google Keep	GoogleKeep	954774
+Google Maps	GoogleMaps	964914
+Google One	GoogleOne	955022
+Google Photos	GooglePhotos	956382
+Google Pixel	GooglePixel	957446
+Google Play	GooglePlay	956634
+Google Play Music	GooglePlayMusic	950446
+Google TV	GoogleTV	955589
+Google Voice	GoogleVoice	956557
+Google Workspace	GoogleWorkspace	957587
+NotebookLM	NotebookLM	953726
+Google NotebookLM	GoogleNotebookLM	950137
+WYSIWYG	WYSIWYG	975181
+What You See Is What You Get	WYSIWYG	946592
+Mark Text	MarkText	952024
+Joplin	Joplin	963183
+SteamOS	SteamOS	961765
+Steam Deck	SteamDeck	954124
+Steam Machine	SteamMachine	955257
+TikTok	TikTok	974965
+IDC	IDC	973898
+International Data Corporation	IDC	951792
+International Data Corporation	InternationalDataCorporation	951792
+Wunderlist	Wunderlist	952745
+VMware	VMware	977183
+Flyme	Flyme	967976
+VMware Fusion	VMwareFusion	954168
+VMware Fusion Player	VMwareFusionPlayer	949077
+VMware Fusion Pro	VMwareFusionPro	951353
+Vanilla	Vanilla	977582
+Ubisoft	Ubisoft	963088
+Twitch	Twitch	969404
+Todoist	Todoist	966585
+TeamViewer	TeamViewer	955464
+Sleep Cycle	SleepCycle	958932
+Sony	Sony	992108
+Nikon	Nikon	978154
+Canon	Canon	989587
+FujiFilm	FujiFilm	953516
+Panasonic	Panasonic	964478
+Ricoh	Ricoh	965442
+Casio	Casio	973430
+CCD	CCD	976148
+Charge-Coupled Device	CCD	956118
+PDF Expert	PDFExpert	958943
+OSCHINA	OSCHINA	957517
+Navicat	Navicat	965036
+Navicat Premium	NavicatPremium	957107
+NameSilo	NameSilo	955753
+Musixmatch	Musixmatch	952334
+G Suite	GSuite	960968
+CloudXNS	CloudXNS	948934
+Bitwarden	Bitwarden	964225
+BitComet	BitComet	962594
+Bitbucket	Bitbucket	964559
+LyricsX	LyricsX	957453
+OneDrive	OneDrive	953326
+Xbox	Xbox	970360
+Xbox One	XboxOne	958355
+Xbox One X	XboxOneX	950513
+Xbox Series	XboxSeries	952979
+Xbox Series S	XboxSeriesS	949997
+CSS	CSS	983929
+Cascading Style Sheets	CSS	961309
+Cascading Style Sheets	CascadingStyleSheets	961309
+OTC	OTC	978308
+IEPL	IEPL	964336
+International Ethernet Private Line	IEPL	950283
+IPLC	IPLC	964551
+International Private Leased Circuit	IPLC	944997
+IntelliJ	IntelliJ	968218
+IntelliJ IDEA	IntelliJIDEA	961472
+IntelliJ IDEA Community	IntelliJIDEACommunity	954374
+IntelliJ IDEA Ultimate	IntelliJIDEAUltimate	954237
+IDEA Community	IDEACommunity	947590
+IDEA Ultimate	IDEAUltimate	952609
+NTR	NTR	973065
+Notion	Notion	971522
+Notion AI	NotionAI	945826
+Touch Bar	TouchBar	955003
+DOM	DOM	985285
+D.VA	D.VA	968118
+IPv4	IPv4	980894
+IPv6	IPv6	980894
+Rick and Morty	RickandMorty	962593
+uTools	uTool	959259
+uTools	uTools	959259
+AirPods	AirPods	965148
+AirPods Pro	AirPodsPro	953464
+AirPods Max	AirPodsMax	951557
+EarPods	EarPods	959740
+CallKit	CallKit	954587
+OSS	OSS	977611
+Object Storage Service	OSS	953327
+Object Storage Service	ObjectStorageService	953327
+OceanBase	OceanBase	962300
+YouTube Music	YouTubeMusic	956339
+Apple Music	AppleMusic	955039
+TED	TED	977390
+DeepL	DeepL	964176
+Homebrew	Homebrew	957636
+VMess	VMess	962996
+Shadowsocks	Shadowsocks	953476
+PC	PC	984021
+iStat	iStat	963516
+ClashX	ClashX	955440
+Clash Verge	ClashVerge	950663
+ClashX Pro	ClashXPro	951584
+Clash for Android	ClashForAndroid	950495
+OpenClash	OpenClash	953784
+passwall	passwall	952641
+passwall2	passwall2	949653
+qBittorrent	qBittorrent	955365
+qBittorrent	qBit	955365
+qBittorrent Enhanced Edition	qEE	950125
+qBittorrent Enhanced Edition	qBEE	950125
+qBittorrent Enhanced Edition	qBitEE	950125
+qBittorrent Enhanced Edition	qBittorrentEE	950125
+qBittorrent Enhanced Edition	qBittorrentEnhancedEdition	950125
+YAML	YAML	967919
+YAML Ain't Markup Language	YAML	960352
+TOML	TOML	965630
+Tom's Obvious Minimal Language	TOML	955702
+Hexo	Hexo	965540
+Hugo	Hugo	979556
+Epic Games	EpicGames	950814
+Instagram	IG	989455
+Instagram	INS	989455
+Instagram	Instagram	989455
+Evernote	Evernote	962813
+PDF	PDF	985371
+Portable Document Format	PDF	957752
+Portable Document Format	PortableDocumentFormat	957752
+PDFs	PDFs	971808
+QuickTime Player	QuickTimePlayer	950238
+CSDN	CSDN	983383
+Gitee	Gitee	970250
+Gitea	Gitea	970912
+GitBook	GitBook	959706
+Gboard	Gboard	957534
+Access	Access	995809
+BMW	BMW	977600
+Bayerische Motoren Werke AG	BMW	953189
+BGM	BGM	976333
+Background music	BGM	971796
+Background music	Backgroundmusic	971796
+CEO	CEO	977902
+Chief Executive Officer	CEO	961297
+Chief Executive Officer	ChiefExecutiveOfficer	961297
+CTO	CTO	972521
+Chief Technology Officer	CTO	948498
+Chief Technology Officer	ChiefTechnologyOfficer	948498
+CFO	CFO	973444
+Chief Financial Officer	CFO	959676
+Django	Django	976380
+DBMesh	DBMesh	958876
+Facebook	Facebook	992643
+Firefox	Firefox	990877
+git	git	987552
+Go	Go	979656
+GoLand	GoLand	965728
+Golang	Golang	979986
+IQOS	IQOS	966161
+Intel	Intel	991733
+JSON	JSON	998187
+JetBrains	JetBrains	964858
+KTV	KTV	978638
+Macintosh	Macintosh	976859
+MBP	MBP	970266
+MacBook Pro	MBP	956317
+MBA	MBA	975987
+MacBook Air	MBA	955822
+MBN	MBN	969177
+MacBook Neo	MBN	942310
+MariaDB	MariaDB	982052
+Microsoft Access	Access	964799
+MongoDB	MongoDB	981480
+MySQL	MySQL	993306
+MyISAM	MyISAM	965055
+InnoDB	InnoDB	956129
+Node.js	Node.js	984213
+Pornhub	Pornhub	962688
+Postgres	Postgres	962505
+PowerPoint	PowerPoint	970020
+PPT	PPT	982074
+PowerPoint	PPT	970020
+Microsoft PowerPoint	PPT	963393
+PyCharm	PyCharm	972176
+roguelike	roguelike	960280
+Redis	Redis	993672
+Memcached	Memcached	972985
+RION	RION	966577
+SegmentFault	SegmentFault	957594
+SPA	SPA	979139
+SQL	SQL	990780
+Structured Query Language	SQL	963982
+Structured Query Language	StructuredQueryLanguage	963982
+SQLite	SQLite	993688
+Sourcetree	Sourcetree	961278
+Spiritfarer	Spiritfarer	953247
+TCP/IP	TCP/IP	980346
+Twitter	Twitter	994060
+V2EX	V2EX	965930
+VS Code	VSCode	970643
+Vue	Vue	981279
+Vue.js	Vue.js	979743
+Vite+	Vite+	962858
+Vitest	Vitest	960920
+VuePress	VuePress	958003
+VitePress	VitePress	955486
+Oxc	Oxc	973943
+NestJS	NestJS	957461
+Next.js	Next.js	957336
+Nuxt	Nuxt	977242
+Jekyll	Jekyll	981023
+DuckDB	DuckDB	958249
+Vitess	Vitess	954436
+SurrealDB	SurrealDB	954364
+CockroachDB	CockroachDB	956080
+ClickHouse	ClickHouse	956335
+TiDB	TiDB	971017
+GreptimeDB	GreptimeDB	960497
+TDengine	TDengine	954774
+TiKV	TiKV	970761
+ShardingSphere	ShardingSphere	951360
+Apache ShardingSphere	ApacheShardingSphere	953244
+Dubbo	Dubbo	970091
+Apache Dubbo	ApacheDubbo	958668
+ZooKeeper	ZooKeeper	956157
+Apache ZooKeeper	ApacheZooKeeper	960882
+Apache Tomcat	ApacheTomcat	961988
+Nacos	Nacos	977284
+Swagger	Swagger	989008
+Databend	Databend	955782
+PostHog	PostHog	954003
+Plausible	Plausible	959826
+Plausible Analytics	PlausibleAnalytics	950616
+n8n	n8n	963369
+Supabase	Supabase	965478
+Strapi	Strapi	956403
+AppFlowy	AppFlowy	958947
+Directus	Directus	957455
+FastAPI	FastAPI	964488
+Hono	Hono	966265
+Fastify	Fastify	963947
+Ruby on Rails	RubyonRails	965382
+Symfony	Symfony	995479
+Beego	Beego	965631
+KoaJS	KoaJS	971149
+SolidJS	SolidJS	960801
+Qwik	Qwik	973158
+Ember.js	Ember.js	957721
+Backbone.js	Backbone.js	956694
+Knockout.js	Knockout.js	957818
+DataEase	DataEase	958234
+Netdata	Netdata	958207
+TimescaleDB	TimescaleDB	955670
+InfluxDB	InfluxDB	959463
+Neo4j	Neo4j	979058
+nebula	nebula	975861
+Gogs	Gogs	965081
+GitBucket	GitBucket	956210
+OpenCV	OpenCV	964896
+Keras	Keras	980462
+PaddleOCR	PaddleOCR	960528
+Content Management System	ContentManagementSystem	967160
+CMS	CMS	979551
+Content Management System	CMS	967160
+Godot	Godot	965185
+Godot Engine	GodotEngine	957947
+Three.js	Three.js	959864
+PixiJS	PixiJS	964757
+TextMate	TextMate	966978
+Docusaurus	Docusaurus	965223
+Envoy	Envoy	982429
+TradingView	TradingView	954471
+ECharts	ECharts	969448
+Apache ECharts	ECharts	956054
+Apache ECharts	ApacheECharts	956054
+CPython	CPython	965140
+OpenJDK	OpenJDK	966845
+OCaml	OCaml	980970
+Clojure	Clojure	968125
+CoffeeScript	CoffeeScript	963233
+Starlark	Starlark	958309
+MinIO	MinIO	963974
+Storj	Storj	962117
+Wasmtime	Wasmtime	957361
+AssemblyScript	AssemblyScript	957390
+WasmEdge	WasmEdge	952414
+Playwright	Playwright	976034
+Puppeteer	Puppeteer	961229
+Appium	Appium	960722
+JMeter	JMeter	969116
+Apache JMeter	ApacheJMeter	960032
+Tauri	Tauri	971172
+React Native	ReactNative	969990
+Ionic Framework	IonicFramework	961867
+Apache Kafka	Kafka	966463
+Apache Kafka	ApacheKafka	966463
+RabbitMQ	RabbitMQ	973842
+RocketMQ	RocketMQ	972928
+gRPC	gRPC	964793
+Excalidraw	Excalidraw	957762
+PlantUML	PlantUML	959844
+Meilisearch	Meilisearch	952063
+etcd	etcd	972825
+Shadcn	Shadcn	966172
+Semantic UI	SemanticUI	964519
+Nmap	Nmap	974004
+Ansible	Ansible	980902
+LevelDB	LevelDB	958251
+RocksDB	RocksDB	963089
+webpack	webpack	992972
+Turbopack	Turbopack	949248
+esbuild	esbuild	955053
+Mongoose	Mongoose	959015
+Sequelize	Sequelize	951355
+Arduino	Arduino	992696
+Raspberry Pi	RaspberryPi	959808
+OpenTofu	OpenTofu	957998
+Pulumi	Pulumi	969169
+LM Studio	LMStudio	958390
+LLM	LLM	973461
+Large Language Model	LLM	959182
+Large Language Model	LargeLanguageModel	959182
+NLP	NLP	981123
+Natural Language Processing	NLP	961451
+Dify	Dify	967268
+ComfyUI	ComfyUI	960755
+Cherry Studio	CherryStudio	946044
+Open WebUI	OpenWebUI	951668
+OpenRouter	OpenRouter	952588
+CUDA	CUDA	999393
+CUDA Toolkit	CUDAToolkit	961673
+WebStorm	WebStorm	958685
+Xcode	Xcode	974681
+emoji	emoji	995289
+gakki	gakki	964249
+iMazing	iMazing	958587
+ECMAScript	ECMAScript	970158
+jQuery	jQuery	995658
+JS	JS	980950
+JavaScript	JS	993610
+JavaScript	JavaScript	993610
+JSP	JSP	978826
+JPG	JPG	976464
+Joint Photographic Experts Group	JPG	953347
+JPEG	JPEG	989164
+Joint Photographic Experts Group	JPEG	953347
+PNG	PNG	980171
+Portable Network Graphics	PNG	963405
+GIF	GIF	979492
+Graphics Interchange Format	GIF	955971
+DNS	DNS	979737
+Domain Name System	DNS	963629
+Domain Name System	DomainNameSystem	963629
+RimWorld	RimWorld	956803
+Factorio	Factorio	961080
+Game Boy	GameBoy	966029
+GBA	GBA	965087
+Game Boy Advance	GBA	963107
+Game Boy Advance	GameBoyAdvance	963107
+GBC	GBC	974437
+Game Boy Color	GBC	959129
+Game Boy Color	GameBoyColor	959129
+GCC	GCC	983099
+GNU Compiler Collection	GCC	966811
+GNU Compiler Collection	GNUCompilerCollection	966811
+LLVM	LLVM	986838
+LLDB	LLDB	970525
+Clang	Clang	977804
+CMake	CMake	972822
+uBlacklist	uBlacklist	950261
+AirTag	AirTag	959670
+Apple AirTag	AppleAirTag	954018
+Apple Watch	AppleWatch	958808
+Apple Watch SE	AppleWatchSE	951866
+Apple Watch Ultra	AppleWatchUltra	952824
+AppleCare	AppleCare	957399
+AppleCare+	AppleCare+	954403
+Apple Card	AppleCard	959576
+Apple Books	AppleBooks	957536
+ATI	ATI	969861
+Apple Store	AppleStore	955494
+Apple TV	AppleTV	953928
+Apple TV+	AppleTV+	954595
+Apple TV 4K	AppleTV4K	956091
+Apple Developer	AppleDeveloper	962262
+Apple File System	AppleFileSystem	957488
+Apple ID	AppleID	954917
+Apple News	AppleNews	955639
+Apple News+	AppleNews+	949707
+Apple Pay	ApplePay	958206
+Apple Fitness+	AppleFitness+	954859
+iTunes Store	iTunesStore	963297
+AMD	AMD	984000
+AMDgpu	AMDgpu	962657
+App Store	AppStore	958186
+AirDrop	AirDrop	960139
+Alfred	Alfred	971643
+Amazon	Amazon	995127
+Adobe	Adobe	991806
+Axure	Axure	965482
+Bartender	Bartender	954595
+Better Snap Tool	BetterSnapTool	947621
+Better Touch Tool	BetterTouchTool	955810
+Better Zip	BetterZip	959969
+Brackets	Brackets	971684
+BundleHunt	BundleHunt	956355
+Byword	Byword	956287
+Btitish	Btitish	958239
+Btrfs	Btrfs	972062
+Caffeine	Caffeine	966992
+Calcbot	Calcbot	955581
+Calibre	Calibre	976625
+CarPlay	CarPlay	956319
+CarLife	CarLife	957119
+CarLife+	CarLife+	952662
+HiCar	HiCar	963842
+CDN	CDN	972934
+Content Delivery Network	CDN	962422
+Content Delivery Network	ContentDeliveryNetwork	962422
+PCDN	PCDN	968521
+Peer-to-Peer Content Delivery Network	PCDN	948148
+CheatSheet	CheatSheet	960950
+Chocolatey	Chocolatey	950680
+choco	choco	963551
+WinGet	WinGet	960025
+ChemBioDraw	ChemBioDraw	948199
+Clean My Mac	CleanMyMac	953087
+Clean My Mac X	CleanMyMacX	953503
+CloudApp	CloudApp	949930
+CloudMagic	CloudMagic	950710
+CodeBox	CodeBox	963094
+CodeKit	CodeKit	959880
+Color Schemer	ColorSchemer	953285
+Color Snapper	ColorSnapper	949437
+Control Center	ControlCenter	958623
+Cornerstone	Cornerstone	971495
+Cortana	Cortana	966125
+Curio	Curio	965579
+Current Mac Bundles	CurrentMacBundles	953745
+Daisy Disk	DaisyDisk	953237
+Datagraph	Datagraph	957413
+Day One	DayOne	957657
+Default Folder X	DefaultFolderX	953515
+Developer Preview	DeveloperPreview	959796
+DEVONthink	DEVONthink	955404
+Disk Utility	DiskUtility	960406
+Diumoo	Diumoo	955611
+Dropbox	Dropbox	966056
+Dropzone	Dropzone	960996
+Endnote	Endnote	965387
+Entropy	Entropy	989992
+EPUB	EPUB	978519
+Eureka	Eureka	979647
+ExFAT	ExFAT	965447
+Extended File Allocation Table	ExFAT	958365
+Extended File Allocation Table	ExtendedFileAllocationTable	958365
+Fantastical	Fantastical	959679
+F-Droid	F-Droid	962831
+FileVault	FileVault	958329
+Final Cut Pro	FinalCutPro	962727
+Flickr	Flickr	972046
+Force Touch	ForceTouch	953995
+Forecast	Forecast	988435
+ForkLift	ForkLift	956350
+Frank DeLoupe	FrankDeLoupe	957419
+Geekbench	Geekbench	958050
+Gestimer	Gestimer	949830
+GhostNote	GhostNote	954717
+GhostTile	GhostTile	955900
+Gif Brewery	GifBrewery	950132
+gists	gists	963592
+GitHub	GitHub	998553
+GoagentX	GoagentX	949443
+Graffle	Graffle	946855
+Handoff	Handoff	964165
+Hazel	Hazel	978643
+HomeKit	HomeKit	956185
+HTML	HTML	999995
+HyperText Markup Language	HTML	967331
+HyperText Markup Language	HyperTextMarkupLanguage	967331
+iA Writer	iAWriter	954660
+IBM	IBM	984010
+International Business Machines	IBM	955703
+International Business Machines	InternationalBusinessMachines	955703
+iCloud	iCloud	966267
+iCloud Mail	iCloudMail	945327
+iCloud Drive	iCloudDrive	950152
+iExplorer	iExplorer	963929
+iFFmpeg	iFFmpeg	953269
+IFTTT	IFTTT	978286
+iMac	iMac	970094
+IME	IME	988201
+Input Method Editor	IME	953673
+iMessage	iMessage	958953
+iMore	iMore	963039
+Inboard	Inboard	952803
+Instacast	Instacast	947292
+Instashare	Instashare	946978
+Intensify	Intensify	967630
+IP	IP	983536
+internet protocol	IP	958463
+internet protocol	internetprotocol	958463
+iPack	iPack	966332
+iPad Air	iPadAir	966023
+iPad mini	iPadmini	964030
+iPad Pro	iPadPro	966379
+IPN	IPN	966713
+IPTV	IPTV	971015
+iStat Menus	iStatMenus	957133
+iTerm	iTerm	969627
+iTerm2	iTerm2	969827
+iTunes	iTunes	982313
+iTunes Connect	iTunesConnect	961621
+iTunes Match	iTunesMatch	956797
+iBook	iBook	969846
+Kaleidoscope	Kaleidoscope	956587
+Karabiner	Karabiner	957249
+Keka	Keka	968134
+Keyboard Maestro	KeyboardMaestro	959167
+Keycard	Keycard	954395
+KeyCue	KeyCue	957788
+LaTeXian	LaTeXian	958616
+Launcher	Launcher	988310
+Little Snitch	LittleSnitch	951760
+Live Photos	LivePhotos	951410
+LiveReload	LiveReload	960771
+LockScreen	LockScreen	951977
+Mac App Store	MacAppStore	960232
+Mac Rumors	MacRumors	960448
+MacAppDeals	MacAppDeals	946219
+MacBook	MacBook	961011
+MacBook Air	MacBookAir	955822
+MacBook Pro	MacBookPro	956317
+MacBook Neo	MacBookNeo	942310
+Mac Pro	MacPro	959453
+MacID	MacID	966318
+MacTips	MacTips	963161
+MacUpdate Desktop	MacUpdateDesktop	946973
+Mailbox	Mailbox	978553
+MAMP PRO	MAMPPRO	950723
+Manico	Manico	954233
+Matlab	Matlab	978967
+MarkMyWords	MarkMyWords	951838
+MarsEdit	MarsEdit	956306
+Mathtype	Mathtype	959814
+MIPS	MIPS	981574
+Moke	Moke	965978
+MoneyWiz	MoneyWiz	949999
+Moom	Moom	964690
+MP3	MP3	976302
+MP4	MP4	971859
+MplayerX	MplayerX	951411
+Netflix	Netflix	989914
+Noizio	Noizio	961252
+nvALT	nvALT	968136
+OmmWriter	OmmWriter	951963
+OmniFocus	OmniFocus	955580
+OmniGraffle	OmniGraffle	957615
+OmniOutliner	OmniOutliner	959700
+OmniPlan	OmniPlan	951441
+OneNote	OneNote	954574
+OS	OS	985390
+Operating System	OS	967546
+Operating System	OperatingSystem	967546
+PaintCode	PaintCode	958343
+Parallels Desktop	ParallelsDesktop	951422
+PayPal	PayPal	967370
+PhotoDesk	PhotoDesk	952203
+Picatext	Picatext	950812
+PingWest	PingWest	954093
+Pixelmator	Pixelmator	967348
+Play by Play	PlaybyPlay	956315
+PlistEdit	pliPlistEdit	950582
+PopClip	PopClip	954364
+PowerPack	PowerPack	953939
+Privoxy	Privoxy	960864
+Promotee	Promotee	952460
+Proxifier	Proxifier	952042
+Public Beta	PublicBeta	951341
+Quitter	Quitter	957085
+Quiver	Quiver	958358
+Rdio	Rdio	965405
+Readability	Readability	965041
+Readkit	Readkit	952479
+RescueTime	RescueTime	955904
+Safari View Controller	SafariViewController	952761
+SaneDesk	SaneDesk	960209
+Scrapbook	Scrapbook	957700
+ScreenFloat	ScreenFloat	948095
+ScreenFlow	ScreenFlow	955918
+Scrivener	Scrivener	958882
+SDDM	SDDM	965212
+Simple Desktop Display Manager	SDDM	948208
+SDK	SDK	981956
+Software Development Kit	SDK	955894
+Software Development Kit	SoftwareDevelopmentKit	955894
+Should I Sleep	ShouldISleep	944700
+Simplenote	Simplenote	960077
+Siri	Siri	967519
+Siri AI	SiriAI	953764
+Slicy	Slicy	964931
+Snagit	Snagit	965175
+Sparkbox	Sparkbox	954377
+Sparrow	Sparrow	963498
+Speedtest	Speedtest	955382
+Spotify	Spotify	963259
+SSL	SSL	981280
+Secure Sockets Layer	SSL	955472
+StackSocial	StackSocial	951097
+Sublime Text	SublimeText	955909
+TechWeb	TechWeb	958188
 # Terminal	Terminal
-TestFlight	TestFlight
-Texshop	Texshop
-Textastic	Textastic
-TextExpander	TextExpander
-TextWrangler	TextWrangler
-The Unarchiver	TheUnarchiver
-Time Capsule	TimeCapsule
-TinkerTool	TinkerTool
-Touch ID	TouchID
-Trello	Trello
-Tumblr	Tumblr
-tvOS	tvOS
-Tweetbot	Tweetbot
-Typora	Typora
-Uber	Uber
-uBlock	uBlock
-uBlock Origin	uBlockOrigin
-uBlock Origin Lite	uBlockOriginLite
-Ulysses	Ulysses
-USB	USB
-Universal Serial Bus	USB
-Universal Serial Bus	UniversalSerialBus
-Versions	Versions
-VPN	VPN
-virtual private network	VPN
-watchOS	watchOS
-Wi-Fi	Wi-Fi
+TestFlight	TestFlight	955705
+Texshop	Texshop	963360
+Textastic	Textastic	954662
+TextExpander	TextExpander	956018
+TextWrangler	TextWrangler	959154
+The Unarchiver	TheUnarchiver	953800
+Time Capsule	TimeCapsule	955225
+TinkerTool	TinkerTool	959990
+Touch ID	TouchID	956878
+Trello	Trello	972181
+Tumblr	Tumblr	989724
+tvOS	tvOS	968739
+Tweetbot	Tweetbot	956272
+Typora	Typora	963033
+Uber	Uber	993703
+uBlock	uBlock	961668
+uBlock Origin	uBlockOrigin	957395
+uBlock Origin Lite	uBlockOriginLite	951866
+Ulysses	Ulysses	966459
+USB	USB	981666
+Universal Serial Bus	USB	952957
+Universal Serial Bus	UniversalSerialBus	952957
+Versions	Versions	991484
+VPN	VPN	977558
+virtual private network	VPN	966379
+watchOS	watchOS	960046
+Wi-Fi	Wi-Fi	981689
 # WiFi	WiFi
-Widget	Widget
-WiFi Explorer	WiFiExplorer
-WiFi Scanner	WiFiScanner
-Window Tidy	WindowTidy
-Windows RT	WindowsRT
-Windows NT	WindowsNT
-Windows Server	WindowsServer
-Windows Mobile	WindowsMobile
-Windows Phone	WindowsPhone
-Workflow	Workflow
-WorkFlowy	WorkFlowy
-WWDC	WWDC
-Apple Worldwide Developers Conference	WWDC
-Xee	Xee
-Xmind	Xmind
-xScope	xScope
-XtraFinder	XtraFinder
-YouTube	YouTube
-YouTuber	YouTuber
-ZEALER	ZEALER
-Rosetta	Rosetta
-Face ID	FaceID
-URL	URL
-Uniform Resource Locator	URL
-URLs	URLs
-URI	URI
-Uniform Resource Identifier	URI
-HTTP	HTTP
-Hypertext Transfer Protocol	HTTP
-Hypertext Transfer Protocol	HypertextTransferProtocol
-HTTPS	HTTPS
-Hypertext Transfer Protocol Secure	HTTPS
-Hypertext Transfer Protocol Secure	HypertextTransferProtocolSecure
-HandBrake	HandBrake
-Logi Options	LogiOptions
-Logi Options+	LogiOptions+
-Downie	Downie
-MindNode	MindNode
-Permute	Permute
-Proxyman	Proxyman
-TablePlus	TablePlus
-wget	wget
-yt-dlp	yt-dlp
-Blockchain	Blockchain
-BTC	BTC
-Bitcoin	BTC
-Bitcoin	Bitcoin
-ETH	ETH
-Ethereum	ETH
-Ethereum	Ethereum
-Monero	Monero
-Litecoin	Litecoin
-Aptos	Aptos
-Dogecoin	Dogecoin
-Ethena	Ethena
-Worldcoin	Worldcoin
-Bittensor	Bittensor
-Smart Contract	SmartContract
-CoinGecko	CoinGecko
-CoinMarketCap	CoinMarketCap
-CoinGlass	CoinGlass
-CoinDesk	CoinDesk
-CoinCheckup	CoinCheckup
-CoinCodex	CoinCodex
-Coinranking	Coinranking
-DefiLlama	DefiLlama
-Etherscan	Etherscan
-BscScan	BscScan
-Solscan	Solscan
-PolygonScan	PolygonScan
-Glassnode	Glassnode
-PANews	PANews
-Messari	Messari
-Chainalysis	Chainalysis
-CryptoQuant	CryptoQuant
-TokenInsight	TokenInsight
-Trust Wallet	TrustWallet
-imToken	imToken
-MakerDAO	MakerDAO
-Magic Eden	MagicEden
-Substack	Substack
-GameFi	GameFi
-MagSafe	MagSafe
-Magic UI	MagicUI
-HDMI	HDMI
-High Definition Multimedia Interface	HDMI
-High Definition Multimedia Interface	HighDefinitionMultimediaInterface
-NSFW	NSFW
-Not Safe For Work	NSFW
-Not Suitable For Work	NSFW
-Not Safe For Work	NotSafeForWork
-Not Suitable For Work	NotSuitableForWork
-Termius	Termius
-Jinja	Jinja
-NetSetMan	NetSetMan
-Cinity	Cinity
-UTC	UTC
-Coordinated Universal Time	UTC
-Coordinated Universal Time	CoordinatedUniversalTime
-GMT	GMT
-Greenwich Mean Time	GMT
-Greenwich Mean Time	GreenwichMeanTime
-GoDaddy	GoDaddy
-SQLAlchemy	SQLAlchemy
+Widget	Widget	995809
+WiFi Explorer	WiFiExplorer	946096
+WiFi Scanner	WiFiScanner	948039
+Window Tidy	WindowTidy	950570
+Windows RT	WindowsRT	957152
+Windows NT	WindowsNT	966222
+Windows Server	WindowsServer	967376
+Windows Mobile	WindowsMobile	956104
+Windows Phone	WindowsPhone	958400
+Workflow	Workflow	988509
+WorkFlowy	WorkFlowy	952359
+WWDC	WWDC	976962
+Apple Worldwide Developers Conference	WWDC	959230
+Xee	Xee	968747
+Xmind	Xmind	970685
+xScope	xScope	956490
+XtraFinder	XtraFinder	952499
+YouTube	YouTube	992638
+YouTuber	YouTuber	960611
+ZEALER	ZEALER	961243
+Rosetta	Rosetta	985442
+Face ID	FaceID	956291
+URL	URL	988224
+Uniform Resource Locator	URL	964035
+URLs	URLs	977630
+URI	URI	982275
+Uniform Resource Identifier	URI	961793
+HTTP	HTTP	992526
+Hypertext Transfer Protocol	HTTP	957577
+Hypertext Transfer Protocol	HypertextTransferProtocol	957577
+HTTPS	HTTPS	989637
+Hypertext Transfer Protocol Secure	HTTPS	953561
+Hypertext Transfer Protocol Secure	HypertextTransferProtocolSecure	953561
+HandBrake	HandBrake	960763
+Logi Options	LogiOptions	946942
+Logi Options+	LogiOptions+	945132
+Downie	Downie	958152
+MindNode	MindNode	961983
+Permute	Permute	965811
+Proxyman	Proxyman	946213
+TablePlus	TablePlus	953916
+wget	wget	992904
+yt-dlp	yt-dlp	970825
+Blockchain	Blockchain	989216
+BTC	BTC	977218
+Bitcoin	BTC	992410
+Bitcoin	Bitcoin	992410
+ETH	ETH	981155
+Ethereum	ETH	974755
+Ethereum	Ethereum	974755
+Monero	Monero	955353
+Litecoin	Litecoin	982076
+Aptos	Aptos	962084
+Dogecoin	Dogecoin	964933
+Ethena	Ethena	964318
+Worldcoin	Worldcoin	956394
+Bittensor	Bittensor	954951
+Smart Contract	SmartContract	962262
+CoinGecko	CoinGecko	956100
+CoinMarketCap	CoinMarketCap	955597
+CoinGlass	CoinGlass	953204
+CoinDesk	CoinDesk	957015
+CoinCheckup	CoinCheckup	954029
+CoinCodex	CoinCodex	954793
+Coinranking	Coinranking	951148
+DefiLlama	DefiLlama	951663
+Etherscan	Etherscan	958640
+BscScan	BscScan	956536
+Solscan	Solscan	958760
+PolygonScan	PolygonScan	960562
+Glassnode	Glassnode	960154
+PANews	PANews	957818
+Messari	Messari	954360
+Chainalysis	Chainalysis	953054
+CryptoQuant	CryptoQuant	959189
+TokenInsight	TokenInsight	953141
+Trust Wallet	TrustWallet	954827
+imToken	imToken	952612
+MakerDAO	MakerDAO	955749
+Magic Eden	MagicEden	954441
+Substack	Substack	954202
+GameFi	GameFi	962060
+MagSafe	MagSafe	961943
+Magic UI	MagicUI	961141
+HDMI	HDMI	979229
+High Definition Multimedia Interface	HDMI	951015
+High Definition Multimedia Interface	HighDefinitionMultimediaInterface	951015
+NSFW	NSFW	979245
+Not Safe For Work	NSFW	951015
+Not Suitable For Work	NSFW	952932
+Not Safe For Work	NotSafeForWork	951015
+Not Suitable For Work	NotSuitableForWork	952932
+Termius	Termius	953457
+Jinja	Jinja	979331
+NetSetMan	NetSetMan	948909
+Cinity	Cinity	960568
+UTC	UTC	980723
+Coordinated Universal Time	UTC	961277
+Coordinated Universal Time	CoordinatedUniversalTime	961277
+GMT	GMT	976592
+Greenwich Mean Time	GMT	956274
+Greenwich Mean Time	GreenwichMeanTime	956274
+GoDaddy	GoDaddy	964473
+SQLAlchemy	SQLAlchemy	961429
 # Admin	Admin
 # Administrator	Administrator
-ASMR	ASMR
-Autonomous sensory meridian response	ASMR
-Autonomous sensory meridian response	Autonomoussensorymeridianresponse
-iKlear	iKlear
+ASMR	ASMR	979483
+Autonomous sensory meridian response	ASMR	956282
+Autonomous sensory meridian response	Autonomoussensorymeridianresponse	956282
+iKlear	iKlear	960947
 # Legal High	ligouhai
-Legal High	LegalHigh
-Werkzeug	Werkzeug
-itsdangerours	itsdangerours
-Mimestream	Mimestream
-CRUD	CRUD
-Create Read Update Delete	CRUD
-RESTful	RESTful
-CLion	CLion
-Unix-like	Unix-like
-imgur	imgur
-Stack Overflow	StackOverflow
-PyWebIO	PyWebIO
-Launchpad	Launchpad
-cosplay	cosplay
-Gravatar	Gravatar
-Xshell	Xshell
-Nokia	Nokia
-OCR	OCR
-Optical Character Recognition	OCR
-Optical Character Recognition	OpticalCharacterRecognition
-Déjà vu	Dejavu
-FFmpeg	FFmpeg
-DMCA	DMCA
-Digital Millennium Copyright Act	DMCA
-Digital Millennium Copyright Act	DigitalMillenniumCopyrightAct
-PUA	PUA
-Pickup Artists	PUA
-Pickup Artists	PickupArtists
-Dockerfile	Dockerfile
-Docker Hub	DockerHub
-Darcula	Darcula
-Cloudflare Pages	CloudflarePages
-GitHub Pages	GitHubPages
-Coding Pages	CodingPages
-Gitee Pages	GiteePages
-CNAME	CNAME
-macOS Server	macOSServer
-Darwin	Darwin
-NAS	NAS
-Network Attached Storage	NAS
-Network Attached Storage	NetworkAttachedStorage
-CommonMark	CommonMark
-Goldmark	Goldmark
-blackFriday	blackFriday
-One UI	OneUI
-Raycast	Raycast
-CloudFront	CloudFront
-RSS	RSS
-rsync	rsync
-RDF Site Summary	RSS
-Really Simple Syndication	RSS
-CocoaPods	CocoaPods
-Zsh	Zsh
-Oh My Zsh	OhMyZsh
-ProxyChains	ProxyChains
-Disqus	Disqus
-Waline	Waline
-Valine	Valine
-LeanCloud	LeanCloud
-PaperMod	PaperMod
-Vercel	Vercel
-CS	CS
-Counter-Strike	CS
-Backblaze	Backblaze
-WebP	WebP
-WebM	WebM
-CleanShot X	CleanShotX
-Setapp	Setapp
-GraphQL	GraphQL
-TOTP	TOTP
-Time-based One-Time Password	TOTP
-Unclutter	Unclutter
-DuckDuckGo	DuckDuckGo
-Yandex	Yandex
-Geralt	Geralt
-ServerCat	ServerCat
-Zoho	Zoho
-TinyPNG	TinyPNG
-Thanos	Thanos
-XML	XML
-Extensible Markup Language	XML
-Extensible Markup Language	ExtensibleMarkupLanguage
-XHTML	XHTML
-eXtensible HyperText Markup Language	XHTML
-eXtensible HyperText Markup Language	eXtensibleHyperTextMarkupLanguage
-Baiduspider	Baiduspider
-Bingbot	Bingbot
-SogouSpider	SogouSpider
-YoudaoBot	YoudaoBot
-GitHub Copilot	GitHubCopilot
-GitHub Copilot X	GitHubCopilotX
-GitHub Copilot CLI	GitHubCopilotCLI
-GitHub Copilot chat	GitHubCopilotchat
-iPadOS	iPadOS
-Apple Pencil	ApplePencil
-Reddit	Reddit
-HHKB	HHKB
-Happy Hacking Keyboard	HHKB
-Happy Hacking Keyboard	HappyHackingKeyboard
-MAPPA	MAPPA
-SEO	SEO
-Search Engine Optimization	SEO
-Search Engine Optimization	SearchEngineOptimization
-OCSP	OCSP
-Online Certificate Status Protocol	OCSP
-Online Certificate Status Protocol	OnlineCertificateStatusProtocol
-Arthas	Arthas
-Wordle	Wordle
-Silicon Valley	SiliconValley
-Pied Piper	PiedPiper
-Pikachu	Pikachu
-Fastmail	Fastmail
-WordPress	WordPress
-AOSP	AOSP
-Android Open Source Project	AOSP
-Android Open Source Project	AndroidOpenSourceProject
-TypeScript	TypeScript
-Unity	Unity
-MIUI	MIUI
-Shottr	Shottr
-Turbo Boost	TurboBoost
-Turbo Boost Switcher	TurboBoostSwitcher
-OPPO	OPPO
-vivo	vivo
-Uno	Uno
-GDPR	GDPR
-General Data Protection Regulation	GDPR
-Netlify	Netlify
-Mac Studio	MacStudio
-Studio Display	StudioDisplay
-Studio Display XDR	StudioDisplayXDR
-Pro Display XDR	ProDisplayXDR
-OC	OC
-Objective-C	OC
-Objective-C	Objective-C
-Mac mini	Macmini
-Garena	Garena
-WonderCV	WonderCV
-WebKit	WebKit
-Igalia	Igalia
-WebCore	WebCore
-GNU	GNU
-GNU General Public License	GNU
-GNU General Public License	GNUGeneralPublicLicense
-GPL	GPL
-GNU General Public License	GPL
-Minions	Minions
-Rush B	RushB
-Rush A	RushA
-AK	AK
-AK47	AK47
-AK74	AK74
-Mastercard	Mastercard
-COVID	COVID
-COVID-19	COVID-19
-Wallpaper Engine	WallpaperEngine
-Erlang	Erlang
-FAQ	FAQ
-Frequently Asked Question	FAQ
-Frequently Asked Question	FrequentlyAskedQuestion
-Panamera	Panamera
-FaceTime	FaceTime
-FaceTime Audio	FaceTimeAudio
-LMAO	LMAO
-Laugh My Ass Off	LMAO
-Laugh My Ass Off	LaughMyAssOff
-Vivaldi	Vivaldi
-Cryptomator	Cryptomator
-WTF	WTF
-what the fuck	WTF
-what the fuck	whatthefuck
-ASAP	ASAP
-as soon as possible	ASAP
-PUBG	PUBG
-PLAYERUNKNOWN'S BATTLEGROUNDS	PUBG
-GFM	GFM
-GitHub Flavored Markdown	GFM
-GitHub Flavored Markdown	GitHubFlavoredMarkdown
-GeekNote	GeekNote
-GUI	GUI
-Graphical User Interface	GUI
-Graphical User Interface	GraphicalUserInterface
-VPS	VPS
-Virtual private server	VPS
-Virtual private server	Virtualprivateserver
-BIOS	BIOS
-Basic Input/Output System	BIOS
-Basic Input/Output System	BasicInput/OutputSystem
-goroutine	goroutine
-goroutines	goroutines
-Celsius	Celsius
-Fahrenheit	Fahrenheit
-Mojito	Mojito
-Niconico	Niconico
-TickTick	TickTick
-CHDBits	CHDBits
-M-Team	M-Team
-Vim	Vim
-Workers	Workers
-Cloudflare Workers	CloudflareWorkers
-PlayStation	PlayStation
-Visual Studio	VisualStudio
-AVIF	AVIF
-AV1 Image File Format	AVIF
-Apple Arcade	AppleArcade
-MS-DOS	MS-DOS
-Microsoft Visual Studio	MicrosoftVisualStudio
-Microsoft Visual Studio	VisualStudio
-Microsoft Corporation	MicrosoftCorporation
-Microsoft Windows	MicrosoftWindows
-Microsoft Office	MicrosoftOffice
-Microsoft Word	MicrosoftWord
-Microsoft Excel	MicrosoftExcel
-Microsoft Access	MicrosoftAccess
-Microsoft PowerPoint	MicrosoftPowerPoint
-Microsoft PowerPoint	PowerPoint
-Microsoft Outlook	MicrosoftOutlook
-Microsoft OneNote	MicrosoftOneNote
-Microsoft Azure	MicrosoftAzure
-Microsoft Edge	MicrosoftEdge
-IE	IE
-Internet Explorer	IE
-Internet Explorer	InternetExplorer
-Media Player	MediaPlayer
-Windows Media Player	MediaPlayer
-Windows Media Player	WindowsMediaPlayer
-Visual Studio Code	VisualStudioCode
-Visual Studio Code	VSCode
-PowerShell	PowerShell
-Surface	Surface
-MSN	MSN
-Skype	Skype
-TOC	TOC
-Table of Contents	TOC
-Table of Contents	TableOfContents
-One Dark	OneDark
-IINA	IINA
-GUID	GUID
-Globally Unique Identifier	GUID
-Globally Unique Identifier	GloballyUniqueIdentifier
-APFS	APFS
-Apple File System	APFS
-NTFS	NTFS
-New Technology File System	NTFS
-New Technology File System	NewTechnologyFileSystem
-Microsoft NTFS	NTFS
-Microsoft NTFS	MicrosoftNTFS
-ChromeOS	ChromeOS
-Chromebook	Chromebook
-Ed Sheeran	EdSheeran
-Sheeran	Sheeran
-Cloudflare Images	CloudflareImages
-Cloudflare Stream	CloudflareStream
-Zero Trust	ZeroTrust
-Universal Actions	UniversalActions
-Airbnb	Airbnb
-OpenCC	OpenCC
-HarmonyOS	HarmonyOS
-NPC	NPC
-Non-Player Character	NPC
-Non-Player Character	Non-PlayerCharacter
-skynet	skynet
-serverless	serverless
-Identifier	Identifier
-NameCheap	NameCheap
-rime-ice	rime-ice
-Handover	Handover
-Language Reactor	LanguageReactor
-Tencent	Tencent
-Alibaba	Alibaba
-Alibaba Group	AlibabaGroup
-Linus	Linus
-PaaS	PaaS
-platform as a service	PaaS
-aPaaS	aPaaS
-application Platform as a Service	aPaaS
-WhatsApp	WhatsApp
-Messenger	Messenger
-Doge	Doge
-SUV	SUV
-Sport Utility Vehicle	SUV
-Sport Utility Vehicle	SportUtilityVehicle
-UFO	UFO
-Unidentified Flying Object	UFO
-Unidentified Flying Object	UnidentifiedFlyingObject
-TM	TM
-tmux	tmux
-SOS	SOS
-abcd	abcd
-ABCD	ABCD
-Starbucks	Starbucks
-I Love You	ILoveYou
-ZZZ	ZZZ
-PS	PS
-Photoshop	PS
-Photoshop	Photoshop
-Adobe Photoshop	AdobePhotoshop
-Honey Select	HoneySelect
-McCafe	McCafe
-BSD	BSD
-Berkeley Software Distribution	BSD
-Berkeley Software Distribution	BerkeleySoftwareDistribution
-DNSPod	DNSPod
-Bandizip	Bandizip
-NATO	NATO
-North Atlantic Treaty Organization	NATO
-North Atlantic Treaty Organization	NorthAtlanticTreatyOrganization
-MissWarmJ	MissWarmJ
-NASA	NASA
-National Aeronautics and Space Administration	NASA
-Meta	Meta
-PictureView	PictureView
-RAM	RAM
-Random-access memory	RAM
-Random-access memory	Random-AccessMemory
-ROM	ROM
-Read-only memory	ROM
-Read-only memory	Read-OnlyMemory
-AV	AV
-Adult Video	AV
-Adult Video	AdultVideo
-TODO	TODO
-Microsoft To Do	MicrosoftToDo
-VCD	VCD
-Video CD	VCD
-Video CD	VideoCD
-FBI	FBI
-Federal Bureau of Investigation	FBI
-Federal Bureau of Investigation	FederalBureauofInvestigation
-FBI WARNING	FBIWARNING
-CDPR	CDPR
-CD Projekt	CDPR
-CD Projekt	CDProjekt
-CD Projekt RED	CDProjektRED
-ACG	ACG
-Animation Comics Games	ACG
-NBA	NBA
-National Basketball Association	NBA
-National Basketball Association	NationalBasketballAssociation
-CBA	CBA
-Chinese Basketball Association	CBA
-Chinese Basketball Association	ChineseBasketballAssociation
-SpaceX	SpaceX
-Avira	Avira
-FeHelper	FeHelper
-Hypertext	Hypertext
-PHP	PHP
-Hypertext Preprocessor	PHP
-Hypertext Preprocessor	HypertextPreprocessor
-duang	duang
-QSpace	QSpace
-Path Finder	PathFinder
-Tabnine	Tabnine
-Bonjour	Bonjour
-ICMP	ICMP
-Internet Control Message Protocol	ICMP
-Internet Control Message Protocol	InternetControlMessageProtocol
-Electron	Electron
-FTP	FTP
-File Transfer Protocol	FTP
-File Transfer Protocol	FileTransferProtocol
-SFTP	SFTP
-SSH File Transfer Protocol	SFTP
-SSH File Transfer Protocol	SSHFileTransferProtocol
-uPic	uPic
-refactor	refactor
-refactoring	refactoring
-Notepad	Notepad
-Notepad++	Notepad++
-Notepad++	npp
-O'Reilly	O'Reilly
-Octocat	Octocat
-IMAP	IMAP
-Internet Message Access Protocol	IMAP
-Internet Message Access Protocol	InternetMessageAccessProtocol
-SMTP	SMTP
-Simple Mail Transfer Protocol	SMTP
-Simple Mail Transfer Protocol	SimpleMailTransferProtocol
-Waterfox	Waterfox
-Let's go	Let'sgo
-one-liner	one-liner
-Callback	Callback
-SSID	SSID
-Service Set Identifier	SSID
-Service Set Identifier	ServiceSetIdentifier
-Time Machine	TimeMachine
-regexp	regexp
-FOSS	FOSS
-Free and open source software	FOSS
-Free and open source software	Freeandopensourcesoftware
-InfoQ	InfoQ
-SFC	SFC
-Software Freedom Conservancy	SFC
-Software Freedom Conservancy	SoftwareFreedomConservancy
-PopCap	PopCap
-PopCap Games	PopCapGames
-Kotlin	Kotlin
-PhpStorm	PhpStorm
-Datalore	Datalore
-DataSpell	DataSpell
-RubyMine	RubyMine
-AppCode	AppCode
-Code With Me	CodeWithMe
-JDK	JDK
-Java Development Kit	JDK
-Java Development Kit	JavaDevelopmentKit
-JRE	JRE
-Java Runtime Environment	JRE
-Java Runtime Environment	JavaRuntimeEnvironment
-JVM	JVM
-Java Virtual Machine	JVM
-Java Virtual Machine	JavaVirtualMachine
-Java EE	JavaEE
-ReSharper	ReSharper
-dotPeek	dotPeek
-dotTrace	dotTrace
-dotMemory	dotMemory
-dotCover	dotCover
-TeamCity	TeamCity
-EduTools	EduTools
-FIFO	FIFO
-First In, First Out	FIFO
-LIFO	LIFO
-Last In, First out	LIFO
-Neat Download Manager	NDM
-Neat Download Manager	NeatDownloadManager
-Maine	Maine
-Elijah	Elijah
-Love & Peace	Love&Peace
-Peace & Love	Peace&Love
-LCD	LCD
-Liquid Crystal Display	LCD
-Liquid Crystal Display	LiquidCrystalDisplay
-Emotional Damage	EmotionalDamage
-GitLab	GitLab
-GitLab Runner	GitLabRunner
-CI/CD	CI/CD
-DevSecOps	DevSecOps
-Apple silicon	Applesilicon
-ADSL	ADSL
-Asymmetric Digital Subscriber Line	ADSL
-Asymmetric Digital Subscriber Line	AsymmetricDigitalSubscriberLine
-ICP	ICP
-Internet Content Provider	ICP
-Internet Content Provider	InternetContentProvider
-iRime	iRime
-APK	APK
-Android application package	APK
-Android application package	Androidapplicationpackage
-Type-A	Type-A
-Type-B	Type-B
-Type-C	Type-C
-USB Type-A	USBType-A
-USB Type-B	USBType-B
-USB Type-C	USBType-C
-USB-A	USB-A
-USB-B	USB-B
-USB-C	USB-C
-J.R.R. Tolkien	J.R.R.Tolkien
-Impostor Factory	ImpostorFactory
-Vampire Survivors	VampireSurvivors
-AppCleaner	AppCleaner
-IQIYI	IQIYI
-BuhoCleaner	BuhoCleaner
-Midjourney	Midjourney
-Champion's inequality	Champion'sinequality
-NovelAI	NovelAI
-Angular	Angular
-rebase	rebase
-Motrix	Motrix
-VCS	VCS
-version control system	VCS
-version control system	versioncontrolsystem
-cnBeta	cnBeta
-pull request	pullrequest
-merge request	mergerequest
-Ant Design	AntDesign
-Disney	Disney
-early access	earlyaccess
-Fedora	Fedora
-hading	hading
-LeetCode	LeetCode
-Helvetica	Helvetica
-limon	limon
-GFW	GFW
-Great Firewall	GFW
-Great Firewall	GreatFirewall
-gfwlist	gfwlist
-GeoIP	GeoIP
-gVim	gVim
-Vimium	Vimium
-Nvim	Nvim
-Neovim	Neovim
-MacVim	MacVim
-VimR	VimR
-LunarVim	LunarVim
-IdeaVim	IdeaVim
-unfo	unfo
-timeshift	timeshift
-ChatGPT	ChatGPT
-OpenAI	OpenAI
-VoIP	VoIP
-Voice over Internet Protocol	VoIP
-Greasy Fork	GreasyFork
-GalGame	GalGame
-VoLTE	VoLTE
-VoWiFi	VoWiFi
-Voice Over LTE	VoLTE
-CEF	CEF
-Chromium Embedded Framework	CEF
-RustDesk	RustDesk
-Capcom	Capcom
-Paxlovid	Paxlovid
-datetime	datetime
-Hammerspoon	Hammerspoon
-CrossOver	CrossOver
-hallelujahIM	hallelujahIM
-AVAST!	AVAST!
-Bitdefender	Bitdefender
-ClamAV	ClamAV
-Comodo	Comodo
-McAfee	McAfee
-OK	OK
-NG	NG
-TV	TV
-television	TV
-VTuber	VTuber
-NVMe	NVMe
-NGFF	NGFF
-PCIe	PCIe
-PCI Express	PCIe
-PCI Express	PCIExpress
-SATA	SATA
-eSATA	eSATA
-mSATA	mSATA
-GPIB	GPIB
-GPIO	GPIO
-DVD	DVD
-CD	CD
-eSIM	eSIM
-UTF	UTF
-UTF-8	UTF-8
-UTF-16	UTF-16
-ASCII	ASCII
-IEEE	IEEE
-Institute of Electrical and Electronics Engineers	IEEE
-DjVu	DjVu
-LaTeX	LaTeX
-API	API
-Application Programming Interface	API
-Ethernet	Ethernet
-SOCKS	SOCKS
-PrintScreen	PrintScreen
-DIY	DIY
-Do It Yourself	DIY
-DNA	DNA
-deoxyribonucleic acid	DNA
-RNA	RNA
-ribonucleic acid	RNA
-mRNA	mRNA
-messenger RNA	mRNA
-C++	C++
-C++	Cpp
-MIT	MIT
-Massachusetts Institute of Technology	MIT
-Massachusetts Institute of Technology	MassachusettsInstituteofTechnology
-MIT License	MITLicense
-LGPL	LGPL
-GNU Lesser General Public License	LGPL
-GNU Lesser General Public License	GNULesserGeneralPublicLicense
-Mozilla Firefox	MozillaFirefox
-Android	Android
-Android Auto	AndroidAuto
-Android TV	AndroidTV
-iOS	iOS
-Linux	Linux
-Ubuntu	Ubuntu
-RHEL	RHEL
-Red Hat Enterprise Linux	RHEL
-Red Hat Enterprise Linux	RedHatEnterpriseLinux
-NixOS	NixOS
-Microsoft	Microsoft
-Nintendo	Nintendo
-Wii U	WiiU
-Wii	Wii
-OriginOS	OriginOS
-iPhone	iPhone
-iPad	iPad
-iPod	iPod
-HomePod	HomePod
-HomePod mini	HomePodmini
-UI	UI
-UK	UK
-United Kingdom	UK
-United Kingdom	UnitedKingdom
-DirectX	DirectX
-Kinect	Kinect
-Cloudflare	Cloudflare
-Hip-Hop	Hip-Hop
-Simplified Chinese	SimplifiedChinese
-Traditional Chinese	TraditionalChinese
-US	US
-United States	US
-United States	UnitedStates
-USA	USA
-The United States of America	USA
-USD	USD
-United States Dollar	USD
-United States Dollar	UnitedStatesDollar
-CN	CN
-MTV	MTV
-Music Television	MTV
-Music Television	MusicTelevision
-Mrs.	Mrs.
-MitM	MitM
-man-in-the-middle	MitM
-ToDesk	ToDesk
-PreSearch	PreSearch
-Odysee	Odysee
-ISBN	ISBN
-International Standard Book Number	ISBN
-International Standard Book Number	InternationalStandardBookNumber
-ISSN	ISSN
-International Standard Serial Number	ISSN
-International Standard Serial Number	InternationalStandardSerialNumber
-QoS	QoS
-Quality of Service	QoS
-Quality of Service	QualityofService
-DoH	DoH
-DNS over HTTPS	DoH
-DNS over HTTPS/3	DoH
-DNS over HTTPS	DNSoverHTTPS
-DNS over HTTPS/3	DNSoverHTTPS/3
-DoQ	DoQ
-DNS over QUIC	DoQ
-DNS over QUIC	DNSoverQUIC
-HK	HK
-Hong Kong	HK
-Hong Kong	HongKong
-Party Animals	PartyAnimals
-ABS	ABS
-Anti-lock Braking System	ABS
-Anti-lock Braking System	Anti-lockBrakingSystem
-ADHD	ADHD
-attention deficit hyperactivity disorder	ADHD
-attention deficit hyperactivity disorder	attentiondeficithyperactivitydisorder
-BBQ	BBQ
-barbecue	BBQ
-BBS	BBS
-Bulletin Board System	BBS
-Bulletin Board System	BulletinBoardSystem
-chrono	chrono
-Widevine	Widevine
-Valhalla	Valhalla
-KFC	KFC
-AWP	AWP
-Arctic Warfare Police	AWP
-Arctic Warfare Police	ArcticWarfarePolice
-CLI	CLI
-Command-Line Interface	CLI
-Command-Line Interface	Command-LineInterface
-Dnsmasq	Dnsmasq
-DOS	DOS
-Disk Operating System	DOS
-Disk Operating System	DiskOperatingSystem
-Tether	Tether
-USDT	USDT
-USDC	USDC
-USDe	USDe
-USDS	USDS
-Lua	Lua
-MacType	MacType
-Alipay	Alipay
-WeChat Pay	WeChatPay
-UPnP	UPnP
-Universal Plug and Play	UPnP
-Universal Plug and Play	UniversalPlugandPlay
-DoS	DoS
-denial-of-service attack	DoS
-denial-of-service attack	denial-of-serviceattack
-DDoS	DDoS
-distributed denial-of-service attack	DDoS
-distributed denial-of-service attack	distributeddenial-of-serviceattack
-CVE	CVE
-Common Vulnerabilities and Exposures	CVE
-Common Vulnerabilities and Exposures	CommonVulnerabilitiesandExposures
-CWE	CWE
-Common Weakness Enumeration	CWE
-Common Weakness Enumeration	CommonWeaknessEnumeration
-LibreWolf	LibreWolf
-WebRTC	WebRTC
-WebDAV	WebDAV
-SwiftUI	SwiftUI
-Astro	Astro
-SigmaOS	SigmaOS
-fuckity	fuckity
-Funtouch OS	FuntouchOS
-fo	fo
-Unix shell	Unixshell
-Z-Library	Z-Library
-Zaraz	Zaraz
-Scribble Diffusion	ScribbleDiffusion
-ASUS	ASUS
-Lenovo	Lenovo
-Adios	Adios
-EMS	EMS
-Express Mail Service	EMS
-IPFS	IPFS
-InterPlanetary File System	IPFS
-InterPlanetary File System	InterPlanetaryFileSystem
-Noria	Noria
-DHCP	DHCP
-Dynamic Host Configuration Protocol	DHCP
-PPPoE	PPPoE
-Point-to-Point Protocol over Ethernet	PPPoE
-IPoE	IPoE
-Internet Protocol over Ethernet	IPoE
-VLAN	VLAN
-Virtual Local Area Network	VLAN
-WLAN	WLAN
-Wireless LAN	WLAN
-GPT	GPT
-Generative Pre-trained Transformer	GPT
-GPTs	GPTs
-GPT-3	GPT-3
-GPT-3.5	GPT-3.5
-GPT-4	GPT-4
-GPT-4o	GPT-4o
-GPT-4.1	GPT-4.1
-GPT-4.5	GPT-4.5
-GPT-5	GPT-5
-GPT-5.1	GPT-5.1
-GPT-5.2	GPT-5.2
-LaMDA	LaMDA
-Language Model for Dialogue Applications	LaMDA
-Coinbase Wallet	CoinbaseWallet
-MetaMask	MetaMask
-Discord	Discord
-New Bing	NewBing
-flomo	flomo
-HanLP	HanLP
-Arch Linux	ArchLinux
-AlmaLinux	AlmaLinux
-Fedora CoreOS	FedoraCoreOS
-CoreOS	CoreOS
-OpenBSD	OpenBSD
-Rocky Linux	RockyLinux
-Vultr	Vultr
-GoFrame	GoFrame
-ORM	ORM
-Object Relational Mapping	ORM
-Object Relational Mapping	ObjectRelationalMapping
-KPI	KPI
-Key Performance Indicators	KPI
-mutex	mutex
-TIOBE	TIOBE
-DigitalOcean	DigitalOcean
-Depay	Depay
-Codeium	Codeium
-OpenCat	OpenCat
-OpenWrt	OpenWrt
-AWS	AWS
-Amazon Web Services	AWS
-Amazon Web Services	AmazonWebServices
-Tailwind	Tailwind
-Tailwind CSS	TailwindCSS
-Fcitx	Fcitx
-Fcitx5	Fcitx5
-openSUSE	openSUSE
-FOMO	FOMO
-Fear of Missing Out	FOMO
-bromite	bromite
-orz	orz
-Scooby-Doo	Scooby-Doo
-SpongeBob	SpongeBob
-SquarePants	SquarePants
-SpongeBob SquarePants	SpongeBobSquarePants
-Louis Vuitton	LouisVuitton
-FIFA	FIFA
-Fédération Internationale de Football Association	FIFA
-FYI	FYI
-for your information	FYI
-IPO	IPO
-Initial Public Offerings	IPO
-MVC	MVC
-Model-View-Controller	MVC
-MVVM	MVVM
-Model-View-ViewModel	MVVM
-NGO	NGO
-Non-Governmental Organization	NGO
-OMG	OMG
-Oh My God	OMG
-RFT	RFT
-Rich Text Format	RFT
-SVG	SVG
-Scalable Vector Graphics	SVG
-SVN	SVN
-Apache Subversion	SVN
-TLS	TLS
-Transport Layer Security	TLS
-UDP	UDP
-User Datagram Protocol	UDP
-TCP	TCP
-Transmission Control Protocol	TCP
-UID	UID
-User ID	UID
-USSR	USSR
-Union of Soviet Socialist Republics	USSR
-WMV	WMV
-Windows Media Video	WMV
-WWI	WWI
-World War I	WWI
-WWII	WWII
-World War II	WWII
-WWIII	WWIII
-World War III	WWIII
-pgSQL	pgSQL
-PostgreSQL	pgSQL
-PL/pgSQL	PL/pgSQL
-Procedural Language / PostGres Structured Query Language	PL/pgSQL
-IQ	IQ
-Intelligence quotient	IQ
-BTW	BTW
-by the way	BTW
-QUIC	QUIC
-Quick UDP Internet Connections	QUIC
-SRWare Iron	SRWareIron
-Nexitally	Nexitally
-AGI	AGI
-Artificial general intelligence	AGI
-Strong AI	StrongAI
-Weak AI	WeakAI
-Narrow AI	NarrowAI
-Applied AI	AppliedAI
-BREAKING CHANGE	BREAKINGCHANGE
-GitHub Actions	GitHubActions
-GitHub Codespaces	GitHubCodespaces
-UUID	UUID
-Universally Unique Identifier	UUID
-Fyne	Fyne
-Claude	Claude
-Cinderella	Cinderella
-WebGPU	WebGPU
-Mailfence	Mailfence
-CodeWhisperer	CodeWhisperer
-espanso	espanso
-CAPTCHA	CAPTCHA
-Coinbase	Coinbase
-Kraken	Kraken
-Huobi	Huobi
-Bitfinex	Bitfinex
-KuCoin	KuCoin
-OKX	OKX
-Arbitrum	Arbitrum
-Avalanche	Avalanche
-Binance	Binance
-Binance Smart Chain	BinanceSmartChain
-Aevo	Aevo
-Bybit	Bybit
-Bitget	Bitget
-BitMart	BitMart
-Bitstamp	Bitstamp
-Deribit	Deribit
-Hyperliquid	Hyperliquid
-HashKey	HashKey
-Pionex	Pionex
-Polymarket	Polymarket
-Raydium	Raydium
-OpenSea	OpenSea
-BNB Chain	BNBChain
-Chainlink	Chainlink
-Cosmos	Cosmos
-Cardano	Cardano
-Polkadot	Polkadot
-Solana	Solana
-Starknet	Starknet
-Optimism	Optimism
-Polygon	Polygon
-NEAR Protocol	NEARProtocol
-Lens Protocal	LensProtocal
-zkSync	zkSync
-Arweave	Arweave
-Filecoin	Filecoin
-Harmony	Harmony
-Harmony One	HarmonyOne
-DApp	DApp
-DApps	DApps
-Uniswap	Uniswap
-SushiSwap	SushiSwap
-PancakeSwap	PancakeSwap
-JediSwap	JediSwap
-Orbiter	Orbiter
-MakerDAO	MakerDAO
-Compound	Compound
-Aave	Aave
-Curve	Curve
-Curve Finance	CurveFinance
-dYdX	dYdX
-NFT	NFT
-Non-Fungible Token	NFT
-Solidity	Solidity
-Argent X	ArgentX
-Braavos	Braavos
-Braavos Wallet	Braavos
-OneKey	OneKey
-Hackintosh	Hackintosh
-DYOR	DYOR
-Do Your Own Research	DYOR
-Noita	Noita
-Screen Studio	ScreenStudio
-Norah	Norah
-Wayland	Wayland
-Wappalyzer	Wappalyzer
-noop	noop
-Kung Fu	KungFu
-TL;DR	TL;DR
-too long; didn't read	TL;DR
-Ant-Man	Ant-Man
-ungoogled	ungoogled
-ungoogled-chromium	ungoogled-chromium
-RouterOS	RouterOS
-Sumatra	Sumatra
-Sumatra PDF	SumatraPDF
-sideload	sideload
-sideloading	sideloading
-librime	librime
-JRPG	JRPG
-Japanese Role-Playing Game	JRPG
-Kuromis	Kuromis
-heil	heil
-AmyTelecom	AmyTelecom
-Patreon	Patreon
-Anaconda	Anaconda
-LLaMA	LLaMA
-Large Language Model Meta AI	LLaMA
-R.I.P	R.I.P
-AIGC	AIGC
-AI Generated Content	AIGC
-Upscayl	Upscayl
-Cocos Creator	CocosCreator
-John Wick	JohnWick
-npm	npm
-Node Package Manager	npm
-Node Package Manager	NodePackageManager
-.npmrc	.npmrc
-Apple Vision	AppleVision
-Apple Vision Pro	AppleVisionPro
-Vision Pro	VisionPro
-a11y	a11y
-accessibility	a11y
-i18n	i18n
-internationalization	i18n
-internationalization	internationalization
-l10n	l10n
-localization	l10n
-g11n	g11n
-globalization	g11n
-m17n	m17n
-multilingualization	m17n
-multilingualization	multilingualization
-t9n	t9n
-translation	t9n
-p13n	p13n
-personalization	p13n
-personalization	personalization
-K3s	K3s
-K8s	K8s
-Kubernetes	K8s
-Kubernetes	Kubernetes
-Kubeadm	Kubeadm
-Minikube	Minikube
-shitwork	shitwork
-W3C	W3C
-World Wide Web Consortium	W3C
-A4	A4
-3D	3D
-Loki	Loki
-dict	dict
-Hughie	Hughie
-Maeve	Maeve
-Oppenheimer	Oppenheimer
-UltraEdit	UltraEdit
-GoldenDict	GoldenDict
-tokenizer	tokenizer
-ControlNet	ControlNet
-CISC	CISC
-RISC	RISC
-x86	x86
-x86-64	x86-64
-x64	x64
-amd64	amd64
-arm64	arm64
-Xeon	Xeon
-Pentium	Pentium
-Celeron	Celeron
-EPYC	EPYC
-Ryzen	Ryzen
-Athlon	Athlon
-DSL	DSL
-Domain Specific Language	DSL
-HDL	HDL
-Hardware Description Language	HDL
-VHDL	VHDL
-Verilog	Verilog
-keysym	keysym
-keysyms	keysyms
-PotPlayer	PotPlayer
-Code::Blocks	Code::Blocks
-Protocol Buffers	ProtocolBuffers
-protobuf	protobuf
-beyatch	beyatch
-iBus	iBus
-BT	BT
-BitTorrent	BT
-ProtonMail	ProtonMail
-Elasticsearch	Elasticsearch
-OpenSearch	OpenSearch
-rho	rho
-D&D	D&D
-Dungeons & Dragons	D&D
-Dungeons & Dragons	Dungeons&Dragons
-DnD	DnD
-D&D	DnD
-Dungeons & Dragons	DnD
-Minecraft	Minecraft
-LSP	LSP
-Language Server Protocol	LSP
-C#	C#
-KeyCastr	KeyCastr
-Laugh Tale	LaughTale
-Joy Boy	JoyBoy
-RustRover	RustRover
-bilibili	bilibili
-Terraria	Terraria
-Unihan	Unihan
-DLsite	DLsite
-I'm	I'm
-you're	you're
-she's	she's
-we're	we're
-they're	they're
-aren't	aren't
-wasn't	wasn't
-weren't	weren't
-hasn't	hasn't
-haven't	haven't
-hadn't	hadn't
-wouldn't	wouldn't
-couldn't	couldn't
-shouldn't	shouldn't
-mightn't	mightn't
-mustn't	mustn't
-shan't	shan't
-ain't	ain't
-daren't	daren't
-needn't	needn't
-oughtn't	oughtn't
-who's	who's
-where's	where's
-when's	when's
-why's	why's
-how's	how's
-here's	here's
-you'll	you'll
-it'll	it'll
-they'll	they'll
-you'd	you'd
-we'd	we'd
-I've	I've
-he'd	he'd
-it'd	it'd
-they'd	they'd
-you've	you've
-we've	we've
-they've	they've
-lemme	lemme
-outta	outta
-whatcha	whatcha
-PVP	PVP
-Player versus Player	PVP
-PVE	PVE
-player versus environment	PVE
-Elon	Elon
-Musk	Musk
-Logseq	Logseq
-WPS	WPS
-Morty	Morty
-Frundles	Frundles
-Brotato	Brotato
-engineman	engineman
-unhuman	unhuman
-unhumified	unhumified
-unhumanize	unhumanize
-P2P	P2P
-peer-to-peer	P2P
-F2A	F2A
-B2B	B2B
-C2C	C2C
-B2C	B2C
-C2B	C2B
-O2O	O2O
-NBA 2K	NBA2K
-WebCatalog	WebCatalog
-Apple One	AppleOne
-pixiv	pixiv
-M4A1	M4A1
-PK	PK
-WireGuard	WireGuard
-AdGuard	AdGuard
-Altman	Altman
-Ultraman	Ultraman
-sider	sider
-DALL·E	DALL·E
-e.g.	e.g.
-i.e.	i.e.
-et al.	etal.
-Zettlr	Zettlr
-Codium	Codium
-CodiumAI	CodiumAI
-SaaS	SaaS
-Software as a service	SaaS
-gitignore	gitignore
-.gitignore	.gitignore
-Alita	Alita
-epoll	epoll
-kqueue	kqueue
-LangChain	LangChain
-LangServe	LangServe
-LangSmith	LangSmith
-runc	runc
-containerd	containerd
-Melvor	Melvor
-Melvor Idle	MelvorIdle
-WebSocket	WebSocket
-systemctl	systemctl
-reconfig	reconfig
-sudo	sudo
-flypy	flypy
-traefik	traefik
-deepin	deepin
-srv	srv
-usr	usr
-AUR	AUR
-Arch User Repository	AUR
-pacman	pacman
-Pac-Man	Pac-Man
-eBPF	eBPF
-DevOps	DevOps
-Zippo	Zippo
-QR code	QRcode
-Prometheus	Prometheus
-Grafana	Grafana
-Mirtle	Mirtle
-Hadoop	Hadoop
-HBase	HBase
-Hive	Hive
-Apache Hive	ApacheHive
-Flink	Flink
-Palworld	Palworld
-submodule	submodule
-submodules	submodules
-Writerside	Writerside
-Manifest V2	ManifestV2
-Manifest V3	ManifestV3
-IMBA	IMBA
-GitButler	GitButler
-WinNAS	WinNAS
-Wireshark	Wireshark
-Theseus	Theseus
-Laravel	Laravel
-Chiikawa	Chiikawa
-LibreOffice	LibreOffice
-Asics	Asics
-Saucony	Saucony
-nvm	nvm
-Node Version Manager	nvm
-Node Version Manager	NodeVersionManager
-Prettier	Prettier
-ESLint	ESLint
-Hibernate	Hibernate
-MyBatis	MyBatis
-MyBatis-Plus	MyBatis-Plus
-Spring Boot	SpringBoot
-Spring Cloud	SpringCloud
-Element Plus	ElementPlus
-Flameshot	Flameshot
-Flatpak	Flatpak
-Salesforce	Salesforce
-V8 engine	V8engine
-V8 JS engine	V8JSengine
-V8 JavaScript engine	V8JavaScriptengine
-Wasm	Wasm
-WebAssembly	WebAssembly
-Feign	Feign
-OpenFeign	OpenFeign
-IMF	IMF
-International Monetary Fund	IMF
-International Monetary Fund	InternationalMonetaryFund
-Terraform	Terraform
-systemd	systemd
-IC	IC
-Integrated Circuit	IC
-ASIC	ASIC
-FPGA	FPGA
-Field-Programmable Gate Array	FPGA
-Samsung	Samsung
-Samsung Galaxy	SamsungGalaxy
-VimL	VimL
-Vimscript	Vimscript
-kubectl	kubectl
-mvn	mvn
-mvnd	mvnd
-maven	maven
-Fluent UI	FluentUI
-ActiveX	ActiveX
-arXiv	arXiv
-Gzip	Gzip
-LexisNexis	LexisNexis
-phpBB	phpBB
-ThinkPad	ThinkPad
-WebLogic	WebLogic
-Yahoo	Yahoo
-Zope	Zope
-GameBoy	GameBoy
-GameCube	GameCube
-GameFAQs	GameFAQs
-WSL	WSL
-Windows Subsystem for Linux	WSL
-MSVC	MSVC
-Microsoft Visual C++	MSVC
-Microsoft Visual C++	MicrosoftVisualC++
-DBeaver	DBeaver
-AE86	AE86
-Floorp	Floorp
-Costco	Costco
-NFC	NFC
-Near Field Communication	NFC
-Near Field Communication	NearFieldCommunication
-Apple Intelligence	AppleIntelligence
-7-Zip	7-Zip
-LGTM	LGTM
-PTAL	PTAL
-MBR	MBR
-master boot record	masterbootrecord
-master boot record	MBR
-EFI	EFI
-Extensible Firmware Interface	ExtensibleFirmwareInterface
-Extensible Firmware Interface	EFI
-UEFI	UEFI
-Unified Extensible Firmware Interface	UnifiedExtensibleFirmwareInterface
-Unified Extensible Firmware Interface	UEFI
-CMOS	CMOS
-complementary metal-oxide-semiconductor	complementarymetal-oxide-semiconductor
-complementary metal-oxide-semiconductor	CMOS
-OOP	OOP
-object-oriented programming	object-orientedprogramming
-object-oriented programming	OOP
-IDE	IDE
-integrated development environment	integrateddevelopmentenvironment
-integrated development environment	IDE
-TensorFlow	TensorFlow
-PyTorch	PyTorch
-DeepSeek	DeepSeek
-Mercedes-Benz	Mercedes-Benz
-1Password	1Password
-WD-40	WD-40
-OpenStreetMap	OpenStreetMap
-OsmAnd	OsmAnd
-Syncthing	Syncthing
-Heptabase	Heptabase
-Ghostty	Ghostty
-WezTerm	WezTerm
-Wez's Terminal Emulator	WezTerm
-Tailscale	Tailscale
-Shadowrocket	Shadowrocket
-Quantumult	Quantumult
-Quantumult X	QuantumultX
-V2Ray	V2Ray
-v2rayN	v2rayN
-v2rayA	v2rayA
-v2ray-core	v2ray-core
-Xray-core	Xray-core
-mihomo	mihomo
-trojan-go	trojan-go
-VLESS	VLESS
-Hysteria	Hysteria
-sing-box	sing-box
-SagerNet	SagerNet
-live house	livehouse
-DiskGenius	DiskGenius
-ICPC	ICPC
-International Collegiate Programming Contest	ICPC
-International Collegiate Programming Contest	InternationalCollegiateProgrammingContest
-UML	UML
-Unified Modeling Language	UML
-Unified Modeling Language	UnifiedModelingLanguage
-Ollama	Ollama
-Omarchy	Omarchy
-LMArena	LMArena
-MaxMind	MaxMind
-PM2.5	PM2.5
-PM10	PM10
-SARS-CoV-2	SARS-CoV-2
-Nano Banana	NanoBanana
-Zotero	Zotero
-CP2K	CP2K
-VASP	VASP
-FTIR	FTIR
-Slurm	Slurm
-Qwen	Qwen
-UnoCSS	UnoCSS
-Temu	Temu
-Clawdbot	Clawdbot
-Waydroid	Waydroid
-PKGBUILD	PKGBUILD
-Moltbot	Moltbot
-OpenClaw	OpenClaw
-Starlink	Starlink
-Seedance	Seedance
-Dependabot	Dependabot
-KaTeX	KaTeX
-MathJax	MathJax
+Legal High	LegalHigh	953819
+Werkzeug	Werkzeug	965043
+itsdangerours	itsdangerours	950651
+Mimestream	Mimestream	958193
+CRUD	CRUD	975479
+Create Read Update Delete	CRUD	954872
+RESTful	RESTful	977626
+CLion	CLion	969908
+Unix-like	Unix-like	964037
+imgur	imgur	983313
+Stack Overflow	StackOverflow	978199
+PyWebIO	PyWebIO	970145
+Launchpad	Launchpad	970263
+cosplay	cosplay	963207
+Gravatar	Gravatar	956347
+Xshell	Xshell	962829
+Nokia	Nokia	977117
+OCR	OCR	981385
+Optical Character Recognition	OCR	955709
+Optical Character Recognition	OpticalCharacterRecognition	955709
+Déjà vu	Dejavu	976304
+FFmpeg	FFmpeg	981379
+DMCA	DMCA	975658
+Digital Millennium Copyright Act	DMCA	955198
+Digital Millennium Copyright Act	DigitalMillenniumCopyrightAct	955198
+PUA	PUA	968414
+Pickup Artists	PUA	957211
+Pickup Artists	PickupArtists	957211
+Dockerfile	Dockerfile	960595
+Docker Hub	DockerHub	954803
+Darcula	Darcula	970505
+Cloudflare Pages	CloudflarePages	947990
+GitHub Pages	GitHubPages	961316
+Coding Pages	CodingPages	957346
+Gitee Pages	GiteePages	954237
+CNAME	CNAME	979961
+macOS Server	macOSServer	956036
+Darwin	Darwin	985446
+NAS	NAS	977675
+Network Attached Storage	NAS	951948
+Network Attached Storage	NetworkAttachedStorage	951948
+CommonMark	CommonMark	950255
+Goldmark	Goldmark	958543
+blackFriday	blackFriday	951517
+One UI	OneUI	956218
+Raycast	Raycast	966875
+CloudFront	CloudFront	954789
+RSS	RSS	981040
+rsync	rsync	985119
+RDF Site Summary	RSS	954090
+Really Simple Syndication	RSS	951151
+CocoaPods	CocoaPods	963557
+Zsh	Zsh	969322
+Oh My Zsh	OhMyZsh	953794
+ProxyChains	ProxyChains	946648
+Disqus	Disqus	963896
+Waline	Waline	959596
+Valine	Valine	965546
+LeanCloud	LeanCloud	954167
+PaperMod	PaperMod	956913
+Vercel	Vercel	966817
+CS	CS	991565
+Counter-Strike	CS	955020
+Backblaze	Backblaze	960491
+WebP	WebP	969041
+WebM	WebM	969453
+AHK	AHK	970426
+CleanShot X	CleanShotX	955038
+Setapp	Setapp	956409
+GraphQL	GraphQL	991321
+TOTP	TOTP	976140
+Time-based One-Time Password	TOTP	957966
+Unclutter	Unclutter	946565
+DuckDuckGo	DuckDuckGo	961635
+Yandex	Yandex	973089
+Geralt	Geralt	962068
+ServerCat	ServerCat	952535
+Zoho	Zoho	971092
+TinyPNG	TinyPNG	963216
+Thanos	Thanos	975299
+XML	XML	982191
+Extensible Markup Language	XML	962250
+Extensible Markup Language	ExtensibleMarkupLanguage	962250
+XHTML	XHTML	975426
+eXtensible HyperText Markup Language	XHTML	954863
+eXtensible HyperText Markup Language	eXtensibleHyperTextMarkupLanguage	954863
+Baiduspider	Baiduspider	957329
+Bingbot	Bingbot	958648
+Bing	Bing	967297
+SogouSpider	SogouSpider	949645
+YoudaoBot	YoudaoBot	951681
+GitHub Copilot	GitHubCopilot	958907
+GitHub Copilot X	GitHubCopilotX	951025
+GitHub Copilot CLI	GitHubCopilotCLI	944944
+GitHub Copilot chat	GitHubCopilotchat	946719
+iPadOS	iPadOS	970412
+Apple Pencil	ApplePencil	958703
+Reddit	Reddit	999627
+HHKB	HHKB	967301
+Happy Hacking Keyboard	HHKB	953656
+Happy Hacking Keyboard	HappyHackingKeyboard	953656
+MAPPA	MAPPA	966551
+SEO	SEO	980165
+Search Engine Optimization	SEO	964561
+Search Engine Optimization	SearchEngineOptimization	964561
+OCSP	OCSP	972331
+Online Certificate Status Protocol	OCSP	955625
+Online Certificate Status Protocol	OnlineCertificateStatusProtocol	955625
+Arthas	Arthas	954017
+Wordle	Wordle	966879
+Silicon Valley	SiliconValley	968496
+Pied Piper	PiedPiper	952634
+Pikachu	Pikachu	966830
+Fastmail	Fastmail	953826
+WordPress	WordPress	990168
+AOSP	AOSP	968163
+Android Open Source Project	AOSP	955825
+Android Open Source Project	AndroidOpenSourceProject	955825
+TypeScript	TypeScript	969142
+Unity	Unity	992440
+MIUI	MIUI	970171
+Shottr	Shottr	959341
+Turbo Boost	TurboBoost	954574
+Turbo Boost Switcher	TurboBoostSwitcher	944123
+OPPO	OPPO	977307
+vivo	vivo	969219
+Uno	Uno	979129
+GDPR	GDPR	979440
+General Data Protection Regulation	GDPR	952292
+Netlify	Netlify	964585
+Mac Studio	MacStudio	956398
+Studio Display	StudioDisplay	952412
+Studio Display XDR	StudioDisplayXDR	954541
+Pro Display XDR	ProDisplayXDR	953934
+OC	OC	980409
+Objective-C	OC	966819
+Objective-C	Objective-C	966819
+Mac mini	Macmini	957854
+Garena	Garena	965312
+WonderCV	WonderCV	957031
+WebKit	WebKit	994765
+Igalia	Igalia	966611
+WebCore	WebCore	958080
+GNU	GNU	983031
+GNU General Public License	GNU	963509
+GNU General Public License	GNUGeneralPublicLicense	963509
+GPL	GPL	980075
+GNU General Public License	GPL	963509
+Minions	Minions	960893
+Rush B	RushB	959110
+Rush A	RushA	956541
+AK	AK	984051
+AK47	AK47	970034
+AK74	AK74	966214
+Mastercard	Mastercard	957926
+COVID	COVID	989164
+COVID-19	COVID-19	964114
+Wallpaper Engine	WallpaperEngine	948308
+Erlang	Erlang	966346
+FAQ	FAQ	980559
+Frequently Asked Question	FAQ	954534
+Frequently Asked Question	FrequentlyAskedQuestion	954534
+Panamera	Panamera	956425
+FaceTime	FaceTime	958375
+FaceTime Audio	FaceTimeAudio	949786
+LMAO	LMAO	972455
+Laugh My Ass Off	LMAO	954611
+Laugh My Ass Off	LaughMyAssOff	954611
+Vivaldi	Vivaldi	970742
+Cryptomator	Cryptomator	959389
+WTF	WTF	981656
+what the fuck	WTF	946749
+what the fuck	whatthefuck	946749
+ASAP	ASAP	983306
+as soon as possible	ASAP	959126
+PUBG	PUBG	971425
+PLAYERUNKNOWN'S BATTLEGROUNDS	PUBG	956586
+GFM	GFM	975354
+GitHub Flavored Markdown	GFM	956429
+GitHub Flavored Markdown	GitHubFlavoredMarkdown	956429
+GeekNote	GeekNote	959946
+GUI	GUI	990768
+Graphical User Interface	GUI	960446
+Graphical User Interface	GraphicalUserInterface	960446
+VPS	VPS	976399
+Virtual private server	VPS	953658
+Virtual private server	Virtualprivateserver	953658
+BIOS	BIOS	980991
+Basic Input/Output System	BIOS	950981
+Basic Input/Output System	BasicInput/OutputSystem	950981
+goroutine	goroutine	970781
+goroutines	goroutines	965813
+Celsius	Celsius	976792
+AHK	AHK	970426
+88VIP	88VIP	972569
+Fahrenheit	Fahrenheit	975712
+Mojito	Mojito	970565
+Niconico	Niconico	964446
+TickTick	TickTick	953121
+CHDBits	CHDBits	952547
+M-Team	M-Team	964685
+Vim	Vim	973752
+Workers	Workers	990074
+Cloudflare Workers	CloudflareWorkers	951216
+PlayStation	PlayStation	958403
+Visual Studio	VisualStudio	962827
+AVIF	AVIF	968261
+AV1 Image File Format	AVIF	951503
+Apple Arcade	AppleArcade	956014
+MS-DOS	MS-DOS	974341
+Microsoft Visual Studio	MicrosoftVisualStudio	968363
+Microsoft Visual Studio	VisualStudio	968363
+Microsoft Corporation	MicrosoftCorporation	959770
+Microsoft Windows	MicrosoftWindows	973398
+Microsoft Office	MicrosoftOffice	971288
+Microsoft Word	MicrosoftWord	971928
+Microsoft Excel	MicrosoftExcel	972649
+Microsoft Access	MicrosoftAccess	964799
+Microsoft PowerPoint	MicrosoftPowerPoint	963393
+Microsoft PowerPoint	PowerPoint	963393
+Microsoft Outlook	MicrosoftOutlook	961450
+Microsoft OneNote	MicrosoftOneNote	956436
+Microsoft Azure	MicrosoftAzure	969750
+Microsoft Edge	MicrosoftEdge	959098
+IE	IE	983839
+Internet Explorer	IE	956530
+Internet Explorer	InternetExplorer	956530
+Media Player	MediaPlayer	956517
+Windows Media Player	MediaPlayer	959140
+Windows Media Player	WindowsMediaPlayer	959140
+Visual Studio Code	VisualStudioCode	956752
+Visual Studio Code	VSCode	956752
+PowerShell	PowerShell	963300
+MSN	MSN	979280
+Skype	Skype	975696
+TOC	TOC	976927
+Table of Contents	TOC	974307
+Table of Contents	TableOfContents	974307
+One Dark	OneDark	951386
+IINA	IINA	967236
+GUID	GUID	996880
+Globally Unique Identifier	GUID	954129
+Globally Unique Identifier	GloballyUniqueIdentifier	954129
+APFS	APFS	968870
+Apple File System	APFS	957488
+NTFS	NTFS	984015
+New Technology File System	NTFS	958126
+New Technology File System	NewTechnologyFileSystem	958126
+Microsoft NTFS	NTFS	955428
+Microsoft NTFS	MicrosoftNTFS	955428
+ChromeOS	ChromeOS	962681
+Chromebook	Chromebook	971095
+Ed Sheeran	EdSheeran	955844
+Sheeran	Sheeran	960466
+Cloudflare Images	CloudflareImages	944827
+Cloudflare Stream	CloudflareStream	944357
+Zero Trust	ZeroTrust	958281
+Universal Actions	UniversalActions	950782
+Airbnb	Airbnb	965015
+OpenCC	OpenCC	958431
+HarmonyOS	HarmonyOS	963841
+NPC	NPC	980278
+Non-Player Character	NPC	947444
+Non-Player Character	Non-PlayerCharacter	947444
+skynet	skynet	965438
+serverless	serverless	970986
+Identifier	Identifier	990757
+NameCheap	NameCheap	956111
+rime-ice	rime-ice	951643
+Handover	Handover	972961
+Language Reactor	LanguageReactor	944932
+Tencent	Tencent	963889
+Alibaba	Alibaba	970143
+Alibaba Group	AlibabaGroup	952418
+Linus	Linus	974917
+PaaS	PaaS	987042
+platform as a service	PaaS	955938
+aPaaS	aPaaS	965419
+application Platform as a Service	aPaaS	947025
+WhatsApp	WhatsApp	986885
+Messenger	Messenger	987595
+Doge	Doge	968058
+SUV	SUV	976129
+Sport Utility Vehicle	SUV	954072
+Sport Utility Vehicle	SportUtilityVehicle	954072
+UFO	UFO	978620
+Unidentified Flying Object	UFO	951585
+Unidentified Flying Object	UnidentifiedFlyingObject	951585
+TM	TM	981120
+tmux	tmux	987910
+SOS	SOS	979960
+abcd	abcd	992638
+ABCD	ABCD	984752
+Starbucks	Starbucks	971676
+I Love You	ILoveYou	963849
+ZZZ	ZZZ	969088
+PS	PS	982579
+Photoshop	PS	974576
+Photoshop	Photoshop	974576
+Adobe Photoshop	AdobePhotoshop	970761
+Honey Select	HoneySelect	946442
+McCafe	McCafe	965677
+BSD	BSD	985890
+Berkeley Software Distribution	BSD	964749
+Berkeley Software Distribution	BerkeleySoftwareDistribution	964749
+DNSPod	DNSPod	960658
+Bandizip	Bandizip	959935
+NATO	NATO	983895
+North Atlantic Treaty Organization	NATO	960508
+North Atlantic Treaty Organization	NorthAtlanticTreatyOrganization	960508
+MissWarmJ	MissWarmJ	950636
+NASA	NASA	995982
+National Aeronautics and Space Administration	NASA	953458
+Meta	Meta	995171
+PictureView	PictureView	950260
+RAM	RAM	983309
+Random-access memory	RAM	961698
+Random-access memory	Random-AccessMemory	961698
+ROM	ROM	981632
+Read-only memory	ROM	964368
+Read-only memory	Read-OnlyMemory	964368
+AV	AV	979746
+Adult Video	AV	953842
+Adult Video	AdultVideo	953842
+TODO	TODO	996887
+Microsoft To Do	MicrosoftToDo	951362
+VCD	VCD	976056
+Video CD	VCD	955222
+Video CD	VideoCD	955222
+FBI	FBI	975704
+Federal Bureau of Investigation	FBI	960900
+Federal Bureau of Investigation	FederalBureauofInvestigation	960900
+FBI WARNING	FBIWARNING	947809
+CDPR	CDPR	964323
+CD Projekt	CDPR	956021
+CD Projekt	CDProjekt	956021
+CD Projekt RED	CDProjektRED	953899
+ACG	ACG	967854
+Animation Comics Games	ACG	949283
+NBA	NBA	977778
+National Basketball Association	NBA	954674
+National Basketball Association	NationalBasketballAssociation	954674
+CBA	CBA	975987
+Chinese Basketball Association	CBA	948052
+Chinese Basketball Association	ChineseBasketballAssociation	948052
+SpaceX	SpaceX	965562
+Avira	Avira	966503
+FeHelper	FeHelper	949316
+Hypertext	Hypertext	962973
+PHP	PHP	986814
+Hypertext Preprocessor	PHP	955140
+Hypertext Preprocessor	HypertextPreprocessor	955140
+duang	duang	978952
+QSpace	QSpace	961271
+Path Finder	PathFinder	957159
+Tabnine	Tabnine	962717
+Bonjour	Bonjour	989008
+ICMP	ICMP	977646
+Internet Control Message Protocol	ICMP	952717
+Internet Control Message Protocol	InternetControlMessageProtocol	952717
+Electron	Electron	976499
+FTP	FTP	978489
+File Transfer Protocol	FTP	967943
+File Transfer Protocol	FileTransferProtocol	967943
+SFTP	SFTP	979183
+SSH File Transfer Protocol	SFTP	954924
+SSH File Transfer Protocol	SSHFileTransferProtocol	954924
+uPic	uPic	962473
+refactor	refactor	962288
+refactoring	refactoring	965389
+Notepad	Notepad	966929
+Notepad++	Notepad++	959724
+Notepad++	npp	959724
+O'Reilly	O'Reilly	974774
+Octocat	Octocat	964016
+IMAP	IMAP	982381
+Internet Message Access Protocol	IMAP	951879
+Internet Message Access Protocol	InternetMessageAccessProtocol	951879
+SMTP	SMTP	992285
+Simple Mail Transfer Protocol	SMTP	958779
+Simple Mail Transfer Protocol	SimpleMailTransferProtocol	958779
+Waterfox	Waterfox	952887
+Let's go	Let'sgo	961048
+one-liner	one-liner	967429
+Callback	Callback	994047
+SSID	SSID	987247
+Service Set Identifier	SSID	952046
+Service Set Identifier	ServiceSetIdentifier	952046
+Time Machine	TimeMachine	958422
+regexp	regexp	998592
+FOSS	FOSS	972482
+Free and open source software	FOSS	959042
+Free and open source software	Freeandopensourcesoftware	959042
+InfoQ	InfoQ	971670
+SFC	SFC	977916
+Software Freedom Conservancy	SFC	954234
+Software Freedom Conservancy	SoftwareFreedomConservancy	954234
+PopCap	PopCap	959424
+PopCap Games	PopCapGames	951605
+Kotlin	Kotlin	981950
+PhpStorm	PhpStorm	961352
+Datalore	Datalore	956157
+DataSpell	DataSpell	954147
+RubyMine	RubyMine	965264
+AppCode	AppCode	960641
+Code With Me	CodeWithMe	957496
+JDK	JDK	979521
+Java Development Kit	JDK	960832
+Java Development Kit	JavaDevelopmentKit	960832
+JRE	JRE	970679
+Java Runtime Environment	JRE	957451
+Java Runtime Environment	JavaRuntimeEnvironment	957451
+JVM	JVM	976882
+Java Virtual Machine	JVM	959147
+Java Virtual Machine	JavaVirtualMachine	959147
+Java EE	JavaEE	975569
+ReSharper	ReSharper	959834
+dotPeek	dotPeek	969587
+dotTrace	dotTrace	959027
+dotMemory	dotMemory	960156
+dotCover	dotCover	961776
+TeamCity	TeamCity	957159
+EduTools	EduTools	951936
+FIFO	FIFO	986163
+First In, First Out	FIFO	954531
+LIFO	LIFO	986677
+Last In, First out	LIFO	952010
+NDM	NDM	969482
+Neat Download Manager	NDM	949643
+Neat Download Manager	NeatDownloadManager	949643
+Maine	Maine	966879
+Elijah	Elijah	974773
+Love & Peace	Love&Peace	951884
+Peace & Love	Peace&Love	952296
+LCD	LCD	979486
+Liquid Crystal Display	LCD	957553
+Liquid Crystal Display	LiquidCrystalDisplay	957553
+Liquid Glass	LiquidGlass	951744
+Emotional Damage	EmotionalDamage	947301
+GitLab	GitLab	972507
+GitLab Runner	GitLabRunner	948667
+CI/CD	CI/CD	980455
+DevSecOps	DevSecOps	971015
+Apple silicon	Applesilicon	959970
+ADSL	ADSL	985019
+Asymmetric Digital Subscriber Line	ADSL	952235
+Asymmetric Digital Subscriber Line	AsymmetricDigitalSubscriberLine	952235
+ICP	ICP	973313
+Internet Content Provider	ICP	952973
+Internet Content Provider	InternetContentProvider	952973
+iRime	iRime	965559
+APK	APK	967951
+Android application package	APK	950834
+Android application package	Androidapplicationpackage	950834
+Type-A	Type-A	970579
+Type-B	Type-B	964704
+Type-C	Type-C	966171
+USB Type-A	USBType-A	952257
+USB Type-B	USBType-B	945794
+USB Type-C	USBType-C	956157
+USB-A	USB-A	965304
+USB-B	USB-B	964128
+USB-C	USB-C	972863
+J.R.R. Tolkien	J.R.R.Tolkien	952355
+Impostor Factory	ImpostorFactory	945115
+Vampire Survivors	VampireSurvivors	956071
+AppCleaner	AppCleaner	960452
+IQIYI	IQIYI	969573
+BuhoCleaner	BuhoCleaner	958563
+Midjourney	Midjourney	963614
+Champion's inequality	Champion'sinequality	949273
+NovelAI	NovelAI	956260
+Angular	Angular	991321
+rebase	rebase	962135
+Motrix	Motrix	965452
+VCS	VCS	976042
+version control system	VCS	968573
+version control system	versioncontrolsystem	968573
+cnBeta	cnBeta	968460
+pull request	pullrequest	965182
+merge request	mergerequest	958150
+Ant Design	AntDesign	960922
+Disney	Disney	988989
+early access	earlyaccess	962999
+Fedora	Fedora	976890
+hading	hading	955761
+LeetCode	LeetCode	969715
+Helvetica	Helvetica	991401
+limon	limon	974893
+GFW	GFW	974027
+Great Firewall	GFW	954325
+Great Firewall	GreatFirewall	954325
+gfwlist	gfwlist	954308
+GeoIP	GeoIP	971122
+gVim	gVim	966651
+Vimium	Vimium	963598
+Nvim	Nvim	967236
+Neovim	Neovim	968281
+MacVim	MacVim	969564
+VimR	VimR	967304
+LunarVim	LunarVim	955064
+IdeaVim	IdeaVim	960316
+unfo	unfo	958955
+timeshift	timeshift	967383
+ChatGPT	ChatGPT	971468
+OpenAI	OpenAI	962986
+VoIP	VoIP	982632
+Voice over Internet Protocol	VoIP	952420
+Greasy Fork	GreasyFork	958572
+GalGame	GalGame	958703
+VoLTE	VoLTE	975249
+VoWiFi	VoWiFi	958446
+Voice Over LTE	VoLTE	952751
+CEF	CEF	978023
+Chromium Embedded Framework	CEF	962560
+RustDesk	RustDesk	960871
+Capcom	Capcom	964518
+Paxlovid	Paxlovid	957916
+datetime	datetime	994817
+Hammerspoon	Hammerspoon	958708
+CrossOver	CrossOver	959643
+hallelujahIM	hallelujahIM	947198
+AVAST!	AVAST!	959020
+Bitdefender	Bitdefender	957990
+ClamAV	ClamAV	964960
+Comodo	Comodo	959860
+McAfee	McAfee	972676
+OK	OK	983839
+NG	NG	983072
+TV	TV	980070
+television	TV	979291
+VTuber	VTuber	967308
+NVMe	NVMe	982549
+NGFF	NGFF	965770
+PCIe	PCIe	977398
+PCI Express	PCIe	968826
+PCI Express	PCIExpress	968826
+SATA	SATA	977134
+eSATA	eSATA	970972
+mSATA	mSATA	967022
+GPIB	GPIB	969655
+GPIO	GPIO	993901
+DVD	DVD	979139
+CD	CD	983839
+eSIM	eSIM	973529
+UTF	UTF	985215
+UTF-8	UTF-8	973442
+UTF-16	UTF-16	969873
+ASCII	ASCII	999975
+IEEE	IEEE	992080
+Institute of Electrical and Electronics Engineers	IEEE	955849
+DjVu	DjVu	966076
+LaTeX	LaTeX	984418
+API	API	988028
+Application Programming Interface	API	961153
+Ethernet	Ethernet	989963
+SOCKS	SOCKS	972552
+PrintScreen	PrintScreen	957749
+DIY	DIY	976351
+Do It Yourself	DIY	949470
+DNA	DNA	980478
+deoxyribonucleic acid	DNA	959804
+RNA	RNA	981956
+ribonucleic acid	RNA	954965
+mRNA	mRNA	978072
+messenger RNA	mRNA	956641
+C++	C++	982270
+C++	Cpp	982270
+MIT	MIT	989152
+Massachusetts Institute of Technology	MIT	961887
+Massachusetts Institute of Technology	MassachusettsInstituteofTechnology	961887
+MIT License	MITLicense	962095
+LGPL	LGPL	969764
+GNU Lesser General Public License	LGPL	963056
+GNU Lesser General Public License	GNULesserGeneralPublicLicense	963056
+Mozilla Firefox	MozillaFirefox	981152
+Android	Android	992970
+Android Auto	AndroidAuto	955834
+Android TV	AndroidTV	955455
+iOS	iOS	980696
+Linux	Linux	997437
+Ubuntu	Ubuntu	991440
+RHEL	RHEL	970460
+Red Hat Enterprise Linux	RHEL	955522
+Red Hat Enterprise Linux	RedHatEnterpriseLinux	955522
+NixOS	NixOS	970016
+Microsoft	Microsoft	991397
+Nintendo	Nintendo	989459
+Wii U	WiiU	968195
+Wii	Wii	971165
+OriginOS	OriginOS	949645
+iPhone	iPhone	992315
+iPad	iPad	990332
+iPod	iPod	969880
+HomePod	HomePod	956477
+HomePod mini	HomePodmini	951551
+UI	UI	984433
+UK	UK	979497
+United Kingdom	UK	969745
+United Kingdom	UnitedKingdom	969745
+DirectX	DirectX	962568
+Kinect	Kinect	964651
+Cloudflare	Cloudflare	959351
+Hip-Hop	Hip-Hop	970350
+Simplified Chinese	SimplifiedChinese	960808
+Traditional Chinese	TraditionalChinese	977505
+US	US	985500
+United States	US	983161
+United States	UnitedStates	983161
+USA	USA	982613
+The United States of America	USA	954438
+USD	USD	981214
+United States Dollar	USD	956754
+United States Dollar	UnitedStatesDollar	956754
+CN	CN	980781
+MTV	MTV	968497
+Music Television	MTV	954624
+Music Television	MusicTelevision	954624
+Mrs.	Mrs.	980929
+MitM	MitM	967234
+man-in-the-middle	MitM	961282
+ToDesk	ToDesk	959702
+PreSearch	PreSearch	948340
+Odysee	Odysee	964680
+ISBN	ISBN	994885
+International Standard Book Number	ISBN	955170
+International Standard Book Number	InternationalStandardBookNumber	955170
+ISSN	ISSN	982071
+International Standard Serial Number	ISSN	954805
+International Standard Serial Number	InternationalStandardSerialNumber	954805
+QoS	QoS	983481
+Quality of Service	QoS	952035
+Quality of Service	QualityofService	952035
+DoH	DoH	963805
+DNS over HTTPS	DoH	957003
+DNS over HTTPS/3	DoH	950208
+DNS over HTTPS	DNSoverHTTPS	957003
+DNS over HTTPS/3	DNSoverHTTPS/3	950208
+DoQ	DoQ	963500
+DNS over QUIC	DoQ	957739
+DNS over QUIC	DNSoverQUIC	957739
+HK	HK	975452
+Hong Kong	HK	979368
+Hong Kong	HongKong	979368
+Party Animals	PartyAnimals	959330
+ABS	ABS	976916
+Anti-lock Braking System	ABS	957962
+Anti-lock Braking System	Anti-lockBrakingSystem	957962
+ADHD	ADHD	982766
+attention deficit hyperactivity disorder	ADHD	959676
+attention deficit hyperactivity disorder	attentiondeficithyperactivitydisorder	959676
+BBQ	BBQ	972901
+barbecue	BBQ	970154
+BBS	BBS	979664
+Bulletin Board System	BBS	962799
+Bulletin Board System	BulletinBoardSystem	962799
+chrono	chrono	998602
+Widevine	Widevine	955709
+Valhalla	Valhalla	961894
+KFC	KFC	977233
+AWP	AWP	976033
+Arctic Warfare Police	AWP	948942
+Arctic Warfare Police	ArcticWarfarePolice	948942
+CLI	CLI	985572
+Command-Line Interface	CLI	958428
+Command-Line Interface	Command-LineInterface	958428
+Dnsmasq	Dnsmasq	971104
+DOS	DOS	983303
+Disk Operating System	DOS	961754
+Disk Operating System	DiskOperatingSystem	961754
+Tether	Tether	968344
+USDT	USDT	981249
+USDC	USDC	977486
+USDe	USDe	963202
+USDS	USDS	965961
+Lua	Lua	979790
+MacType	MacType	956853
+Alipay	Alipay	964584
+WeChat Pay	WeChatPay	954432
+UPnP	UPnP	973549
+Universal Plug and Play	UPnP	952557
+Universal Plug and Play	UniversalPlugandPlay	952557
+DoS	DoS	965041
+denial-of-service attack	DoS	958446
+denial-of-service attack	denial-of-serviceattack	958446
+DDoS	DDoS	983007
+distributed denial-of-service attack	DDoS	953323
+distributed denial-of-service attack	distributeddenial-of-serviceattack	953323
+CVE	CVE	982411
+Common Vulnerabilities and Exposures	CVE	948941
+Common Vulnerabilities and Exposures	CommonVulnerabilitiesandExposures	948941
+CWE	CWE	980090
+Common Weakness Enumeration	CWE	948008
+Common Weakness Enumeration	CommonWeaknessEnumeration	948008
+LibreWolf	LibreWolf	958973
+WebRTC	WebRTC	976703
+WebDAV	WebDAV	969451
+SwiftUI	SwiftUI	961558
+Astro	Astro	979859
+SigmaOS	SigmaOS	955820
+fuckity	fuckity	956740
+Funtouch OS	FuntouchOS	954474
+fo	fo	980503
+Unix shell	Unixshell	966769
+Z-Library	Z-Library	957405
+Zaraz	Zaraz	962856
+Scribble Diffusion	ScribbleDiffusion	952882
+ASUS	ASUS	968841
+Lenovo	Lenovo	982262
+Adios	Adios	967785
+EMS	EMS	978431
+Express Mail Service	EMS	948425
+IPFS	IPFS	971900
+InterPlanetary File System	IPFS	950424
+InterPlanetary File System	InterPlanetaryFileSystem	950424
+Noria	Noria	968804
+DHCP	DHCP	979103
+Dynamic Host Configuration Protocol	DHCP	954858
+PPPoE	PPPoE	976009
+Point-to-Point Protocol over Ethernet	PPPoE	951835
+IPoE	IPoE	961553
+Internet Protocol over Ethernet	IPoE	948803
+VLAN	VLAN	982107
+Virtual Local Area Network	VLAN	954305
+WLAN	WLAN	987778
+Wireless LAN	WLAN	953539
+GPT	GPT	977212
+Generative Pre-trained Transformer	GPT	955232
+GPTs	GPTs	964822
+GPT-3	GPT-3	973922
+GPT-3.5	GPT-3.5	964870
+GPT-4	GPT-4	973971
+GPT-4o	GPT-4o	961896
+GPT-4.1	GPT-4.1	957810
+GPT-4.5	GPT-4.5	964163
+GPT-5	GPT-5	967006
+GPT-5.1	GPT-5.1	955622
+GPT-5.2	GPT-5.2	951872
+GPT-5.5	GPT-5.5	960630
+GPT-5.4	GPT-5.4	951872
+LaMDA	LaMDA	969390
+Language Model for Dialogue Applications	LaMDA	953570
+Coinbase Wallet	CoinbaseWallet	953029
+MetaMask	MetaMask	957667
+Discord	Discord	964613
+New Bing	NewBing	958211
+flomo	flomo	966012
+HanLP	HanLP	971868
+Arch Linux	ArchLinux	961934
+AlmaLinux	AlmaLinux	958712
+Fedora CoreOS	FedoraCoreOS	954033
+CoreOS	CoreOS	960567
+OpenBSD	OpenBSD	962862
+Rocky Linux	RockyLinux	952734
+Vultr	Vultr	962286
+GoFrame	GoFrame	960645
+ORM	ORM	985367
+AppImage	AppImage	956836
+AutoHotkey	AutoHotkey	967962
+hotkey	hotkey	967815
+Object Relational Mapping	ORM	959794
+Object Relational Mapping	ObjectRelationalMapping	959794
+KPI	KPI	979024
+Key Performance Indicators	KPI	959803
+mutex	mutex	997064
+TIOBE	TIOBE	977445
+DigitalOcean	DigitalOcean	959742
+Depay	Depay	963606
+Codeium	Codeium	962942
+OpenCat	OpenCat	956604
+OpenWrt	OpenWrt	964837
+AWS	AWS	980779
+Amazon Web Services	AWS	970913
+Amazon Web Services	AmazonWebServices	970913
+Tailwind	Tailwind	969362
+Tailwind CSS	TailwindCSS	957070
+Fcitx	Fcitx	970242
+Fcitx5	Fcitx5	970011
+openSUSE	openSUSE	965083
+FOMO	FOMO	973925
+Fear of Missing Out	FOMO	951810
+bromite	bromite	938169
+orz	orz	979678
+Scooby-Doo	Scooby-Doo	962615
+SpongeBob	SpongeBob	959246
+SquarePants	SquarePants	951106
+SpongeBob SquarePants	SpongeBobSquarePants	957610
+Louis Vuitton	LouisVuitton	964468
+FIFA	FIFA	981869
+Fédération Internationale de Football Association	FIFA	954864
+FYI	FYI	976560
+for your information	FYI	949475
+IPO	IPO	971359
+Initial Public Offerings	IPO	949381
+MVC	MVC	977417
+Model-View-Controller	MVC	962273
+MVVM	MVVM	975149
+Model-View-ViewModel	MVVM	961042
+NGO	NGO	975136
+Non-Governmental Organization	NGO	950161
+OMG	OMG	972354
+Oh My God	OMG	960761
+RFT	RFT	973104
+Rich Text Format	RFT	964653
+SVG	SVG	980966
+Scalable Vector Graphics	SVG	962399
+SVN	SVN	972258
+Apache Subversion	SVN	960196
+TLS	TLS	977076
+Transport Layer Security	TLS	957997
+UDP	UDP	979158
+User Datagram Protocol	UDP	961531
+TCP	TCP	979056
+Transmission Control Protocol	TCP	958630
+UID	UID	985127
+User ID	UID	970307
+USSR	USSR	973608
+Union of Soviet Socialist Republics	USSR	953916
+WMV	WMV	974946
+Windows Media Video	WMV	951842
+WWI	WWI	974363
+World War I	WWI	967104
+WWII	WWII	982092
+World War II	WWII	966270
+WWIII	WWIII	972043
+World War III	WWIII	953862
+pgSQL	pgSQL	970233
+PostgreSQL	pgSQL	971711
+PL/pgSQL	PL/pgSQL	970347
+Procedural Language / PostGres Structured Query Language	PL/pgSQL	952701
+IQ	IQ	978008
+Intelligence quotient	IQ	954861
+BTW	BTW	979007
+by the way	BTW	966151
+QUIC	QUIC	969940
+Quick UDP Internet Connections	QUIC	953632
+SRWare Iron	SRWareIron	958694
+Nexitally	Nexitally	951378
+AGI	AGI	979055
+Artificial general intelligence	AGI	954182
+Strong AI	StrongAI	962266
+Weak AI	WeakAI	963046
+Narrow AI	NarrowAI	952545
+Applied AI	AppliedAI	956626
+BREAKING CHANGE	BREAKINGCHANGE	958200
+GitHub Actions	GitHubActions	967737
+GitHub Codespaces	GitHubCodespaces	957559
+UUID	UUID	994350
+Universally Unique Identifier	UUID	963254
+Fyne	Fyne	971246
+Claude	Claude	982721
+Claude Mythos	ClaudeMythos	948664
+Claude Fable	ClaudeFable	948134
+Claude Opus	ClaudeOpus	951829
+Claude Sonnet	ClaudeSonnet	949298
+Claude Haiku	ClaudeHaiku	948484
+Cinderella	Cinderella	966781
+WebGPU	WebGPU	967656
+Mailfence	Mailfence	955405
+CodeWhisperer	CodeWhisperer	961523
+espanso	espanso	958420
+CAPTCHA	CAPTCHA	980864
+Coinbase	Coinbase	959007
+Kraken	Kraken	973618
+Huobi	Huobi	966325
+Bitfinex	Bitfinex	962155
+KuCoin	KuCoin	964558
+OKX	OKX	965370
+Arbitrum	Arbitrum	956249
+Avalanche	Avalanche	961347
+Binance	Binance	961062
+Binance Smart Chain	BinanceSmartChain	956715
+Aevo	Aevo	966537
+Bybit	Bybit	970945
+Bitget	Bitget	958732
+BitMart	BitMart	956990
+Bitstamp	Bitstamp	961035
+Deribit	Deribit	957467
+Hyperliquid	Hyperliquid	952749
+HashKey	HashKey	954852
+Pionex	Pionex	959020
+Polymarket	Polymarket	952790
+Raydium	Raydium	967692
+OpenSea	OpenSea	964890
+BNB Chain	BNBChain	951906
+Chainlink	Chainlink	953576
+Cosmos	Cosmos	983280
+Cardano	Cardano	961892
+Polkadot	Polkadot	966343
+Solana	Solana	967142
+Starknet	Starknet	959152
+Optimism	Optimism	957664
+Polygon	Polygon	992383
+NEAR Protocol	NEARProtocol	954480
+Lens Protocal	LensProtocal	948464
+zkSync	zkSync	973129
+Arweave	Arweave	961294
+Filecoin	Filecoin	955434
+Harmony	Harmony	978938
+Harmony One	HarmonyOne	953942
+DApp	DApp	968221
+DApps	DApps	970667
+Uniswap	Uniswap	960540
+SushiSwap	SushiSwap	959487
+PancakeSwap	PancakeSwap	951359
+JediSwap	JediSwap	959414
+Orbiter	Orbiter	961899
+MakerDAO	MakerDAO	955749
+Compound	Compound	989871
+Aave	Aave	967928
+Curve	Curve	994292
+Curve Finance	CurveFinance	950113
+dYdX	dYdX	965120
+NFT	NFT	978185
+Non-Fungible Token	NFT	954800
+Solidity	Solidity	965343
+Argent X	ArgentX	952704
+Braavos	Braavos	962579
+Braavos Wallet	Braavos	955854
+OneKey	OneKey	954198
+Hackintosh	Hackintosh	964815
+DYOR	DYOR	975154
+Do Your Own Research	DYOR	944764
+Noita	Noita	963298
+Screen Studio	ScreenStudio	944630
+Norah	Norah	963138
+Wayland	Wayland	956859
+Wappalyzer	Wappalyzer	959301
+noop	noop	993580
+Kung Fu	KungFu	978170
+TL;DR	TL;DR	977338
+too long; didn't read	TL;DR	958069
+Ant-Man	Ant-Man	958516
+ungoogled	ungoogled	953207
+ungoogled-chromium	ungoogled-chromium	956671
+RouterOS	RouterOS	956801
+Sumatra	Sumatra	957066
+Sumatra PDF	SumatraPDF	958591
+sideload	sideload	969885
+sideloading	sideloading	961053
+librime	librime	957430
+JRPG	JRPG	975910
+Japanese Role-Playing Game	JRPG	948500
+Kuromis	Kuromis	946886
+heil	heil	965424
+AmyTelecom	AmyTelecom	953158
+Patreon	Patreon	969724
+Anaconda	Anaconda	974389
+LLaMA	LLaMA	977264
+Large Language Model Meta AI	LLaMA	953246
+R.I.P	R.I.P	974715
+AIGC	AIGC	971468
+AI Generated Content	AIGC	957261
+Upscayl	Upscayl	960757
+Cocos Creator	CocosCreator	957531
+John Wick	JohnWick	962814
+npm	npm	977585
+Node Package Manager	npm	959354
+Node Package Manager	NodePackageManager	959354
+.npmrc	.npmrc	974802
+Apple Vision	AppleVision	954812
+Apple Vision Pro	AppleVisionPro	955735
+Vision Pro	VisionPro	953887
+a11y	a11y	965551
+accessibility	a11y	976136
+i18n	i18n	976645
+internationalization	i18n	972962
+internationalization	internationalization	972962
+l10n	l10n	969574
+localization	l10n	968662
+g11n	g11n	964416
+globalization	g11n	974604
+m17n	m17n	971639
+multilingualization	m17n	950370
+multilingualization	multilingualization	950370
+t9n	t9n	960051
+translation	t9n	995078
+p13n	p13n	967453
+personalization	p13n	955235
+personalization	personalization	955235
+K3s	K3s	963190
+K8s	K8s	968921
+Kubernetes	K8s	975929
+Kubernetes	Kubernetes	975929
+Kubeadm	Kubeadm	968485
+Minikube	Minikube	960402
+shitwork	shitwork	955670
+W3C	W3C	964473
+World Wide Web Consortium	W3C	962742
+A4	A4	969545
+3D	3D	973480
+Loki	Loki	969764
+dict	dict	994756
+Hughie	Hughie	968300
+Maeve	Maeve	970126
+Oppenheimer	Oppenheimer	954469
+UltraEdit	UltraEdit	959060
+GoldenDict	GoldenDict	954493
+tokenizer	tokenizer	989428
+ControlNet	ControlNet	957220
+CISC	CISC	977247
+RISC	RISC	986044
+x86	x86	979531
+x86-64	x86-64	973018
+x64	x64	972230
+amd64	amd64	975764
+arm64	arm64	965440
+Xeon	Xeon	973930
+Pentium	Pentium	963210
+Celeron	Celeron	968179
+EPYC	EPYC	968848
+Ryzen	Ryzen	965531
+Athlon	Athlon	973769
+DSL	DSL	980886
+Domain Specific Language	DSL	958436
+HDL	HDL	978776
+Hardware Description Language	HDL	956250
+VHDL	VHDL	978464
+Verilog	Verilog	980686
+keysym	keysym	961744
+keysyms	keysyms	959739
+PotPlayer	PotPlayer	950852
+Code::Blocks	Code::Blocks	961499
+Protocol Buffers	ProtocolBuffers	951143
+protobuf	protobuf	991968
+beyatch	beyatch	949997
+iBus	iBus	963612
+BT	BT	980721
+BitTorrent	BT	969852
+ProtonMail	ProtonMail	951146
+Elasticsearch	Elasticsearch	955963
+OpenSearch	OpenSearch	957125
+rho	rho	980692
+D&D	D&D	977597
+Dungeons & Dragons	D&D	954632
+Dungeons & Dragons	Dungeons&Dragons	954632
+DnD	DnD	974687
+D&D	DnD	977597
+Dungeons & Dragons	DnD	954632
+Minecraft	Minecraft	966655
+LSP	LSP	975481
+Language Server Protocol	LSP	953958
+C#	C#	982754
+KeyCastr	KeyCastr	954272
+Laugh Tale	LaughTale	958227
+Joy Boy	JoyBoy	958095
+RustRover	RustRover	957870
+bilibili	bilibili	961923
+Terraria	Terraria	958063
+Unihan	Unihan	959446
+DLsite	DLsite	959537
+I'm	I'm	981732
+you're	you're	968908
+she's	she's	968515
+we're	we're	980603
+they're	they're	967054
+aren't	aren't	974936
+wasn't	wasn't	970304
+weren't	weren't	967206
+hasn't	hasn't	969953
+haven't	haven't	971484
+hadn't	hadn't	971100
+wouldn't	wouldn't	957044
+couldn't	couldn't	970117
+shouldn't	shouldn't	957997
+mightn't	mightn't	956754
+mustn't	mustn't	963589
+shan't	shan't	964871
+ain't	ain't	973341
+daren't	daren't	953851
+needn't	needn't	960946
+oughtn't	oughtn't	950300
+who's	who's	970068
+where's	where's	965969
+when's	when's	961166
+why's	why's	967040
+how's	how's	966008
+here's	here's	975916
+you'll	you'll	975085
+it'll	it'll	959235
+they'll	they'll	957726
+you'd	you'd	971465
+we'd	we'd	969122
+I've	I've	985483
+he'd	he'd	966067
+it'd	it'd	959573
+they'd	they'd	960084
+you've	you've	969778
+we've	we've	975091
+they've	they've	958753
+lemme	lemme	980780
+outta	outta	964758
+whatcha	whatcha	960548
+PVP	PVP	976354
+Player versus Player	PVP	958484
+PVE	PVE	972603
+player versus environment	PVE	958524
+Elon	Elon	965244
+Musk	Musk	978323
+Logseq	Logseq	960421
+WPS	WPS	976363
+Morty	Morty	963633
+Frundles	Frundles	955363
+Brotato	Brotato	964216
+engineman	engineman	955358
+unhuman	unhuman	954489
+unhumified	unhumified	946562
+unhumanize	unhumanize	939453
+P2P	P2P	972281
+peer-to-peer	P2P	962641
+F2A	F2A	965353
+B2B	B2B	972312
+C2C	C2C	969175
+B2C	B2C	969677
+C2B	C2B	962974
+O2O	O2O	969313
+NBA 2K	NBA2K	970395
+WebCatalog	WebCatalog	955735
+Apple One	AppleOne	955551
+pixiv	pixiv	971079
+M4A1	M4A1	966051
+PK	PK	982598
+WireGuard	WireGuard	956230
+AdGuard	AdGuard	959024
+Altman	Altman	968756
+Ultraman	Ultraman	955835
+sider	sider	964934
+DALL·E	DALL·E	961157
+e.g.	e.g.	973071
+i.e.	i.e.	983385
+et al.	etal.	965776
+Zettlr	Zettlr	958742
+Codium	Codium	961922
+CodiumAI	CodiumAI	960651
+SaaS	SaaS	984989
+Software as a service	SaaS	954431
+gitignore	gitignore	964295
+.gitignore	.gitignore	986707
+Alita	Alita	964078
+epoll	epoll	965456
+kqueue	kqueue	963720
+LangChain	LangChain	968033
+LangServe	LangServe	956104
+LangSmith	LangSmith	959542
+runc	runc	965196
+containerd	containerd	958351
+Melvor	Melvor	957736
+Melvor Idle	MelvorIdle	951586
+WebSocket	WebSocket	989277
+systemctl	systemctl	956722
+reconfig	reconfig	955463
+sudo	sudo	994314
+flypy	flypy	968793
+traefik	traefik	964183
+deepin	deepin	958721
+srv	srv	978143
+usr	usr	982892
+AUR	AUR	973947
+Arch User Repository	AUR	955739
+pacman	pacman	971152
+Pac-Man	Pac-Man	959258
+eBPF	eBPF	976625
+DevOps	DevOps	986318
+Zippo	Zippo	966676
+QR code	QRcode	981974
+Prometheus	Prometheus	958247
+Grafana	Grafana	970093
+Mirtle	Mirtle	967421
+Hadoop	Hadoop	986459
+HBase	HBase	977892
+Hive	Hive	976690
+Apache Hive	ApacheHive	961420
+Flink	Flink	974074
+Palworld	Palworld	955351
+submodule	submodule	957342
+submodules	submodules	957460
+Writerside	Writerside	951546
+Manifest V2	ManifestV2	952829
+Manifest V3	ManifestV3	955320
+IMBA	IMBA	976821
+GitButler	GitButler	952461
+WinNAS	WinNAS	957818
+Wireshark	Wireshark	968518
+Theseus	Theseus	958759
+Laravel	Laravel	973521
+Chiikawa	Chiikawa	960319
+LibreOffice	LibreOffice	957686
+Asics	Asics	966382
+Saucony	Saucony	962448
+nvm	nvm	968214
+Node Version Manager	nvm	955986
+Node Version Manager	NodeVersionManager	955986
+Prettier	Prettier	970746
+ESLint	ESLint	973161
+Hibernate	Hibernate	987539
+MyBatis	MyBatis	966087
+MyBatis-Plus	MyBatis-Plus	953854
+Spring Boot	SpringBoot	960149
+Spring Cloud	SpringCloud	956866
+Element Plus	ElementPlus	955049
+Flameshot	Flameshot	949653
+Flatpak	Flatpak	960619
+Salesforce	Salesforce	961526
+V8 engine	V8engine	955915
+V8 JS engine	V8JSengine	959444
+V8 JavaScript engine	V8JavaScriptengine	956284
+Wasm	Wasm	975884
+WebAssembly	WebAssembly	964740
+Feign	Feign	968990
+OpenFeign	OpenFeign	956548
+IMF	IMF	972979
+International Monetary Fund	IMF	951930
+International Monetary Fund	InternationalMonetaryFund	951930
+Terraform	Terraform	960136
+systemd	systemd	959537
+IC	IC	981908
+Integrated Circuit	IC	963463
+ASIC	ASIC	996523
+FPGA	FPGA	980841
+Field-Programmable Gate Array	FPGA	951930
+Samsung	Samsung	992410
+Samsung Galaxy	SamsungGalaxy	971556
+VimL	VimL	970080
+Vimscript	Vimscript	957436
+kubectl	kubectl	990013
+mvn	mvn	975737
+mvnd	mvnd	965952
+maven	maven	976964
+Fluent UI	FluentUI	955471
+ActiveX	ActiveX	967686
+arXiv	arXiv	975375
+Gzip	Gzip	971516
+LexisNexis	LexisNexis	960585
+phpBB	phpBB	974917
+ThinkPad	ThinkPad	960400
+WebLogic	WebLogic	960841
+Yahoo	Yahoo	989209
+Zope	Zope	969676
+GameBoy	GameBoy	967237
+GameCube	GameCube	960138
+GameFAQs	GameFAQs	964081
+WSL	WSL	974112
+Windows Subsystem for Linux	WSL	960970
+MSVC	MSVC	973777
+Microsoft Visual C++	MSVC	963528
+Microsoft Visual C++	MicrosoftVisualC++	963528
+DBeaver	DBeaver	969144
+AE86	AE86	966432
+Floorp	Floorp	957660
+Costco	Costco	964244
+NFC	NFC	974633
+Near Field Communication	NFC	957215
+Near Field Communication	NearFieldCommunication	957215
+Apple Intelligence	AppleIntelligence	953954
+7-Zip	7-Zip	977134
+LGTM	LGTM	970511
+PTAL	PTAL	969486
+MBR	MBR	972968
+master boot record	masterbootrecord	957434
+master boot record	MBR	957434
+EFI	EFI	977218
+Extensible Firmware Interface	ExtensibleFirmwareInterface	954448
+Extensible Firmware Interface	EFI	954448
+UEFI	UEFI	978474
+Unified Extensible Firmware Interface	UnifiedExtensibleFirmwareInterface	960316
+Unified Extensible Firmware Interface	UEFI	960316
+CMOS	CMOS	985328
+complementary metal-oxide-semiconductor	complementarymetal-oxide-semiconductor	957070
+complementary metal-oxide-semiconductor	CMOS	957070
+OOP	OOP	987648
+object-oriented programming	object-orientedprogramming	972240
+object-oriented programming	OOP	972240
+IDE	IDE	988847
+integrated development environment	integrateddevelopmentenvironment	959199
+integrated development environment	IDE	959199
+TensorFlow	TensorFlow	972333
+PyTorch	PyTorch	970778
+DeepSeek	DeepSeek	956664
+Mercedes-Benz	Mercedes-Benz	963848
+1Password	1Password	962727
+WD-40	WD-40	968138
+OpenStreetMap	OpenStreetMap	959489
+OsmAnd	OsmAnd	962960
+Syncthing	Syncthing	962200
+Heptabase	Heptabase	949506
+Ghostty	Ghostty	955199
+WezTerm	WezTerm	962359
+Wez's Terminal Emulator	WezTerm	948525
+MobaXterm	MobaXterm	969275
+MobaTextEditor	MobaTextEditor	953301
+MobaDiff	MobaDiff	953003
+Tailscale	Tailscale	955259
+Shadowrocket	Shadowrocket	955362
+Quantumult	Quantumult	956563
+Quantumult X	QuantumultX	955985
+V2Ray	V2Ray	967724
+v2rayN	v2rayN	959131
+v2rayA	v2rayA	959514
+v2ray-core	v2ray-core	951040
+Xray-core	Xray-core	952046
+mihomo	mihomo	960308
+trojan-go	trojan-go	959771
+VLESS	VLESS	967096
+Hysteria	Hysteria	971280
+sing-box	sing-box	957250
+SagerNet	SagerNet	953112
+live house	livehouse	956143
+DiskGenius	DiskGenius	956279
+ICPC	ICPC	980886
+International Collegiate Programming Contest	ICPC	960758
+International Collegiate Programming Contest	InternationalCollegiateProgrammingContest	960758
+UML	UML	978837
+Unified Modeling Language	UML	962218
+Unified Modeling Language	UnifiedModelingLanguage	962218
+Ollama	Ollama	972650
+Omarchy	Omarchy	954856
+LMArena	LMArena	954122
+MaxMind	MaxMind	960021
+PM2.5	PM2.5	970610
+PM10	PM10	970997
+SARS-CoV-2	SARS-CoV-2	962349
+Nano Banana	NanoBanana	951877
+Zotero	Zotero	958893
+CP2K	CP2K	967022
+VASP	VASP	976069
+FTIR	FTIR	974075
+Slurm	Slurm	970803
+Qwen	Qwen	975392
+UnoCSS	UnoCSS	962744
+Temu	Temu	966119
+Clawdbot	Clawdbot	952730
+Waydroid	Waydroid	958148
+PKGBUILD	PKGBUILD	965642
+Moltbot	Moltbot	956300
+OpenClaw	OpenClaw	954046
+Starlink	Starlink	957376
+Seedance	Seedance	950640
+Dependabot	Dependabot	958309
+KaTeX	KaTeX	974019
+MathJax	MathJax	968803
+Codex	Codex	983738
+Codex CLI	CodexCLI	956798
+Claude Code	ClaudeCode	950050
+MCP	MCP	974365
+IELTS	IELTS	981903
+TOEFL	TOEFL	977659
+Haskell	Haskell	968982
+Vulkan	Vulkan	976250
+LINUX DO	LINUXDO	951860
+Capoo	Capoo	966998
+OAuth	OAuth	992069
+OAuth2	OAuth2	978929
+2FA	2FA	975171
+Hashsum	Hashsum	955972
+Canva	Canva	965216
+DISM	DISM	969022
+FHD	FHD	975430
+FHD+	FHD+	963520
+HMCL	HMCL	964851
+Hyper-V	Hyper-V	961537
+HostUS	HostUS	956073
+KOOK	KOOK	964402
+KeepassXC	KeepassXC	950508
+Keypirinha	Keypirinha	957909
+Klei	Klei	970434
+Koofr	Koofr	969770
+Kong	Kong	981462
+LTS	LTS	971765
+LTSC	LTSC	965208
+Manjaro	Manjaro	962397
+mockup	mockup	969572
+mockups	mockups	958617
+linter	linter	968351
+Nvdia	Nvdia	970838
+OP	OP	983072
+OptFine	OptFine	954861
+Pinterest	Pinterest	986951
+QHD+	QHD+	964609
+QWERT	QWERT	970557
+QuickLook	QuickLook	955259
+Red Hat	RedHat	962988
+rclone	rclone	964222
+ShareX	ShareX	956111
+Shopify	Shopify	965211
+Termux	Termux	957476
+VirtualBox	VirtualBox	962840
+Oracle VirtualBox	OracleVirtualBox	951055
+Xperia	Xperia	963811
+alacritty	alacritty	957955
+admx	admx	959621
+chezmoi	chezmoi	962985
+foobar	foobar	995398
+gist	gist	991488
+HEVC	HEVC	977780
+H.265	H.265	968553
+H.264	H.264	972214
+keepass	keepass	957720
+litemetica	litemetica	951447
+pandoc	pandoc	961400
+OnePlus	OnePlus	954491
+stabledb	stabledb	952036
+synthesia	synthesia	947372
+tabledb	tabledb	952857
+tabliss	tabliss	958640
+pypinyin	pypinyin	957222
+LineageOS	LineageOS	943840
+referer	referer	991596
+speedrun	speedrun	953469
+RSSHub	RSSHub	962754
+QA	QA	978448
+Mothra	Mothra	962682
+Koopa	Koopa	969257
+NA	NA	983839
+XD	XD	975834
+Trime	Trime	964983
+TPM	TPM	976900
+CI	CI	981989
+CP	CP	985368
+GIPHY	GIPHY	973870
+Feinberg	Feinberg	960484
+Deadpool	Deadpool	955689
+crDroid	crDroid	960430
+Windsurf	Windsurf	966496
+MiniMax	MiniMax	963449
+OpenCode	OpenCode	956733
+OpenCode Go	OpenCodeGo	948076
+CLIProxyAPI	CLIProxyAPI	948079
+NewAPI	NewAPI	957706
+CC Switch	CCSwitch	950154
+Trae	Trae	965519
+Qoder	Qoder	965488
+Comate	Comate	953273
+CodeBuddy	CodeBuddy	960603
+LibreChat	LibreChat	949847
+LobeHub	LobeHub	958862
+Open WebUI	OpenWebUI	951668
+Kelivo	Kelivo	956589
+AnythingLLM	AnythingLLM	950353
+ChatBox	ChatBox	956338
+FastGPT	FastGPT	963376
+SearXNG	SearXNG	965816
+SEGGER	SEGGER	968397
+J-Link	J-Link	962947
+J-Trace	J-Trace	954849
+J-Flash	J-Flash	953908
+J-Mem	J-Mem	969811
+J-Scope	J-Scope	962411
+JTAG	JTAG	978637
+Joint Test Action Group	JTAG	951545
+WinMerge	WinMerge	961968
+Araxis Merge	AraxisMerge	948775
+Source Insight	SourceInsight	950496
+SourceMonitor	SourceMonitor	945981
+WinSCP	WinSCP	966590
+PuTTY	PuTTY	974396
+Renesas	Renesas	970460
+Infineon	Infineon	953471
+AURIX	AURIX	968814
+TriCore	TriCore	955431
+Qualcomm	Qualcomm	952670
+Hynix	Hynix	968400
+Broadcom	Broadcom	955826
+MediaTek	MediaTek	956838
+KIOXIA	KIOXIA	963992
+Microchip	Microchip	961832
+Marvell	Marvell	961390
+Realtek	Realtek	959670
+GigaDevice	GigaDevice	950107
+GPT‑5.6 Sol	GPT‑5.6Sol	947313
+GPT-5.6 Terra	GPT-5.6Terra	945825
+GPT-5.6 Luna	GPT-5.6Luna	948300
+Nust	Nust	966055
+MacPorts	MacPorts	960090

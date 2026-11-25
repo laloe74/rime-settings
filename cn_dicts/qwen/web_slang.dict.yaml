@@ -1,0 +1,432 @@
+# encoding utf-8
+# 网络流行语 fcitx5-pinyin-zhwiki 0.3.1 (20261018)
+# 上游: https://github.com/felixonmars/fcitx5-pinyin-zhwiki & outloudvi/mw2fcitx
+# 处理: 滤除无汉字词条, 编码转小写, Qwen3-14B-Base 离线蒸馏校准词频; 字母音节修正(缩写合并/单字母转读音)
+---
+name: web_slang
+version: "2026.10.24"
+sort: by_weight
+...
+A站	ei zhan	552
+B友	bi you	192
+B站	bi zhan	19384
+C毛	sei mao	79
+N站	en zhan	328
+XX控	xi xi kong	551
+X丝	xi si	189
+X厨房	xi chu fang	316
+X粉	xi fen	143
+X饭圈	xi fan quan	82
+X黑粉	xi hei fen	90
+city不city	sei ai ti yi bu sei ai ti yi	2
+一首凉凉送给你	yi shou liang liang song gei ni	4
+三男一狗	san nan yi gou	66
+三省省会	san sheng sheng hui	50
+上海滩老大	shang hai tan lao da	4
+下崽	xia zai	58
+下饺子	xia jiao zi	886
+不懂球的胖子	bu dong qiu de pang zi	4
+不明觉厉	bu ming jue li	2356
+不约而同	bu yue er tong	978
+丑国	chou guo	81
+世界是个草台班子	shi jie shi ge cao tai ban zi	4
+东东	dong dong	2335
+东北币	dong bei bi	103
+东大	dong da	1799
+东方明珠防御塔	dong fang ming zhu fang yu ta	4
+严谨国	yan jin guo	164
+丧戆	sang gang	1
+中国式XX	zhong guo shi xi xi	3
+主理人	zhu li ren	692
+主要看气质	zhu yao kan qi zhi	5
+五对轮	wu dui lun	90
+亚文化	ya wen hua	6562
+京爷	jing ye	87
+人参	ren shen	19560
+人肉搜索	ren rou sou suo	4943
+人艰不拆	ren jian bu chai	633
+任性	ren xing	15521
+任教主	ren jiao zhu	171
+任粉	ren fen	82
+任豚	ren tun	10
+伤不起	shang bu qi	806
+伪娘	wei niang	2030
+低智商的善良	di zhi shang de shan liang	4
+你国	ni guo	450
+你妹	ni mei	450
+你已急哭	ni yi ji ku	20
+你懂的	ni dong de	1025
+你生我梦	ni sheng wo meng	25
+俯卧撑	fu wo cheng	2389
+偶像	ou xiang	47336
+偷国	tou guo	89
+儒西	ru xi	37
+光之国	guang zhi guo	152
+兔子	tu zi	30235
+全科	quan ke	3508
+内卷	nei juan	7968
+内卷化	nei juan hua	905
+内牛满面	nei niu man mian	131
+冯了个福	feng le ge fu	26
+凉了	liang le	223
+凉凉	liang liang	204
+凤凰男	feng huang nan	396
+刷屏	shua ping	1182
+剁手党	duo shou dang	57
+劈腿	pi tui	256
+力工思维	li gong si wei	47
+加麻大	jia ma da	157
+北京	bei jing	350000
+匿鸟	ni niao	25
+十动然拒	shi dong ran ju	329
+南深圳	nan shen zhen	409
+卡兹	ka zi	389
+卡哇伊	ka wa yi	88
+卡婊	ka biao	22
+又双叒叕	you shuang ruo zhuo	129
+叉腰肌	cha yao ji	52
+口口	kou kou	3690
+叫兽	jiao shou	1585
+可爱	ke ai	81403
+台客	tai ke	531
+右手	you shou	37806
+吐槽	tu cao	45208
+吸兔	xi tu	35
+吸狗	xi gou	61
+吸猫	xi mao	368
+呜呜	wu wu	195
+呵呵	he he	60470
+呼呼	hu hu	643
+咔咔	ka ka	149
+哈哈	ha ha	312448
+哈基米	ha ji mi	1336
+哟西	yo xi	102
+唐人	tang ren	4784
+啊痛悟蜡	a tong wu la	30
+喷鼻血	pen bi xue	51
+嘉欣	jia xin	63
+嘉豪	jia hao	75
+嘎嘎	ga ga	948
+嘻嘻	xi xi	13323
+嘿嘿	hei hei	17494
+噬元兽	shi yuan shou	74
+四老外	si lao wai	113
+回笼漂	hui long piao	65
+围脖	wei bo	2842
+围观	wei guan	15874
+国王董	guo wang dong	79
+图种熊菊	tu zhong xiong ju	27
+圆头耄耋	yuan tou mao die	22
+土著	tu zhu	3612
+坑爹网	keng die wang	80
+坛子	tan zi	2164
+坟贴	fen tie	10
+坡县	po xian	93
+城管	cheng guan	35019
+大公公掉粪坑啦	da gong gong diao fen keng la	5
+大刀	da dao	1718
+大奉先	da feng xian	86
+大法	da fa	3293
+大神	da shen	5611
+大菠萝	da bo luo	104
+大虾	da xia	476
+大飞老师	da fei lao shi	50
+太空易	tai kong yi	105
+太阳国	tai yang guo	149
+奇葩	qi pa	19011
+奔四	ben si	150
+女神	nv shen	46601
+如花	ru hua	547
+妓者	ji zhe	97
+姑狗	gu gou	45
+孔雀女	kong que nv	54
+安卓XX	an zhuo xi xi	165
+宝宝	bao bao	224131
+实锤	shi chui	122
+密西	mi xi	5946
+小P孩	xiao pi hai	98
+小伙伴	xiao huo ban	67301
+小强	xiao qiang	4043
+小日子	xiao ri zi	2931
+小目标	xiao mu biao	5556
+小绿人	xiao lv ren	373
+小霸王服务器	xiao ba wang fu wu qi	4
+小魔仙	xiao mo xian	109
+小黑屋	xiao hei wu	133
+屌丝	diao si	1341
+山姆规则	shan mu gui ze	79
+山寨	shan zhai	15153
+山寨文化	shan zhai wen hua	567
+岛国	dao guo	2314
+左手	zuo shou	29430
+巨硬	ju ying	119
+帝都	di du	3443
+常务副球王	chang wu fu qiu wang	5
+干色摸	gan se mo	41
+床单军团	chuang dan jun tuan	49
+废柴	fei chai	1790
+度娘	du niang	1439
+建模	jian mo	9064
+弓虽	gong sui	104
+弗雷尔卓德	fu lei er zhuo de	5
+待我长发及腰	dai wo chang fa ji yao	5
+很s	hen si	256
+徽京	hui jing	109
+性压抑论	xing ya yi lun	61
+总裁	zong cai	83812
+恐龙	kong long	28766
+恩情国	en qing guo	67
+感冒	gan mao	66997
+愤青	fen qing	620
+我伙呆	wo huo dai	217
+我伙惊	wo huo jing	146
+我劝你善良	wo quan ni shan liang	6
+战爹	zhan die	22
+打PP	da pi pi	367
+打脸	da lian	1273
+打酱油	da jiang you	3071
+打铁	da tie	4034
+扛八袋	kang ba dai	45
+拉影	la ying	157
+拉玛西亚影视学院	la ma xi ya ying shi xue yuan	3
+拍砖	pai zhuan	789
+拖鞋军	tuo xie jun	66
+捉急	zhuo ji	99
+掐架	qia jia	68
+接地气	jie di qi	20851
+搞抽象	gao chou xiang	384
+搭子	da zi	4398
+斑竹	ban zhu	819
+旋转猫	xuan zhuan mao	97
+无言独上枝头	wu yan du shang zhi tou	2
+旺财	wang cai	1466
+易主席	yi zhu xi	326
+易帝	yi di	83
+暖男	nuan nan	891
+最好先定一个能达到的小目标	zui hao xian ding yi ge neng da dao de xiao mu biao	4
+最强法务部	zui qiang fa wu bu	5
+木仓	mu cang	146
+木油	mu you	222
+术术人	shu shu ren	135
+机车	ji che	6463
+李家坡	li jia po	69
+杯具	bei ju	3736
+板斧	ban fu	370
+林皇	lin huang	66
+某某党	mou mou dang	109
+某某哥	mou mou ge	103
+某某帝	mou mou di	96
+梨花体	li hua ti	309
+梨花体诗	li hua ti shi	38
+棒子	bang zi	1672
+椅子男	yi zi nan	114
+楼脆脆	lou cui cui	70
+欧吉桑	ou ji sang	50
+欧巴桑	ou ba sang	63
+欺实马	qi shi ma	63
+正能量	zheng neng liang	46556
+正龙拍虎	zheng long pai hu	55
+武僧	wu seng	289
+歪楼	wai lou	159
+死人	si ren	4655
+比如我先挣它一个亿	bi ru wo xian zheng ta yi ge yi	4
+毛子	mao zi	970
+毛抬厂	mao tai chang	28
+毛纳尔彪	mao na er biao	28
+水手	shui shou	5739
+水水	shui shui	5353
+水爷	shui ye	167
+沪币	hu bi	55
+沪签	hu qian	47
+油墨	you mo	1319
+油纸包	you zhi bao	56
+油腻	you ni	13379
+洗具	xi ju	992
+洗澡狗	xi zao gou	102
+流行语	liu xing yu	3923
+涯叔	ya shu	31
+渣浪	zha lang	73
+温酒吧	wen jiu ba	169
+湖南省会	hu nan sheng hui	408
+湖南第二省会	hu nan di er sheng hui	4
+湖南精神省会	hu nan jing shen sheng hui	4
+湖绿	hu lv	101
+滴滴	di di	43531
+漂亮国	piao liang guo	550
+潜水	qian shui	21405
+灌水	guan shui	791
+火乍药	huo zha yao	47
+火星人	huo xing ren	978
+火星文	huo xing wen	175
+火钳刘明	huo qian liu ming	79
+灯塔国	deng ta guo	78
+灯泡	deng pao	5621
+点菜	dian cai	1091
+然并卵	ran bing luan	45
+煤球	mei qiu	360
+煤球王	mei qiu wang	49
+爱你老己	ai ni lao ji	59
+爱好者	ai hao zhe	58347
+爱老虎油	ai lao hu you	264
+爷青结	ye qing jie	117
+片片	pian pian	1166
+牛B	niu bi	681
+牢大	lao da	1250
+牲口	sheng kou	2410
+狗带	gou dai	187
+狼族	lang zu	256
+猪猪	zhu zhu	1676
+球全	qiu quan	136
+球玉	qiu yu	114
+申请加入义和团	shen qing jia ru yi he tuan	4
+电棍	dian gun	151
+男友	nan you	40054
+男朋友	nan peng you	46804
+画美不看	hua mei bu kan	58
+番羽土啬	fan yu tu se	19
+番茄台	fan qie tai	81
+痛苦面具	tong ku mian ju	220
+瘟都死	wen dou si	56
+百合	bai he	19889
+百错仍硕	bai cuo reng shuo	25
+皇家武术队	huang jia wu shu dui	4
+盖楼	gai lou	576
+知音体	zhi yin ti	109
+石化	shi hua	60206
+石头剪子布理论	shi tou jian zi bu li lun	6
+码头队	ma tou dui	156
+砍大山	kan da shan	84
+砖家	zhuan jia	566
+砲姐	pao jie	25
+社会我X哥	she hui wo xi ge	5
+神兽	shen shou	2446
+神马	shen ma	1023
+神马都是浮云	shen ma dou shi fu yun	6
+科目四	ke mu si	214
+稀饭	xi fan	167
+穿越	chuan yue	66764
+童鞋	tong xie	431
+等国	deng guo	224
+筒子	tong zi	986
+简单方便女	jian dan fang bian nv	4
+粉丝	fen si	128463
+精神小伙	jing shen xiao huo	4583
+精罗	jing luo	335
+索狗	suo gou	68
+索粉	suo fen	108
+累觉不爱	lei jue bu ai	125
+纠结	jiu jie	29786
+经济	jing ji	350000
+经济适用男	jing ji shi yong nan	4
+给他爱	gei ta ai	553
+绿厂	lv chang	71
+网红	wang hong	61809
+网络文化	wang luo wen hua	3059
+网络用语	wang luo yong yu	8928
+网路用语	wang lu yong yu	253
+罗总裁	luo zong cai	140
+罪大恶极	zui da e ji	1363
+美丽国	mei li guo	887
+美帝良心想	mei di liang xin xiang	4
+美积电	mei ji dian	111
+群殴	qun ou	270
+老滚	lao gun	106
+考瑞亚	kao rui ya	101
+肉鸡	rou ji	1735
+肥仔	fei zai	114
+肥宅快乐X	fei zhai kuai le xi	4
+肾机	shen ji	83
+肿么	zhong me	518
+脑洞大开	nao dong da kai	1137
+船长	chuan zhang	6090
+色友	se you	161
+艺术类型	yi shu lei xing	859
+节操社	jie cao she	145
+芭比Q了	ba bi qiu le	40
+花西币	hua xi bi	66
+苏州享耀国际机场	su zhou xiang yao guo ji ji chang	5
+苏州梅友机场	su zhou mei you ji chang	4
+苹果XX	ping guo xi xi	211
+苹果安卓相对论	ping guo an zhuo xiang dui lun	4
+范大将军	fan da jiang jun	148
+范跑跑	fan pao pao	100
+茶具	cha ju	2604
+茶包	cha bao	2221
+草根	cao gen	2904
+荔枝台	li zhi tai	113
+萝莉	luo li	2919
+董卓	dong zhuo	2156
+蓝厂	lan chang	83
+蓝瘦香菇	lan shou xiang gu	191
+蔡国庆	cai guo qing	100
+虐菜	nve cai	63
+蛋G	dan ji	63
+蛋定	dan ding	110
+蛋疼	dan teng	1196
+蛋白质	dan bai zhi	51551
+蛋白质女孩	dan bai zhi nv hai	4
+蜜糖体	mi tang ti	53
+裸奔	luo ben	90
+诈骗之岛	zha pian zhi dao	34
+诈骗岛	zha pian dao	95
+误闯天家	wu chuang tian jia	32
+贝林黛玉	bei lin dai yu	39
+贫穷限制了我的想象力	pin qiong xian zhi le wo de xiang xiang li	4
+贵族打野	gui zu da ye	37
+赢麻了	ying ma le	118
+走你	zou ni	634
+跑牛	pao niu	87
+路过	lu guo	23555
+跳水罗	tiao shui luo	45
+踩一脚	cai yi jiao	108
+躲猫猫	duo mao mao	2571
+躺平	tang ping	10543
+车万	che wan	916
+软粉	ruan fen	98
+软蛆	ruan qu	4
+轻舞肥羊	qing wu fei yang	31
+还有这种操作	hai you zhe zhong cao zuo	6
+远哭	yuan ku	66
+那一天的XX起来	na yi tian de xi xi qi lai	5
+邪修	xie xiu	158
+邪教	xie jiao	2654
+郜林斯曼	gao lin si man	24
+郜飞机	gao fei ji	28
+酱紫	jiang zi	116
+酷鸡	ku ji	41
+里奥哟西	li ao yo xi	35
+鉴定	jian ding	76924
+钓鱼	diao yu	37631
+锅巴	guo ba	3087
+阴间论坛	yin jian lun tan	53
+阿伟罗	a wei luo	52
+阿水	a shui	179
+霉国	mei guo	77
+霉男	mei nan	66
+霓虹国	ni hong guo	50
+霹雳	pi li	2983
+青蛙	qing wa	12192
+非主流	fei zhu liu	1556
+非死不可	fei si bu ke	383
+颜值	yan zhi	63853
+飞友	fei you	99
+飞鱼族	fei yu zu	69
+食具	shi ju	1305
+餐具	can ju	14538
+饭饭	fan fan	161
+馨香	xin xiang	1297
+马叉虫	ma cha chong	32
+马头	ma tou	2878
+骚年	sao nian	472
+骡子	luo zi	1873
+高丽棒子	gao li bang zi	78
+高富帅	gao fu shuai	214
+高速运转的机械进入中国	gao su yun zhuan de ji xie jin ru zhong guo	4
+高雅人士	gao ya ren shi	90
+魔都	mo dou	864
+鱼塘局	yu tang ju	43
+鸭梨	ya li	452
+鹦鹉军团	ying wu jun tuan	50
+黑人问号	hei ren wen hao	333
+鼠鼠	shu shu	613
+龟毛	gui mao	119
